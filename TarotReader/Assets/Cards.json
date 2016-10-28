@@ -1,0 +1,35 @@
+{
+    "cards" :
+    [
+        {
+        "title": "The World",
+        "text": "The World is round",
+        "image": "Sorcorers_r1_c1.png"
+        },
+        {
+        "title": "Strength",
+        "text": "Strength gives power",
+        "image": "Sorcorers_r1_c3.png"
+        },
+        {
+        "title": "The Lovers",
+        "text": "Lovers at Heart",
+        "image": "Sorcorers_r1_c5.png"
+        },
+        {
+        "title": "The Sun",
+        "text": "The Sun is bright",
+        "image": "Sorcorers_r3_c1.png"
+        },
+        {
+        "title": "The Devil",
+        "text": "Lucifer is the Devil",
+        "image": "Sorcorers_r3_c2.png"
+        },
+        {
+        "title": "The Priestess",
+        "text": "The wholly preistess",
+        "image": "Sorcorers_r3_c4.png"
+        }
+    ]
+}
