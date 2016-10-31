@@ -2,34 +2,40 @@
     "cards" :
     [
         {
-        "title": "The World",
-        "text": "The World is round",
-        "image": "Sorcorers_r1_c1.png"
+        "title": "Receiving",
+        "text": "Change me Divine Beloved into one who is willing to receive All the right help, knowing each person, animal, or thing is a form of You. Let me feel deserving of Divine assistance in every way. Open me to receive.",
+        "affirmation" : "I Am Open to Receive",
+        "image": "Matt_Final_Edited_9_21-05.png"
         },
         {
-        "title": "Strength",
-        "text": "Strength gives power",
-        "image": "Sorcorers_r1_c3.png"
+        "title": "Trust",
+        "text": "Change me Divine Beloved into one who easily honors and respects my Inner Self. May I always belong first to my own inner Knowing.",
+        "affirmation" : "I Respect Myself",
+        "image": "Matt_Final_Edited_9_21-06.png"
         },
         {
-        "title": "The Lovers",
-        "text": "Lovers at Heart",
-        "image": "Sorcorers_r1_c5.png"
+        "title": "Worthiness",
+        "text": "Thank you Divine Beloved for shifting me into one who easily opens to receive in every way. Let me always know my own worthiness and beauty.",
+        "affirmation" : "I Am Worthy",
+        "image": "Matt_Final_Edited_9_21-07.png"
         },
         {
-        "title": "The Sun",
-        "text": "The Sun is bright",
-        "image": "Sorcorers_r3_c1.png"
+        "title": "Faith",
+        "text": "Change me Devine Beloved into one who trusts that all drives and departs exactly on schedule. May I always know You know my deepest needs in every way and guide all actions.",
+        "affirmation" : "I Am One Who Trusts",
+        "image": "Matt_Final_Edited_9_21-08.png"
         },
         {
-        "title": "The Devil",
-        "text": "Lucifer is the Devil",
-        "image": "Sorcorers_r3_c2.png"
+        "title": "Channel",
+        "text": "",
+     "affirmation" : "I Am a Conduit",
+        "image": "Matt_Final_Edited_9_21-09.png"
         },
         {
-        "title": "The Priestess",
-        "text": "The wholly preistess",
-        "image": "Sorcorers_r3_c4.png"
+        "title": "Understanding",
+        "text": "",
+     "affirmation" : "Clarity Is My Birthright",
+        "image": "Matt_Final_Edited_9_21-09.png"
         }
     ]
 }

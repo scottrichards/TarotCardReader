@@ -20,6 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-nI-ots"/>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="3ZQ-Vc-wrp" secondAttribute="height" multiplier="125:187" id="rZc-5c-o7i"/>
@@ -40,15 +41,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hku-nI-ots" secondAttribute="bottom" id="05s-KD-r5l"/>
                             <constraint firstAttribute="trailing" secondItem="3ZQ-Vc-wrp" secondAttribute="trailing" id="3TZ-Kx-liP"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="WCK-1z-upt"/>
                             <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z1E-5a-eI0"/>
                             <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34.5" id="fEJ-6p-2O1"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gdn-jF-Ozx"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jyg-r8-Ios"/>
+                            <constraint firstItem="Hku-nI-ots" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nkB-5u-tEk"/>
+                            <constraint firstAttribute="trailing" secondItem="Hku-nI-ots" secondAttribute="trailing" id="qez-GK-bx6"/>
+                            <constraint firstItem="Hku-nI-ots" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="two-7t-DNf"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="Hku-nI-ots" id="v9h-l7-wF1"/>
                         <outlet property="descriptionLabel" destination="KL1-tH-HoP" id="L4J-Mp-sZN"/>
                         <outlet property="tarotCardImage" destination="3ZQ-Vc-wrp" id="B2Q-rA-zey"/>
                         <outlet property="titleLabel" destination="IfE-uU-nKa" id="Mmv-zM-LMu"/>
@@ -60,6 +66,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CardBack" width="150" height="247"/>
+        <image name="CardBack" width="582" height="800"/>
     </resources>
 </document>

@@ -12,11 +12,13 @@ import Foundation
 class TarotCard: NSObject {
     var title : String?
     var text : String?
+    var affirmation : String?
     var image : String?
     
     init(jsonData:[String:String]) {
         self.title = jsonData["title"]
         self.text = jsonData["text"]
+        self.affirmation = jsonData["affirmation"]
         self.image = jsonData["image"]
     }
 }

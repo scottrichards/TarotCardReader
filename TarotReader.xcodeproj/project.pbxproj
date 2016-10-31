@@ -10,12 +10,6 @@
 		011387E91DC40E95004FAE58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011387E81DC40E95004FAE58 /* Images.xcassets */; };
 		011387EB1DC415EB004FAE58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011387EA1DC415EB004FAE58 /* Constants.swift */; };
 		0130F64F1DC404B4000A2DDC /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 0130F6471DC404B4000A2DDC /* Cards.json */; };
-		0130F6501DC404B4000A2DDC /* Sorcorers_r1_c1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0130F6491DC404B4000A2DDC /* Sorcorers_r1_c1.png */; };
-		0130F6511DC404B4000A2DDC /* Sorcorers_r1_c3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0130F64A1DC404B4000A2DDC /* Sorcorers_r1_c3.png */; };
-		0130F6521DC404B4000A2DDC /* Sorcorers_r1_c5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0130F64B1DC404B4000A2DDC /* Sorcorers_r1_c5.png */; };
-		0130F6531DC404B4000A2DDC /* Sorcorers_r3_c1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0130F64C1DC404B4000A2DDC /* Sorcorers_r3_c1.png */; };
-		0130F6541DC404B4000A2DDC /* Sorcorers_r3_c2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0130F64D1DC404B4000A2DDC /* Sorcorers_r3_c2.png */; };
-		0130F6551DC404B4000A2DDC /* Sorcorers_r3_c4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0130F64E1DC404B4000A2DDC /* Sorcorers_r3_c4.png */; };
 		0140D4D21DC3FABE00AFF0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */; };
 		0140D4D41DC3FABE00AFF0BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4D31DC3FABE00AFF0BB /* ViewController.swift */; };
 		0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0140D4D51DC3FABE00AFF0BB /* Main.storyboard */; };
@@ -24,6 +18,14 @@
 		0140D4E71DC3FABE00AFF0BB /* TarotReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4E61DC3FABE00AFF0BB /* TarotReaderTests.swift */; };
 		0140D4F51DC3FD4800AFF0BB /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4F41DC3FD4800AFF0BB /* TarotCard.swift */; };
 		0140D4F71DC3FDA300AFF0BB /* TarotCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */; };
+		0164CF201DC667520026B1BB /* Matt_Final_Edited_9_21-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF181DC667520026B1BB /* Matt_Final_Edited_9_21-05.png */; };
+		0164CF211DC667520026B1BB /* Matt_Final_Edited_9_21-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF191DC667520026B1BB /* Matt_Final_Edited_9_21-06.png */; };
+		0164CF221DC667520026B1BB /* Matt_Final_Edited_9_21-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1A1DC667520026B1BB /* Matt_Final_Edited_9_21-07.png */; };
+		0164CF231DC667520026B1BB /* Matt_Final_Edited_9_21-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1B1DC667520026B1BB /* Matt_Final_Edited_9_21-08.png */; };
+		0164CF241DC667520026B1BB /* Matt_Final_Edited_9_21-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1C1DC667520026B1BB /* Matt_Final_Edited_9_21-09.png */; };
+		0164CF251DC667520026B1BB /* Matt_Final_Edited_9_21-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1D1DC667520026B1BB /* Matt_Final_Edited_9_21-10.png */; };
+		0164CF261DC667520026B1BB /* Matt_Final_Edited_9_21-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1E1DC667520026B1BB /* Matt_Final_Edited_9_21-11.png */; };
+		0164CF271DC667520026B1BB /* Matt_Final_Edited_9_21-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1F1DC667520026B1BB /* Matt_Final_Edited_9_21-12.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +42,6 @@
 		011387E81DC40E95004FAE58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		011387EA1DC415EB004FAE58 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0130F6471DC404B4000A2DDC /* Cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
-		0130F6491DC404B4000A2DDC /* Sorcorers_r1_c1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sorcorers_r1_c1.png; sourceTree = "<group>"; };
-		0130F64A1DC404B4000A2DDC /* Sorcorers_r1_c3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sorcorers_r1_c3.png; sourceTree = "<group>"; };
-		0130F64B1DC404B4000A2DDC /* Sorcorers_r1_c5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sorcorers_r1_c5.png; sourceTree = "<group>"; };
-		0130F64C1DC404B4000A2DDC /* Sorcorers_r3_c1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sorcorers_r3_c1.png; sourceTree = "<group>"; };
-		0130F64D1DC404B4000A2DDC /* Sorcorers_r3_c2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sorcorers_r3_c2.png; sourceTree = "<group>"; };
-		0130F64E1DC404B4000A2DDC /* Sorcorers_r3_c4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sorcorers_r3_c4.png; sourceTree = "<group>"; };
 		0140D4CE1DC3FABE00AFF0BB /* TarotReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarotReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0140D4D31DC3FABE00AFF0BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +54,14 @@
 		0140D4E81DC3FABE00AFF0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0140D4F41DC3FD4800AFF0BB /* TarotCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
 		0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotCardDeck.swift; sourceTree = "<group>"; };
+		0164CF181DC667520026B1BB /* Matt_Final_Edited_9_21-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-05.png"; sourceTree = "<group>"; };
+		0164CF191DC667520026B1BB /* Matt_Final_Edited_9_21-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-06.png"; sourceTree = "<group>"; };
+		0164CF1A1DC667520026B1BB /* Matt_Final_Edited_9_21-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-07.png"; sourceTree = "<group>"; };
+		0164CF1B1DC667520026B1BB /* Matt_Final_Edited_9_21-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-08.png"; sourceTree = "<group>"; };
+		0164CF1C1DC667520026B1BB /* Matt_Final_Edited_9_21-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-09.png"; sourceTree = "<group>"; };
+		0164CF1D1DC667520026B1BB /* Matt_Final_Edited_9_21-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-10.png"; sourceTree = "<group>"; };
+		0164CF1E1DC667520026B1BB /* Matt_Final_Edited_9_21-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-11.png"; sourceTree = "<group>"; };
+		0164CF1F1DC667520026B1BB /* Matt_Final_Edited_9_21-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-12.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +94,14 @@
 		0130F6481DC404B4000A2DDC /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				0130F6491DC404B4000A2DDC /* Sorcorers_r1_c1.png */,
-				0130F64A1DC404B4000A2DDC /* Sorcorers_r1_c3.png */,
-				0130F64B1DC404B4000A2DDC /* Sorcorers_r1_c5.png */,
-				0130F64C1DC404B4000A2DDC /* Sorcorers_r3_c1.png */,
-				0130F64D1DC404B4000A2DDC /* Sorcorers_r3_c2.png */,
-				0130F64E1DC404B4000A2DDC /* Sorcorers_r3_c4.png */,
+				0164CF181DC667520026B1BB /* Matt_Final_Edited_9_21-05.png */,
+				0164CF191DC667520026B1BB /* Matt_Final_Edited_9_21-06.png */,
+				0164CF1A1DC667520026B1BB /* Matt_Final_Edited_9_21-07.png */,
+				0164CF1B1DC667520026B1BB /* Matt_Final_Edited_9_21-08.png */,
+				0164CF1C1DC667520026B1BB /* Matt_Final_Edited_9_21-09.png */,
+				0164CF1D1DC667520026B1BB /* Matt_Final_Edited_9_21-10.png */,
+				0164CF1E1DC667520026B1BB /* Matt_Final_Edited_9_21-11.png */,
+				0164CF1F1DC667520026B1BB /* Matt_Final_Edited_9_21-12.png */,
 				011387E81DC40E95004FAE58 /* Images.xcassets */,
 			);
 			path = Images;
@@ -238,17 +244,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0130F6551DC404B4000A2DDC /* Sorcorers_r3_c4.png in Resources */,
 				0140D4DC1DC3FABE00AFF0BB /* LaunchScreen.storyboard in Resources */,
-				0130F6541DC404B4000A2DDC /* Sorcorers_r3_c2.png in Resources */,
+				0164CF261DC667520026B1BB /* Matt_Final_Edited_9_21-11.png in Resources */,
 				0140D4D91DC3FABE00AFF0BB /* Assets.xcassets in Resources */,
+				0164CF251DC667520026B1BB /* Matt_Final_Edited_9_21-10.png in Resources */,
 				011387E91DC40E95004FAE58 /* Images.xcassets in Resources */,
+				0164CF221DC667520026B1BB /* Matt_Final_Edited_9_21-07.png in Resources */,
+				0164CF201DC667520026B1BB /* Matt_Final_Edited_9_21-05.png in Resources */,
 				0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */,
-				0130F6521DC404B4000A2DDC /* Sorcorers_r1_c5.png in Resources */,
-				0130F6511DC404B4000A2DDC /* Sorcorers_r1_c3.png in Resources */,
-				0130F6501DC404B4000A2DDC /* Sorcorers_r1_c1.png in Resources */,
+				0164CF231DC667520026B1BB /* Matt_Final_Edited_9_21-08.png in Resources */,
+				0164CF211DC667520026B1BB /* Matt_Final_Edited_9_21-06.png in Resources */,
+				0164CF241DC667520026B1BB /* Matt_Final_Edited_9_21-09.png in Resources */,
 				0130F64F1DC404B4000A2DDC /* Cards.json in Resources */,
-				0130F6531DC404B4000A2DDC /* Sorcorers_r3_c1.png in Resources */,
+				0164CF271DC667520026B1BB /* Matt_Final_Edited_9_21-12.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

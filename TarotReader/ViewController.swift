@@ -12,10 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tarotCardImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     
     var cardShowing : Bool = false
     var deckOfCards : TarotCardDeck = TarotCardDeck()
     var cardCount : UInt32 = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,7 @@ class ViewController: UIViewController {
         deckOfCards.readJSONFile()
         cardCount = deckOfCards.cards != nil ? UInt32(deckOfCards.cards!.count) : 0
         descriptionLabel.text = Constants.Strings.ClickToSelect
+        backgroundImageView.image = UIImage(named: "Background")
     }
     
     func onClickTarotCard() {
@@ -42,10 +45,15 @@ class ViewController: UIViewController {
                 }
                 if let titleText = selectedTarotCard.title {
                     titleLabel.text = titleText
+                } else {
+                    titleLabel.text = ""
                 }
-                if let descriptionText = selectedTarotCard.text {
-                    descriptionLabel.text = descriptionText
+                if let affirmationText = selectedTarotCard.affirmation {
+                    descriptionLabel.text = affirmationText
+                } else {
+                    descriptionLabel.text = ""
                 }
+                
             }
         }
         cardShowing = !cardShowing
