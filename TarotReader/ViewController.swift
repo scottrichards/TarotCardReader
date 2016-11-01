@@ -36,16 +36,9 @@ class ViewController: UIViewController {
         
         startLocation = tarotCardImage.center
         
-//        let directions: [UISwipeGestureRecognizerDirection] = [.right, .left]
-//        for direction in directions {
-//            var swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(gesture:)))
-//            swipeGesture.direction = direction
-//            self.view.addGestureRecognizer(swipeGesture)
-//        }
         self.tarotCardImage.isUserInteractionEnabled = true
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(respondToPanGesture(gesture:)))
         self.tarotCardImage.addGestureRecognizer(panGestureRecognizer)
-//        backgroundImageView.image = UIImage(named: "Background")
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -135,12 +128,15 @@ class ViewController: UIViewController {
     
     
     func respondToPanGesture(gesture:UIPanGestureRecognizer) {
+        let location = gesture.location(in: self.view)
+        if location.x >= self.view.frame.size.width {
+            print("Next Card")
+        }
         let translation : CGPoint = gesture.translation(in: self.tarotCardImage)
-         tarotCardImage.center = CGPoint(x:  translation.x + (startLocation?.x)!, y:  translation.y + (startLocation?.y)!)
+         tarotCardImage.center = CGPoint(x:  translation.x + (startLocation?.x)!, y: (startLocation?.y)!)
         if (gesture.state == UIGestureRecognizerState.ended) {
             animateBack()
         }
-//        dogView!.center = CGPoint(x: startLocation!.x + translation.x, y: startLocation!.y + translation.y)
     }
     
     // animate dog back to its original position
