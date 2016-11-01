@@ -98,6 +98,35 @@ class ViewController: UIViewController {
 //        UIView.transition(from: cardFaceImageView, to: cardBackImageView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
     }
     
+    func animateCard(count:Int) -> TarotCard? {
+        currentCard = UInt32(count)
+        if let selectedTarotCard = deckOfCards.cards?[count] {
+            UIView.animate(withDuration: 0.7, animations: {
+                if let hexColorStr = selectedTarotCard.color {
+                    self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
+                }
+                self.cardFaceImageView.alpha = 0.2
+                if let imagePath = selectedTarotCard.image {
+                    print("load image: \(imagePath)")
+                    self.cardFaceImageView.image = UIImage(named: imagePath)
+                }
+                self.cardFaceImageView.alpha = 1
+                if let titleText = selectedTarotCard.title {
+                    self.titleLabel.text = titleText
+                } else {
+                    self.titleLabel.text = ""
+                }
+                if let affirmationText = selectedTarotCard.affirmation {
+                    self.descriptionLabel.text = affirmationText
+                } else {
+                    self.descriptionLabel.text = ""
+                }
+
+                }, completion: nil)
+                       return selectedTarotCard
+        }
+        return nil
+    }
     
     // set the card to the card at count#
     func setCard(count:Int) -> TarotCard? {
@@ -136,10 +165,10 @@ class ViewController: UIViewController {
                 
                 if (currentCard > 0) {
                     currentCard -= 1
-                    setCard(count: Int(currentCard))
                 } else {
-                    showCardBack()
+                    currentCard = cardCount - 1
                 }
+                animateCard(count: Int(currentCard))
                 
                 //change view controllers
             case UISwipeGestureRecognizerDirection.left :
@@ -148,10 +177,10 @@ class ViewController: UIViewController {
                 let cardCount :UInt32 = deckOfCards.cards != nil ? UInt32(deckOfCards.cards!.count) : 0
                 if (currentCard <  cardCount - 1) {
                     currentCard += 1
-                    setCard(count: Int(currentCard))
                 } else {
-                    showCardBack()
+                    currentCard = 1
                 }
+                animateCard(count: Int(currentCard))
             default:
                 break
             }
