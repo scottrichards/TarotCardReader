@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var backgroundImageView: UIImageView!
-    @IBOutlet weak var cardFaceImageView: UIImageView!
-    @IBOutlet weak var cardBackImageView: UIImageView!
+    @IBOutlet weak var cardFaceImageView: UIImageView!      // The face of the card with Reading and affirmation
+    @IBOutlet weak var cardBackImageView: UIImageView!      // The back of the card with the Oracle
     @IBOutlet weak var cardHolderView: UIView!      // Container View for the face or back of the card
     
     var cardShowing : Bool = false
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var cardCount : UInt32 = 0
     var currentCard : UInt32 = 0
     var startLocation : CGPoint?
+    var movingCard : Bool = false
     
     override func viewDidLayoutSubviews() {
         startLocation = cardBackImageView?.center
@@ -38,10 +39,17 @@ class ViewController: UIViewController {
         
         startLocation = cardBackImageView.center
         
+        let directions: [UISwipeGestureRecognizerDirection] = [.right, .left]
+        for direction in directions {
+            var swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(gesture:)))
+            swipeGesture.direction = direction
+            self.cardFaceImageView.addGestureRecognizer(swipeGesture)
+        }
+
         self.cardBackImageView.isUserInteractionEnabled = true
         self.cardFaceImageView.isUserInteractionEnabled = true
-        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(respondToPanGesture(gesture:)))
-        self.cardFaceImageView.addGestureRecognizer(panGestureRecognizer)
+//        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(respondToPanGesture(gesture:)))
+//        self.cardFaceImageView.addGestureRecognizer(panGestureRecognizer)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -152,22 +160,29 @@ class ViewController: UIViewController {
     
     
     func respondToPanGesture(gesture:UIPanGestureRecognizer) {
+        if (!movingCard) {
+         //   self.cardFaceImageView.translatesAutoresizingMaskIntoConstraints = false
+        }
         let location = gesture.location(in: self.view)
         if location.x >= self.view.frame.size.width {
             print("Next Card")
         }
         let translation : CGPoint = gesture.translation(in: self.cardBackImageView)
-         cardBackImageView.center = CGPoint(x:  translation.x + (startLocation?.x)!, y: (startLocation?.y)!)
+        cardFaceImageView.center = CGPoint(x:  translation.x + (startLocation?.x)!, y: (startLocation?.y)!)
         if (gesture.state == UIGestureRecognizerState.ended) {
             animateBack()
+            movingCard = false
+      //      self.cardFaceImageView.translatesAutoresizingMaskIntoConstraints = true
+        } else {
+            movingCard = true
         }
     }
     
-    // animate dog back to its original position
+    // animate card back to its original position
     func animateBack()
     {
-        UIView.animate(withDuration: 0.7, delay: 0, options: .curveEaseOut, animations: {
-            self.cardBackImageView!.center = self.startLocation!
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+            self.cardFaceImageView!.center = self.startLocation!
             }, completion: { finished in
                 print("Tarot card back home")
         })
