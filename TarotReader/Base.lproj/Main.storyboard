@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,17 +19,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-nI-ots"/>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp">
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="3ZQ-Vc-wrp" secondAttribute="height" multiplier="125:187" id="rZc-5c-o7i"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-nI-ots">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-uU-nKa">
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-Ox-hMZ">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp"/>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="w9k-7p-Bjk" secondAttribute="trailing" id="0s8-Qk-Wgg"/>
+                                    <constraint firstItem="w9k-7p-Bjk" firstAttribute="leading" secondItem="qdf-Ox-hMZ" secondAttribute="leading" id="HgI-1H-eow"/>
+                                    <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="leading" secondItem="qdf-Ox-hMZ" secondAttribute="leading" id="OEy-Yi-pMx"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ZQ-Vc-wrp" secondAttribute="trailing" id="UEA-7w-ah7"/>
+                                    <constraint firstAttribute="width" secondItem="qdf-Ox-hMZ" secondAttribute="height" multiplier="75:112" id="Wjd-5x-BN7"/>
+                                    <constraint firstAttribute="bottom" secondItem="3ZQ-Vc-wrp" secondAttribute="bottom" id="gj9-TD-M83"/>
+                                    <constraint firstAttribute="bottom" secondItem="w9k-7p-Bjk" secondAttribute="bottom" id="jrk-NN-8JQ"/>
+                                    <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="top" secondItem="qdf-Ox-hMZ" secondAttribute="top" id="rSe-eO-vW1"/>
+                                    <constraint firstItem="w9k-7p-Bjk" firstAttribute="top" secondItem="qdf-Ox-hMZ" secondAttribute="top" id="xBf-Mw-7T4"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
                                 <frame key="frameInset" minX="16" minY="626" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,25 +47,31 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-uU-nKa">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="BIN-Qn-kef"/>
+                                    <constraint firstAttribute="height" constant="21.5" id="jg2-Sl-zbV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hku-nI-ots" secondAttribute="bottom" id="05s-KD-r5l"/>
-                            <constraint firstAttribute="trailing" secondItem="3ZQ-Vc-wrp" secondAttribute="trailing" id="3TZ-Kx-liP"/>
-                            <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="WCK-1z-upt"/>
-                            <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z1E-5a-eI0"/>
-                            <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34.5" id="fEJ-6p-2O1"/>
-                            <constraint firstItem="IfE-uU-nKa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gdn-jF-Ozx"/>
-                            <constraint firstItem="IfE-uU-nKa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jyg-r8-Ios"/>
-                            <constraint firstItem="Hku-nI-ots" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nkB-5u-tEk"/>
-                            <constraint firstAttribute="trailing" secondItem="Hku-nI-ots" secondAttribute="trailing" id="qez-GK-bx6"/>
-                            <constraint firstItem="Hku-nI-ots" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="two-7t-DNf"/>
+                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Wg-nU-hqs"/>
+                            <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="7Xe-6b-Puk"/>
+                            <constraint firstAttribute="trailing" secondItem="qdf-Ox-hMZ" secondAttribute="trailing" id="Abe-fV-vNi"/>
+                            <constraint firstItem="IfE-uU-nKa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cu2-r1-D3x"/>
+                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="oVJ-L5-pCK"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="Hku-nI-ots" id="v9h-l7-wF1"/>
+                        <outlet property="cardBackImageView" destination="3ZQ-Vc-wrp" id="tu9-Xf-dp8"/>
+                        <outlet property="cardFaceImageView" destination="w9k-7p-Bjk" id="FIm-jn-SQl"/>
+                        <outlet property="cardHolderView" destination="qdf-Ox-hMZ" id="EuG-85-oir"/>
                         <outlet property="descriptionLabel" destination="KL1-tH-HoP" id="L4J-Mp-sZN"/>
-                        <outlet property="tarotCardImage" destination="3ZQ-Vc-wrp" id="B2Q-rA-zey"/>
                         <outlet property="titleLabel" destination="IfE-uU-nKa" id="Mmv-zM-LMu"/>
                     </connections>
                 </viewController>
