@@ -27,7 +27,19 @@ class ViewController: UIViewController {
         deckOfCards.readJSONFile()
         cardCount = deckOfCards.cards != nil ? UInt32(deckOfCards.cards!.count) : 0
         descriptionLabel.text = Constants.Strings.ClickToSelect
-        backgroundImageView.image = UIImage(named: "Background")
+        self.view.backgroundColor = UIColor.init(netHex: Constants.Colors.MainBackground)   // 543517
+        
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+//        backgroundImageView.image = UIImage(named: "Background")
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        get {
+            return .lightContent
+        }
     }
     
     func onClickTarotCard() {
@@ -35,10 +47,17 @@ class ViewController: UIViewController {
             titleLabel.text = ""
             self.tarotCardImage.image = UIImage(named: "CardBack")
             descriptionLabel.text = Constants.Strings.ClickToSelect
+            self.view.backgroundColor = UIColor.init(netHex: Constants.Colors.MainBackground)   // 543517
         } else {
             let randomNumber = Int(arc4random_uniform(cardCount))
             print("random Number: \(randomNumber)")
+            
+
+
             if let selectedTarotCard = deckOfCards.cards?[randomNumber] {
+                if let hexColorStr = selectedTarotCard.color {
+                    self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
+                }
                 if let imagePath = selectedTarotCard.image {
                     print("load image: \(imagePath)")
                     self.tarotCardImage.image = UIImage(named: imagePath)
@@ -59,6 +78,29 @@ class ViewController: UIViewController {
         cardShowing = !cardShowing
     }
 
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+                
+            case UISwipeGestureRecognizerDirection.right:
+                
+                print("Swiped right")
+                
+                //change view controllers
+                
+                
+                
+                
+                
+            default:
+                break
+            }
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -12,4 +12,8 @@ struct Constants {
     struct Strings {
         static let ClickToSelect = "Click to Select a Card"
     }
+    
+    struct Colors {
+        static let MainBackground = 0x543517
+    }
 }

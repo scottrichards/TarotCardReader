@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */; };
 		011387E91DC40E95004FAE58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011387E81DC40E95004FAE58 /* Images.xcassets */; };
 		011387EB1DC415EB004FAE58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011387EA1DC415EB004FAE58 /* Constants.swift */; };
 		0130F64F1DC404B4000A2DDC /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 0130F6471DC404B4000A2DDC /* Cards.json */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		011387E81DC40E95004FAE58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		011387EA1DC415EB004FAE58 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0130F6471DC404B4000A2DDC /* Cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010AA1ED1DC80AA3007BDD5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0130F6461DC404B4000A2DDC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		0140D4D01DC3FABE00AFF0BB /* TarotReader */ = {
 			isa = PBXGroup;
 			children = (
+				010AA1ED1DC80AA3007BDD5B /* Extensions */,
 				0130F6461DC404B4000A2DDC /* Assets */,
 				0140D4F31DC3FD4800AFF0BB /* Model */,
 				0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */,
@@ -277,6 +288,7 @@
 				011387EB1DC415EB004FAE58 /* Constants.swift in Sources */,
 				0140D4D41DC3FABE00AFF0BB /* ViewController.swift in Sources */,
 				0140D4F71DC3FDA300AFF0BB /* TarotCardDeck.swift in Sources */,
+				010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */,
 				0140D4D21DC3FABE00AFF0BB /* AppDelegate.swift in Sources */,
 				0140D4F51DC3FD4800AFF0BB /* TarotCard.swift in Sources */,
 			);
