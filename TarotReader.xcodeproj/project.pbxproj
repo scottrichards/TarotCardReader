@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */; };
+		010AA1F11DCAA0FD007BDD5B /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 010AA1F01DCAA0FD007BDD5B /* File.strings */; };
 		011387E91DC40E95004FAE58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011387E81DC40E95004FAE58 /* Images.xcassets */; };
 		011387EB1DC415EB004FAE58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011387EA1DC415EB004FAE58 /* Constants.swift */; };
 		0130F64F1DC404B4000A2DDC /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 0130F6471DC404B4000A2DDC /* Cards.json */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		010AA1F01DCAA0FD007BDD5B /* File.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = File.strings; sourceTree = "<group>"; };
 		011387E81DC40E95004FAE58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		011387EA1DC415EB004FAE58 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0130F6471DC404B4000A2DDC /* Cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				0140D4DA1DC3FABE00AFF0BB /* LaunchScreen.storyboard */,
 				0140D4DD1DC3FABE00AFF0BB /* Info.plist */,
 				011387EA1DC415EB004FAE58 /* Constants.swift */,
+				010AA1F01DCAA0FD007BDD5B /* File.strings */,
 			);
 			path = TarotReader;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				0164CF221DC667520026B1BB /* Matt_Final_Edited_9_21-07.png in Resources */,
 				0164CF201DC667520026B1BB /* Matt_Final_Edited_9_21-05.png in Resources */,
 				0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */,
+				010AA1F11DCAA0FD007BDD5B /* File.strings in Resources */,
 				0164CF231DC667520026B1BB /* Matt_Final_Edited_9_21-08.png in Resources */,
 				0164CF211DC667520026B1BB /* Matt_Final_Edited_9_21-06.png in Resources */,
 				0164CF241DC667520026B1BB /* Matt_Final_Edited_9_21-09.png in Resources */,
@@ -435,6 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BitWyze.TarotReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,6 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BitWyze.TarotReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

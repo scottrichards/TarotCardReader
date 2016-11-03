@@ -48,6 +48,9 @@ class ViewController: UIViewController {
 
         self.cardBackImageView.isUserInteractionEnabled = true
         self.cardFaceImageView.isUserInteractionEnabled = true
+        
+        // clear out the back button navigation item
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
 //        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(respondToPanGesture(gesture:)))
 //        self.cardFaceImageView.addGestureRecognizer(panGestureRecognizer)
     }
@@ -113,6 +116,7 @@ class ViewController: UIViewController {
                 self.cardFaceImageView.alpha = 1
                 if let titleText = selectedTarotCard.title {
                     self.titleLabel.text = titleText
+                    self.navigationItem.title = titleText
                 } else {
                     self.titleLabel.text = ""
                 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v0I-br-kjJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Change Me Prayers-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TarotReader" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,29 +25,28 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-Ox-hMZ">
                                 <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp">
+                                        <frame key="frameInset" width="375" height="560"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk"/>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp"/>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="w9k-7p-Bjk" secondAttribute="trailing" id="0s8-Qk-Wgg"/>
                                     <constraint firstItem="w9k-7p-Bjk" firstAttribute="leading" secondItem="qdf-Ox-hMZ" secondAttribute="leading" id="HgI-1H-eow"/>
-                                    <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="leading" secondItem="qdf-Ox-hMZ" secondAttribute="leading" id="OEy-Yi-pMx"/>
-                                    <constraint firstAttribute="trailing" secondItem="3ZQ-Vc-wrp" secondAttribute="trailing" id="UEA-7w-ah7"/>
                                     <constraint firstAttribute="width" secondItem="qdf-Ox-hMZ" secondAttribute="height" multiplier="75:112" id="Wjd-5x-BN7"/>
-                                    <constraint firstAttribute="bottom" secondItem="3ZQ-Vc-wrp" secondAttribute="bottom" id="gj9-TD-M83"/>
                                     <constraint firstAttribute="bottom" secondItem="w9k-7p-Bjk" secondAttribute="bottom" id="jrk-NN-8JQ"/>
-                                    <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="top" secondItem="qdf-Ox-hMZ" secondAttribute="top" id="rSe-eO-vW1"/>
                                     <constraint firstItem="w9k-7p-Bjk" firstAttribute="top" secondItem="qdf-Ox-hMZ" secondAttribute="top" id="xBf-Mw-7T4"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
-                                <frame key="frameInset" minX="16" minY="626" width="343" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
+                                <frame key="frameInset" minX="37" minY="626" width="297" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-uU-nKa">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-uU-nKa">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="BIN-Qn-kef"/>
                                     <constraint firstAttribute="height" constant="21.5" id="jg2-Sl-zbV"/>
@@ -63,9 +62,17 @@
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="7Xe-6b-Puk"/>
                             <constraint firstAttribute="trailing" secondItem="qdf-Ox-hMZ" secondAttribute="trailing" id="Abe-fV-vNi"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cu2-r1-D3x"/>
-                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="oVJ-L5-pCK"/>
+                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="oVJ-L5-pCK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Change Me Prayers" id="dJc-ys-FKd">
+                        <barButtonItem key="leftBarButtonItem" image="Lotus" id="WD2-2T-hWH"/>
+                        <barButtonItem key="rightBarButtonItem" image="QuestionCircle" id="iC9-P9-yqh">
+                            <connections>
+                                <segue destination="DHj-u2-dCo" kind="show" id="1kJ-Iw-BRu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="backgroundImageView" destination="Hku-nI-ots" id="v9h-l7-wF1"/>
                         <outlet property="cardBackImageView" destination="3ZQ-Vc-wrp" id="tu9-Xf-dp8"/>
@@ -77,10 +84,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1063.2" y="-73.313343328335833"/>
+        </scene>
+        <!--Instructions-->
+        <scene sceneID="K1x-Rx-NEM">
+            <objects>
+                <viewController title="Instructions" id="DHj-u2-dCo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JGc-mV-JOK"/>
+                        <viewControllerLayoutGuide type="bottom" id="8KO-kc-abG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PQ4-md-r1T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructionsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-Hg-ZYb">
+                                <frame key="frameInset" minY="59" width="375" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xyl-zg-l4k">
+                                <frame key="frameInset" minX="27" minY="148" width="323" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">I'm so happy to share this beautiful card deck with you.It's a great way to offer any problem to Love and be freedfrom the stress of the ego forcing solutions. Anyone can learnto invite this Force to take over fully. So ask your intuition to show You the best way to use these cards. They can be an oracle for a specific problem,or simply connect you in the moment to the Divine. Youcan even carry one with you as a sacred reminder. Whenyou open fully, the Way for You will be shown.When we invoke the Divine to “shift” us, we invite theHighest part of OURSELVES to take over. After all, It'severything, inside, outside, all of it.And for more help going deeper into this holy unfolding, reador hear the Change Me Prayer book that these are based on.I hope you receive as much joy from these cards as Matt and I felt making them! </mutableString>
+                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="qOY-Es-rD4"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ML7-O2-lCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877.5999999999999" y="-73.313343328335833"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nHx-kc-bLf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v0I-br-kjJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zXF-Yo-ICL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VZD-jk-UaO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGe-iD-5Xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="124" y="-73.313343328335833"/>
         </scene>
     </scenes>
     <resources>
         <image name="CardBack" width="582" height="800"/>
+        <image name="InstructionsBackground" width="375" height="525"/>
+        <image name="Lotus" width="25" height="25"/>
+        <image name="QuestionCircle" width="25" height="25"/>
     </resources>
 </document>
