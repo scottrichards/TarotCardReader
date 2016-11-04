@@ -24,22 +24,6 @@
                                 <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-Ox-hMZ">
-                                <subviews>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp">
-                                        <frame key="frameInset" width="375" height="560"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk"/>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="w9k-7p-Bjk" secondAttribute="trailing" id="0s8-Qk-Wgg"/>
-                                    <constraint firstItem="w9k-7p-Bjk" firstAttribute="leading" secondItem="qdf-Ox-hMZ" secondAttribute="leading" id="HgI-1H-eow"/>
-                                    <constraint firstAttribute="width" secondItem="qdf-Ox-hMZ" secondAttribute="height" multiplier="75:112" id="Wjd-5x-BN7"/>
-                                    <constraint firstAttribute="bottom" secondItem="w9k-7p-Bjk" secondAttribute="bottom" id="jrk-NN-8JQ"/>
-                                    <constraint firstItem="w9k-7p-Bjk" firstAttribute="top" secondItem="qdf-Ox-hMZ" secondAttribute="top" id="xBf-Mw-7T4"/>
-                                </constraints>
-                            </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
                                 <frame key="frameInset" minX="37" minY="626" width="297" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -64,14 +48,31 @@
                                     <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qf2-oO-7hz"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-Ox-hMZ">
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk"/>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3ZQ-Vc-wrp" secondAttribute="bottom" id="2qc-m9-kVn"/>
+                                    <constraint firstItem="w9k-7p-Bjk" firstAttribute="leading" secondItem="qdf-Ox-hMZ" secondAttribute="leading" id="6Xm-kh-6zx"/>
+                                    <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="top" secondItem="qdf-Ox-hMZ" secondAttribute="top" id="Hlt-hV-Gps"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ZQ-Vc-wrp" secondAttribute="trailing" id="IYU-LC-Xrh"/>
+                                    <constraint firstItem="w9k-7p-Bjk" firstAttribute="top" secondItem="qdf-Ox-hMZ" secondAttribute="top" id="N9f-o5-gtN"/>
+                                    <constraint firstItem="3ZQ-Vc-wrp" firstAttribute="leading" secondItem="qdf-Ox-hMZ" secondAttribute="leading" id="NJj-7q-qXY"/>
+                                    <constraint firstAttribute="trailing" secondItem="w9k-7p-Bjk" secondAttribute="trailing" id="UB6-5f-PaW"/>
+                                    <constraint firstAttribute="width" secondItem="qdf-Ox-hMZ" secondAttribute="height" multiplier="8:11" id="Wmf-Ot-4eJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="w9k-7p-Bjk" secondAttribute="bottom" id="jKM-RY-QHc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Wg-nU-hqs"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="7Xe-6b-Puk"/>
-                            <constraint firstAttribute="trailing" secondItem="qdf-Ox-hMZ" secondAttribute="trailing" id="Abe-fV-vNi"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cu2-r1-D3x"/>
-                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="oVJ-L5-pCK"/>
+                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="7" id="VuV-1d-Imi"/>
+                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="uoV-Qo-pNK"/>
+                            <constraint firstAttribute="trailing" secondItem="qdf-Ox-hMZ" secondAttribute="trailing" constant="8" id="wRT-wr-d53"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Change Me Prayers" id="dJc-ys-FKd">
