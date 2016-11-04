@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
@@ -51,6 +52,7 @@ class ViewController: UIViewController {
         
         // clear out the back button navigation item
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        self.navigationController?.navigationBar.tintColor = UIColor(netHex: Constants.Colors.MainBackground)
 //        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(respondToPanGesture(gesture:)))
 //        self.cardFaceImageView.addGestureRecognizer(panGestureRecognizer)
     }
@@ -97,7 +99,7 @@ class ViewController: UIViewController {
             self.cardBackImageView.isHidden = false
             self.view.backgroundColor = UIColor(netHex: Constants.Colors.MainBackground)
             })
-        
+        self.navigationItem.title = "Change Me Prayers"
 //        UIView.transition(from: cardFaceImageView, to: cardBackImageView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
     }
     
@@ -145,6 +147,7 @@ class ViewController: UIViewController {
             }
             if let titleText = selectedTarotCard.title {
                 titleLabel.text = titleText
+                self.navigationItem.title = titleText
             } else {
                 titleLabel.text = ""
             }
@@ -221,12 +224,25 @@ class ViewController: UIViewController {
         })
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
+    
+    
+    @IBAction func onShare(_ sender: AnyObject) {
+        
+        print("share")
+        
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook){
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            facebookSheet.setInitialText("Share on Facebook")
+            self.present(facebookSheet, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+    }
+    
 
 }
 

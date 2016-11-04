@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,6 +56,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-9N-n0y">
+                                <frame key="frameInset" minX="318" minY="626" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="InvertedShare"/>
+                                <connections>
+                                    <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qf2-oO-7hz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -89,7 +98,7 @@
         <!--Instructions-->
         <scene sceneID="K1x-Rx-NEM">
             <objects>
-                <viewController title="Instructions" id="DHj-u2-dCo" sceneMemberID="viewController">
+                <viewController title="Instructions" id="DHj-u2-dCo" customClass="InstructionsViewController" customModule="TarotReader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JGc-mV-JOK"/>
                         <viewControllerLayoutGuide type="bottom" id="8KO-kc-abG"/>
@@ -98,29 +107,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructionsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-Hg-ZYb">
-                                <frame key="frameInset" minY="59" width="375" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xyl-zg-l4k">
-                                <frame key="frameInset" minX="27" minY="148" width="323" height="397"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InstructionsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-Hg-ZYb">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">I'm so happy to share this beautiful card deck with you.It's a great way to offer any problem to Love and be freedfrom the stress of the ego forcing solutions. Anyone can learnto invite this Force to take over fully. So ask your intuition to show You the best way to use these cards. They can be an oracle for a specific problem,or simply connect you in the moment to the Divine. Youcan even carry one with you as a sacred reminder. Whenyou open fully, the Way for You will be shown.When we invoke the Divine to “shift” us, we invite theHighest part of OURSELVES to take over. After all, It'severything, inside, outside, all of it.And for more help going deeper into this holy unfolding, reador hear the Change Me Prayer book that these are based on.I hope you receive as much joy from these cards as Matt and I felt making them! </mutableString>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyl-zg-l4k">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I'm so happy to share this beautiful card deck with you.
+
+It's a great way to offer any problem to Love and be freed from the stress of the ego forcing solutions. Anyone can learn
+to invite this Force to take over fully. 
+
+So ask your intuition to show You the best way to use these cards. They can be an oracle for a specific problem, or simply connect you in the moment to the Divine. You can even carry one with you as a sacred reminder. When you open fully, the Way for You will be shown.
+
+When we invoke the Divine to “shift” us, we invite the
+Highest part of OURSELVES to take over. After all, It's everything, inside, outside, all of it.
+
+And for more help going deeper into this holy unfolding, read or hear the Change Me Prayer book that these are based on.
+
+I hope you receive as much joy from these cards as Matt and I felt making them!</string>
                                 <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.32941176470588235" green="0.20784313725490194" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hJ7-Hg-ZYb" secondAttribute="trailing" id="87m-Vr-Gun"/>
+                            <constraint firstItem="8KO-kc-abG" firstAttribute="top" secondItem="hJ7-Hg-ZYb" secondAttribute="bottom" id="8yY-zv-HgS"/>
+                            <constraint firstItem="xyl-zg-l4k" firstAttribute="leading" secondItem="PQ4-md-r1T" secondAttribute="leadingMargin" constant="11" id="JGA-ce-eIa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xyl-zg-l4k" secondAttribute="trailing" constant="9" id="TV7-MJ-1T9"/>
+                            <constraint firstItem="8KO-kc-abG" firstAttribute="top" secondItem="xyl-zg-l4k" secondAttribute="bottom" constant="40" id="TqF-rv-lTh"/>
+                            <constraint firstItem="hJ7-Hg-ZYb" firstAttribute="leading" secondItem="PQ4-md-r1T" secondAttribute="leading" id="WGH-5k-8Gd"/>
+                            <constraint firstItem="xyl-zg-l4k" firstAttribute="top" secondItem="JGc-mV-JOK" secondAttribute="bottom" constant="97" id="lBx-m1-3Sj"/>
+                            <constraint firstItem="hJ7-Hg-ZYb" firstAttribute="top" secondItem="JGc-mV-JOK" secondAttribute="bottom" id="zcZ-bg-4dk"/>
+                        </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="qOY-Es-rD4"/>
-                    </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="instructionsView" destination="xyl-zg-l4k" id="qK1-pK-m6L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ML7-O2-lCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1877.5999999999999" y="-73.313343328335833"/>
+            <point key="canvasLocation" x="2004" y="-73.313343328335833"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nHx-kc-bLf">
@@ -144,6 +172,7 @@
     <resources>
         <image name="CardBack" width="582" height="800"/>
         <image name="InstructionsBackground" width="375" height="525"/>
+        <image name="InvertedShare" width="37" height="37"/>
         <image name="Lotus" width="25" height="25"/>
         <image name="QuestionCircle" width="25" height="25"/>
     </resources>
