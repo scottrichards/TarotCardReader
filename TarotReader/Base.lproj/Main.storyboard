@@ -52,6 +52,14 @@
                                 <subviews>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp"/>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="cw3-bN-8Wd">
+                                        <frame key="frameInset" minX="-360" width="360" height="495"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="aV2-r0-i3b">
+                                        <frame key="frameInset" minX="360" width="360" height="495"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="3ZQ-Vc-wrp" secondAttribute="bottom" id="2qc-m9-kVn"/>
@@ -89,6 +97,8 @@
                         <outlet property="cardFaceImageView" destination="w9k-7p-Bjk" id="FIm-jn-SQl"/>
                         <outlet property="cardHolderView" destination="qdf-Ox-hMZ" id="EuG-85-oir"/>
                         <outlet property="descriptionLabel" destination="KL1-tH-HoP" id="L4J-Mp-sZN"/>
+                        <outlet property="leftCardImageView" destination="cw3-bN-8Wd" id="pxb-XK-3c9"/>
+                        <outlet property="rightCardImageView" destination="aV2-r0-i3b" id="Mra-0s-BPa"/>
                         <outlet property="titleLabel" destination="IfE-uU-nKa" id="Mmv-zM-LMu"/>
                     </connections>
                 </viewController>

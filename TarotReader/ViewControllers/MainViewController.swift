@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardFaceImageView: UIImageView!      // The face of the card with Reading and affirmation
     @IBOutlet weak var cardBackImageView: UIImageView!      // The back of the card with the Oracle
     @IBOutlet weak var cardHolderView: UIView!      // Container View for the face or back of the card
+    @IBOutlet weak var leftCardImageView: UIImageView!
+    @IBOutlet weak var rightCardImageView: UIImageView!
     
     var cardShowing : Bool = false
     var deckOfCards : TarotCardDeck = TarotCardDeck()
@@ -78,6 +80,7 @@ class ViewController: UIViewController {
     
     func onClickTarotCard() {
         if (cardShowing) {
+            
             showCardBack()
         } else {
             let randomNumber = Int(arc4random_uniform(cardCount))
@@ -112,33 +115,63 @@ class ViewController: UIViewController {
 //        UIView.transition(from: cardFaceImageView, to: cardBackImageView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
     }
     
-    func animateCard(count:Int) -> TarotCard? {
+    func animateCard(count:Int, direction: UISwipeGestureRecognizerDirection) -> TarotCard? {
         currentCard = UInt32(count)
         if let selectedTarotCard = deckOfCards.cards?[count] {
-            UIView.animate(withDuration: 0.7, animations: {
+//            UIView.animate(withDuration: 0.7,
+//                           animations: {
+//                            if let hexColorStr = selectedTarotCard.color {
+//                                self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
+//                            }
+//                            self.cardFaceImageView.alpha = 0.2
+//                            if let imagePath = selectedTarotCard.image {
+//                                print("load image: \(imagePath)")
+//                                self.cardFaceImageView.image = UIImage(named: imagePath)
+//                            }
+//                            self.cardFaceImageView.alpha = 1
+//                            if let titleText = selectedTarotCard.title {
+//                                self.titleLabel.text = titleText
+//                                self.navigationItem.title = titleText
+//                            } else {
+//                                self.titleLabel.text = ""
+//                            }
+//                            if let affirmationText = selectedTarotCard.affirmation {
+//                                self.descriptionLabel.text = affirmationText
+//                            } else {
+//                                self.descriptionLabel.text = ""
+//                            }
+//                            
+//                },
+//                           completion: nil)
+            let flipDirection = (direction == UISwipeGestureRecognizerDirection.right) ? UIViewAnimationOptions.transitionFlipFromLeft : UIViewAnimationOptions.transitionFlipFromRight
+            UIView.transition(with: cardFaceImageView, duration: 0.7, options: [flipDirection], animations: { [unowned self] in
+//                self.cardFaceImageView.isHidden = false
+//                self.cardBackImageView.isHidden = true
+//                if let hexColorStr = selectedCard?.color {
+//                    self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
+//                }
                 if let hexColorStr = selectedTarotCard.color {
-                    self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
-                }
-                self.cardFaceImageView.alpha = 0.2
-                if let imagePath = selectedTarotCard.image {
-                    print("load image: \(imagePath)")
-                    self.cardFaceImageView.image = UIImage(named: imagePath)
-                }
-                self.cardFaceImageView.alpha = 1
-                if let titleText = selectedTarotCard.title {
-                    self.titleLabel.text = titleText
-                    self.navigationItem.title = titleText
-                } else {
-                    self.titleLabel.text = ""
-                }
-                if let affirmationText = selectedTarotCard.affirmation {
-                    self.descriptionLabel.text = affirmationText
-                } else {
-                    self.descriptionLabel.text = ""
-                }
-
-                }, completion: nil)
-                       return selectedTarotCard
+                                                    self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
+                                                }
+                                                self.cardFaceImageView.alpha = 0.2
+                                                if let imagePath = selectedTarotCard.image {
+                                                    print("load image: \(imagePath)")
+                                                    self.cardFaceImageView.image = UIImage(named: imagePath)
+                                                }
+                                                self.cardFaceImageView.alpha = 1
+                                                if let titleText = selectedTarotCard.title {
+                                                    self.titleLabel.text = titleText
+                                                    self.navigationItem.title = titleText
+                                                } else {
+                                                    self.titleLabel.text = ""
+                                                }
+                                                if let affirmationText = selectedTarotCard.affirmation {
+                                                    self.descriptionLabel.text = affirmationText
+                                                } else {
+                                                    self.descriptionLabel.text = ""
+                                                }
+                })
+            return selectedTarotCard
         }
         return nil
     }
@@ -184,7 +217,7 @@ class ViewController: UIViewController {
                 } else {
                     currentCard = cardCount - 1
                 }
-                animateCard(count: Int(currentCard))
+                animateCard(count: Int(currentCard), direction: swipeGesture.direction)
                 
                 //change view controllers
             case UISwipeGestureRecognizerDirection.left :
@@ -196,7 +229,7 @@ class ViewController: UIViewController {
                 } else {
                     currentCard = 1
                 }
-                animateCard(count: Int(currentCard))
+                animateCard(count: Int(currentCard), direction: swipeGesture.direction)
             default:
                 break
             }
