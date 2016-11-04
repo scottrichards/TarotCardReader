@@ -22,10 +22,18 @@ class ViewController: UIViewController {
     var cardCount : UInt32 = 0
     var currentCard : UInt32 = 0
     var startLocation : CGPoint?
-    var movingCard : Bool = false
+    var cardStartRect : CGRect?
+    var cardState : CardState = .initial
+    
+    var panGestureRecognizer : UIPanGestureRecognizer?
+    
+    enum CardState {
+        case initial, dragging, animating
+    }
     
     override func viewDidLayoutSubviews() {
         startLocation = cardBackImageView?.center
+        cardStartRect = cardBackImageView.frame
     }
     
     override func viewDidLoad() {
@@ -39,7 +47,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.init(netHex: Constants.Colors.MainBackground)   // 543517
         
         startLocation = cardBackImageView.center
-        
+        cardStartRect = cardBackImageView.frame
         let directions: [UISwipeGestureRecognizerDirection] = [.right, .left]
         for direction in directions {
             var swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(gesture:)))
@@ -53,12 +61,13 @@ class ViewController: UIViewController {
         // clear out the back button navigation item
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         self.navigationController?.navigationBar.tintColor = UIColor(netHex: Constants.Colors.MainBackground)
-//        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(respondToPanGesture(gesture:)))
-//        self.cardFaceImageView.addGestureRecognizer(panGestureRecognizer)
+//        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(respondToPanGesture(gesture:)))
+//        self.cardFaceImageView.addGestureRecognizer(panGestureRecognizer!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         startLocation = cardBackImageView.center
+        cardStartRect = cardBackImageView.frame
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -194,23 +203,52 @@ class ViewController: UIViewController {
         }
     }
     
+
+    func translationExceedsBounds(translation:CGPoint) -> Bool {
+        if translation.x > 0 {
+            return translation.x > 100
+        } else if (translation.x < 0) {
+            return translation.x < 100
+        }
+        return false
+    }
     
     func respondToPanGesture(gesture:UIPanGestureRecognizer) {
-        if (!movingCard) {
-         //   self.cardFaceImageView.translatesAutoresizingMaskIntoConstraints = false
-        }
+
         let location = gesture.location(in: self.view)
         if location.x >= self.view.frame.size.width {
             print("Next Card")
         }
         let translation : CGPoint = gesture.translation(in: self.cardBackImageView)
-        cardFaceImageView.center = CGPoint(x:  translation.x + (startLocation?.x)!, y: (startLocation?.y)!)
-        if (gesture.state == UIGestureRecognizerState.ended) {
-            animateBack()
-            movingCard = false
-      //      self.cardFaceImageView.translatesAutoresizingMaskIntoConstraints = true
+        print("Translation: \(translation) cardState: \(cardState)")
+        if (cardState != .animating) {
+            print("MOVE cardFaceImageView.center = \(cardFaceImageView.center)")
+            cardFaceImageView.center = CGPoint(x:  translation.x + (startLocation?.x)!, y: (startLocation?.y)!)
+        }
+        if (cardState == .dragging && gesture.state == UIGestureRecognizerState.ended) {
+        //    animateBack()
+            cardState = .initial
+        }
+        if (cardState == .dragging && translationExceedsBounds(translation: translation)) {   // if we exceed a certain threshold
+            if (translation.x > 0) {
+                if (currentCard <  cardCount - 1) {
+                    currentCard += 1
+                } else {
+                    currentCard = 0
+                }
+            } else {
+                if (currentCard > 0) {
+                    currentCard -= 1
+                } else {
+                    currentCard = cardCount - 1
+                }
+                
+            }
+            
+            
+            animateOff(translation:translation)
         } else {
-            movingCard = true
+            cardState = .dragging
         }
     }
     
@@ -221,6 +259,41 @@ class ViewController: UIViewController {
             self.cardFaceImageView!.center = self.startLocation!
             }, completion: { finished in
                 print("Tarot card back home")
+        })
+        
+    }
+    
+    
+    // animate card back to its original position
+    func animateOff(translation:CGPoint)
+    {
+        cardFaceImageView.removeGestureRecognizer(panGestureRecognizer!)
+        var frameOffscreen : CGRect = cardStartRect!    // start with original card frame
+        if (translation.x > 0) {
+            frameOffscreen.origin.x += 200
+        } else {
+            frameOffscreen.origin.x -= 200
+        }
+//        if (translation.y > 0) {
+//            frameOffscreen.origin.y += translation.y/translation.x * UIScreen.main.bounds.size.width
+//        } else {
+//            frameOffscreen.origin.y -= translation.y/translation.x * UIScreen.main.bounds.size.width
+//        }
+        cardState = .animating
+        UIView.animate(withDuration: 2, delay: 0, animations: {
+                print("Moving offscreen to: \(frameOffscreen)")
+                self.cardFaceImageView!.frame = frameOffscreen
+            }, completion: { finished in
+                print("Tarot card off Screen")
+                if (finished) {
+                //    self.cardFaceImageView.isHidden = true
+                    print("animation FINISHED move back to \(self.cardStartRect)")
+                    self.cardFaceImageView.frame = self.cardStartRect!
+                    self.setCard(count: Int(self.currentCard))
+                 //   self.cardFaceImageView.isHidden = false
+                    self.cardState = .initial
+                    self.cardFaceImageView.addGestureRecognizer(self.panGestureRecognizer!)
+                }
         })
         
     }
