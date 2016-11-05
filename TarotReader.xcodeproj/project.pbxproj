@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */; };
-		010AA1F11DCAA0FD007BDD5B /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 010AA1F01DCAA0FD007BDD5B /* File.strings */; };
+		010AA1F11DCAA0FD007BDD5B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 010AA1F01DCAA0FD007BDD5B /* Localizable.strings */; };
 		010AA1FB1DCC5FAD007BDD5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1F91DCC5FAD007BDD5B /* MainViewController.swift */; };
 		011387E91DC40E95004FAE58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011387E81DC40E95004FAE58 /* Images.xcassets */; };
 		011387EB1DC415EB004FAE58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011387EA1DC415EB004FAE58 /* Constants.swift */; };
 		0130F64F1DC404B4000A2DDC /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 0130F6471DC404B4000A2DDC /* Cards.json */; };
 		013764B61DCDFC140053A07C /* flipcard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 013764B51DCDFC140053A07C /* flipcard.wav */; };
+		013764B91DCE0C040053A07C /* StringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013764B81DCE0C040053A07C /* StringUtilities.swift */; };
 		0140D4D21DC3FABE00AFF0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */; };
 		0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0140D4D51DC3FABE00AFF0BB /* Main.storyboard */; };
 		0140D4D91DC3FABE00AFF0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0140D4D81DC3FABE00AFF0BB /* Assets.xcassets */; };
@@ -45,12 +46,13 @@
 
 /* Begin PBXFileReference section */
 		010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		010AA1F01DCAA0FD007BDD5B /* File.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = File.strings; sourceTree = "<group>"; };
+		010AA1F01DCAA0FD007BDD5B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		010AA1F91DCC5FAD007BDD5B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		011387E81DC40E95004FAE58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		011387EA1DC415EB004FAE58 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0130F6471DC404B4000A2DDC /* Cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
 		013764B51DCDFC140053A07C /* flipcard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipcard.wav; sourceTree = "<group>"; };
+		013764B81DCE0C040053A07C /* StringUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtilities.swift; sourceTree = "<group>"; };
 		0140D4CE1DC3FABE00AFF0BB /* TarotReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarotReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0140D4D61DC3FABE00AFF0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		013764B71DCE0C040053A07C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				013764B81DCE0C040053A07C /* StringUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		0140D4C51DC3FABE00AFF0BB = {
 			isa = PBXGroup;
 			children = (
@@ -162,11 +172,12 @@
 				0140D4D81DC3FABE00AFF0BB /* Assets.xcassets */,
 				011387EA1DC415EB004FAE58 /* Constants.swift */,
 				010AA1ED1DC80AA3007BDD5B /* Extensions */,
-				010AA1F01DCAA0FD007BDD5B /* File.strings */,
 				0140D4DD1DC3FABE00AFF0BB /* Info.plist */,
 				0140D4DA1DC3FABE00AFF0BB /* LaunchScreen.storyboard */,
+				010AA1F01DCAA0FD007BDD5B /* Localizable.strings */,
 				0140D4D51DC3FABE00AFF0BB /* Main.storyboard */,
 				0140D4F31DC3FD4800AFF0BB /* Model */,
+				013764B71DCE0C040053A07C /* Utilities */,
 				010AA1F71DCC5FAD007BDD5B /* ViewControllers */,
 			);
 			path = TarotReader;
@@ -284,7 +295,7 @@
 				0164CF221DC667520026B1BB /* Matt_Final_Edited_9_21-07.png in Resources */,
 				0164CF201DC667520026B1BB /* Matt_Final_Edited_9_21-05.png in Resources */,
 				0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */,
-				010AA1F11DCAA0FD007BDD5B /* File.strings in Resources */,
+				010AA1F11DCAA0FD007BDD5B /* Localizable.strings in Resources */,
 				0164CF231DC667520026B1BB /* Matt_Final_Edited_9_21-08.png in Resources */,
 				0164CF211DC667520026B1BB /* Matt_Final_Edited_9_21-06.png in Resources */,
 				0164CF241DC667520026B1BB /* Matt_Final_Edited_9_21-09.png in Resources */,
@@ -314,6 +325,7 @@
 				010AA1FB1DCC5FAD007BDD5B /* MainViewController.swift in Sources */,
 				019150611DCC619E003BD9D4 /* InstructionsViewController.swift in Sources */,
 				01B521FD1DCD654F008F60C0 /* AboutViewController.swift in Sources */,
+				013764B91DCE0C040053A07C /* StringUtilities.swift in Sources */,
 				0140D4F51DC3FD4800AFF0BB /* TarotCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

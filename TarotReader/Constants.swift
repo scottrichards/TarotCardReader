@@ -11,6 +11,10 @@ import Foundation
 struct Constants {
     struct Strings {
         static let ClickToSelect = "Click to Select a Card"
+        
+        struct Main {
+            static let CardBackTap = "Main.CardBackTap"
+        }
     }
     
     struct Colors {

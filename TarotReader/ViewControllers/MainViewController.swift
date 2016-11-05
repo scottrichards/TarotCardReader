@@ -102,7 +102,7 @@ class ViewController: UIViewController {
     }
     
     func onClickTarotCard() {
-        playDrawSound()
+    //    playDrawSound()
         if (cardShowing) {
             
             showCardBack()
@@ -112,13 +112,15 @@ class ViewController: UIViewController {
             
             let selectedCard = setCard(count: randomNumber)
 //            UIView.transition(from: cardBackImageView, to: cardFaceImageView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
-            UIView.transition(with: cardHolderView, duration: 0.7, options: [.transitionFlipFromRight], animations: { [unowned self] in
+            UIView.transition(with: cardHolderView, duration: 0.7, options: [.transitionCrossDissolve], animations: { [unowned self] in
                 self.cardFaceImageView.isHidden = false
                 self.cardBackImageView.isHidden = true
                 if let hexColorStr = selectedCard?.color {
                     self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
                 }
             })
+            
+           // UIView.transition(from: cardFaceImageView, to: cardBackImageView, duration: 0.7, options: [.transitionCrossDissolve], completion: (Bool) in {} )
         }
         cardShowing = !cardShowing
     }
@@ -130,7 +132,7 @@ class ViewController: UIViewController {
         descriptionLabel.text = Constants.Strings.ClickToSelect
         //self.view.backgroundColor = UIColor.init(netHex: Constants.Colors.MainBackground)
 
-        UIView.transition(with: cardHolderView, duration: 0.7, options: [.transitionFlipFromLeft], animations: { [unowned self] in
+        UIView.transition(with: cardHolderView, duration: 0.7, options: [.transitionCrossDissolve], animations: { [unowned self] in
             self.cardFaceImageView.isHidden = true
             self.cardBackImageView.isHidden = false
             self.view.backgroundColor = UIColor(netHex: Constants.Colors.MainBackground)
