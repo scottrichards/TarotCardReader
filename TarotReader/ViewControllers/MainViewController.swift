@@ -8,6 +8,7 @@
 
 import UIKit
 import Social
+import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
@@ -28,6 +29,8 @@ class ViewController: UIViewController {
     var cardState : CardState = .initial
     
     var panGestureRecognizer : UIPanGestureRecognizer?
+    var audioPlayer = AVAudioPlayer()
+
     
     enum CardState {
         case initial, dragging, animating
@@ -40,6 +43,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        soundSetup()
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(onClickTarotCard))
         cardHolderView.addGestureRecognizer(tapGestureRecognizer)
         // Do any additional setup after loading the view, typically from a nib.
@@ -78,7 +82,27 @@ class ViewController: UIViewController {
         }
     }
     
+    // ------------------------------------
+    // MARK: Sound
+    // ------------------------------------
+    
+    func soundSetup() {
+        let drawCardClip = NSURL(fileURLWithPath: Bundle.main.path(forResource: "flipcard", ofType: "wav")!)
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOf: drawCardClip as URL)
+        } catch {
+            print("Error loading Audio drawcard.wav")
+            return
+        }
+        audioPlayer.prepareToPlay()
+    }
+    
+    func playDrawSound() {
+       audioPlayer.play()
+    }
+    
     func onClickTarotCard() {
+        playDrawSound()
         if (cardShowing) {
             
             showCardBack()
@@ -207,6 +231,7 @@ class ViewController: UIViewController {
     
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        playDrawSound()
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
@@ -339,7 +364,10 @@ class ViewController: UIViewController {
         
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook){
             var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            facebookSheet.setInitialText("Share on Facebook")
+
+            
+            facebookSheet.setInitialText("Tosha Silver's Change me Prayer Oracle App provided me with this message from the Divine")
+//            facebookSheet.add(self.cardFaceImageView.image)
             self.present(facebookSheet, animated: true, completion: nil)
         } else {
             let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
