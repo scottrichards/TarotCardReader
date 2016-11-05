@@ -24,13 +24,6 @@
                                 <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
-                                <frame key="frameInset" minX="37" minY="598" width="297" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-uU-nKa">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="BIN-Qn-kef"/>
@@ -40,14 +33,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-9N-n0y">
-                                <frame key="frameInset" minX="318" minY="626" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="InvertedShare"/>
-                                <connections>
-                                    <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qf2-oO-7hz"/>
-                                </connections>
-                            </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="cw3-bN-8Wd">
                                 <frame key="frameInset" minX="-352" minY="86" width="360" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,13 +58,43 @@
                                     <constraint firstAttribute="bottom" secondItem="w9k-7p-Bjk" secondAttribute="bottom" id="jKM-RY-QHc"/>
                                 </constraints>
                             </view>
+                            <view opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-cg-bN2">
+                                <frame key="frameInset" minY="617" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-9N-n0y">
+                                        <frame key="frameInset" minX="217" minY="7" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Share"/>
+                                        <connections>
+                                            <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qf2-oO-7hz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-fN-eqh">
+                                        <frame key="frameInset" minX="127" minY="8" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Email"/>
+                                        <connections>
+                                            <action selector="onEmailShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2c-lZ-bED"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
+                                <frame key="frameInset" minX="39" minY="571" width="297" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="7Xe-6b-Puk"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cu2-r1-D3x"/>
                             <constraint firstItem="qdf-Ox-hMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="7" id="VuV-1d-Imi"/>
-                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="uoV-Qo-pNK"/>
+                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="uoV-Qo-pNK"/>
                             <constraint firstAttribute="trailing" secondItem="qdf-Ox-hMZ" secondAttribute="trailing" constant="8" id="wRT-wr-d53"/>
                         </constraints>
                     </view>
@@ -236,6 +251,7 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
                     </view>
                     <toolbarItems/>
                     <connections>
+                        <outlet property="instructionTextView" destination="xyl-zg-l4k" id="KkY-v5-4EK"/>
                         <outlet property="instructionsView" destination="xyl-zg-l4k" id="qK1-pK-m6L"/>
                     </connections>
                 </viewController>
@@ -264,10 +280,11 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
     </scenes>
     <resources>
         <image name="CardBack" width="582" height="800"/>
+        <image name="Email" width="37" height="37"/>
         <image name="InstructionsBackground" width="375" height="525"/>
-        <image name="InvertedShare" width="37" height="37"/>
         <image name="Lotus" width="25" height="25"/>
         <image name="QuestionCircle" width="25" height="25"/>
+        <image name="Share" width="37" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="1kJ-Iw-BRu"/>

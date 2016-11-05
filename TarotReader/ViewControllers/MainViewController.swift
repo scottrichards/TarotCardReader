@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     var panGestureRecognizer : UIPanGestureRecognizer?
     var audioPlayer = AVAudioPlayer()
-
+    let emailComposer = EmailComposer()
     
     enum CardState {
         case initial, dragging, animating
@@ -112,6 +112,7 @@ class ViewController: UIViewController {
             
             let selectedCard = setCard(count: randomNumber)
 //            UIView.transition(from: cardBackImageView, to: cardFaceImageView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
+            descriptionLabel.text = StringUtilities.getLocalizedString(stringKey: Constants.Strings.Main.CardFaceSwipe)
             UIView.transition(with: cardHolderView, duration: 0.7, options: [.transitionCrossDissolve], animations: { [unowned self] in
                 self.cardFaceImageView.isHidden = false
                 self.cardBackImageView.isHidden = true
@@ -129,7 +130,7 @@ class ViewController: UIViewController {
     func showCardBack() {
         titleLabel.text = ""
   //      self.tarotCardImage.image = UIImage(named: "CardBack")
-        descriptionLabel.text = Constants.Strings.ClickToSelect
+        descriptionLabel.text = StringUtilities.getLocalizedString(stringKey: Constants.Strings.Main.CardBackTap)
         //self.view.backgroundColor = UIColor.init(netHex: Constants.Colors.MainBackground)
 
         UIView.transition(with: cardHolderView, duration: 0.7, options: [.transitionCrossDissolve], animations: { [unowned self] in
@@ -191,11 +192,11 @@ class ViewController: UIViewController {
                                                 } else {
                                                     self.titleLabel.text = ""
                                                 }
-                                                if let affirmationText = selectedTarotCard.affirmation {
-                                                    self.descriptionLabel.text = affirmationText
-                                                } else {
-                                                    self.descriptionLabel.text = ""
-                                                }
+//                                                if let affirmationText = selectedTarotCard.affirmation {
+//                                                    self.descriptionLabel.text = affirmationText
+//                                                } else {
+//                                                    self.descriptionLabel.text = ""
+//                                                }
                 })
             return selectedTarotCard
         }
@@ -360,24 +361,41 @@ class ViewController: UIViewController {
 
     
     
-//    @IBAction func onShare(_ sender: AnyObject) {
-//        
-//        print("share")
-//        
-//        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook){
-//            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-//
-//            
-//            facebookSheet.setInitialText("Tosha Silver's Change me Prayer Oracle App provided me with this message from the Divine")
-////            facebookSheet.add(self.cardFaceImageView.image)
-//            self.present(facebookSheet, animated: true, completion: nil)
-//        } else {
-//            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
-//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-//            self.present(alert, animated: true, completion: nil)
-//        }
-//        
-//    }
+    @IBAction func onShare(_ sender: AnyObject) {
+        
+        print("share")
+        
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook){
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+
+            
+            facebookSheet.setInitialText("Tosha Silver's Change me Prayer Oracle App provided me with this message from the Divine")
+//            facebookSheet.add(self.cardFaceImageView.image)
+            self.present(facebookSheet, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+    }
+    
+    @IBAction func onEmailShare(_ sender: AnyObject) {
+        let configuredEmailComposer = emailComposer.configuredMailComposeViewController()
+        if emailComposer.canSendMail() {
+            present(configuredEmailComposer, animated: true, completion: {
+                //self.navigationController?.navigationBar.barTintColor = UIColor.trainsweetGreen()
+                //     UINavigationBar.appearance().backgroundColor = UIColor.trainsweetGreen()
+                //                configuredEmailComposer.navigationBar.barTintColor = UIColor.trainsweetGreen()
+                //                configuredEmailComposer.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.trainsweetGreen()]
+                }
+            )
+        } else {
+            let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+            sendMailErrorAlert.show()
+        }
+    }
+
     
 
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class InstructionsViewController: UIViewController {
     @IBOutlet weak var instructionsView: UITextView!
+    @IBOutlet weak var instructionTextView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,7 @@ class InstructionsViewController: UIViewController {
         instructionsView.setContentOffset(CGPoint.zero, animated: false)
         instructionsView.isScrollEnabled = true
         instructionsView.flashScrollIndicators()
-        
+        instructionTextView.text = StringUtilities.getLocalizedString(stringKey: "Help.Description")
     }
 
     override func viewDidLayoutSubviews() {

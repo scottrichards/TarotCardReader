@@ -14,6 +14,11 @@ struct Constants {
         
         struct Main {
             static let CardBackTap = "Main.CardBackTap"
+            static let CardFaceSwipe = "Main.CardFaceSwipe"
+        }
+        
+        struct EMail {
+            static let Body = "EMail.Body"
         }
     }
     

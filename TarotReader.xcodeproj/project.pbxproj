@@ -15,6 +15,7 @@
 		0130F64F1DC404B4000A2DDC /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 0130F6471DC404B4000A2DDC /* Cards.json */; };
 		013764B61DCDFC140053A07C /* flipcard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 013764B51DCDFC140053A07C /* flipcard.wav */; };
 		013764B91DCE0C040053A07C /* StringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013764B81DCE0C040053A07C /* StringUtilities.swift */; };
+		013764BB1DCE622C0053A07C /* EmailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013764BA1DCE622C0053A07C /* EmailComposer.swift */; };
 		0140D4D21DC3FABE00AFF0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */; };
 		0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0140D4D51DC3FABE00AFF0BB /* Main.storyboard */; };
 		0140D4D91DC3FABE00AFF0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0140D4D81DC3FABE00AFF0BB /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		0130F6471DC404B4000A2DDC /* Cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
 		013764B51DCDFC140053A07C /* flipcard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipcard.wav; sourceTree = "<group>"; };
 		013764B81DCE0C040053A07C /* StringUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtilities.swift; sourceTree = "<group>"; };
+		013764BA1DCE622C0053A07C /* EmailComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailComposer.swift; sourceTree = "<group>"; };
 		0140D4CE1DC3FABE00AFF0BB /* TarotReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarotReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0140D4D61DC3FABE00AFF0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		013764B71DCE0C040053A07C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				013764BA1DCE622C0053A07C /* EmailComposer.swift */,
 				013764B81DCE0C040053A07C /* StringUtilities.swift */,
 			);
 			path = Utilities;
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013764BB1DCE622C0053A07C /* EmailComposer.swift in Sources */,
 				011387EB1DC415EB004FAE58 /* Constants.swift in Sources */,
 				0140D4F71DC3FDA300AFF0BB /* TarotCardDeck.swift in Sources */,
 				010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */,
