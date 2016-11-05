@@ -358,24 +358,24 @@ class ViewController: UIViewController {
 
     
     
-    @IBAction func onShare(_ sender: AnyObject) {
-        
-        print("share")
-        
-        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook){
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-
-            
-            facebookSheet.setInitialText("Tosha Silver's Change me Prayer Oracle App provided me with this message from the Divine")
-//            facebookSheet.add(self.cardFaceImageView.image)
-            self.present(facebookSheet, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
-        
-    }
+//    @IBAction func onShare(_ sender: AnyObject) {
+//        
+//        print("share")
+//        
+//        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook){
+//            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+//
+//            
+//            facebookSheet.setInitialText("Tosha Silver's Change me Prayer Oracle App provided me with this message from the Divine")
+////            facebookSheet.add(self.cardFaceImageView.image)
+//            self.present(facebookSheet, animated: true, completion: nil)
+//        } else {
+//            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//            self.present(alert, animated: true, completion: nil)
+//        }
+//        
+//    }
     
 
 }
