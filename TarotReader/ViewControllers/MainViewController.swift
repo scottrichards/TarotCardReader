@@ -112,8 +112,9 @@ class ViewController: UIViewController {
             
             let selectedCard = setCard(count: randomNumber)
 //            UIView.transition(from: cardBackImageView, to: cardFaceImageView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
-            descriptionLabel.text = StringUtilities.getLocalizedString(stringKey: Constants.Strings.Main.CardFaceSwipe)
+            
             UIView.transition(with: cardHolderView, duration: 0.7, options: [.transitionCrossDissolve], animations: { [unowned self] in
+                self.descriptionLabel.text = StringUtilities.getLocalizedString(stringKey: Constants.Strings.Main.CardFaceSwipe)
                 self.cardFaceImageView.isHidden = false
                 self.cardBackImageView.isHidden = true
                 if let hexColorStr = selectedCard?.color {
@@ -358,7 +359,8 @@ class ViewController: UIViewController {
         })
         
     }
-
+    
+   
     
     
     @IBAction func onShare(_ sender: AnyObject) {
@@ -367,7 +369,6 @@ class ViewController: UIViewController {
         
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook){
             var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-
             
             facebookSheet.setInitialText("Tosha Silver's Change me Prayer Oracle App provided me with this message from the Divine")
 //            facebookSheet.add(self.cardFaceImageView.image)
@@ -381,7 +382,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEmailShare(_ sender: AnyObject) {
-        let configuredEmailComposer = emailComposer.configuredMailComposeViewController()
+        var imageName = ""
+        if let selectedTarotCard = deckOfCards.cards?[Int(currentCard)] {
+            imageName = selectedTarotCard.image!
+        }
+        let configuredEmailComposer = emailComposer.configuredMailComposeViewController(imageName: imageName)
         if emailComposer.canSendMail() {
             present(configuredEmailComposer, animated: true, completion: {
                 //self.navigationController?.navigationBar.barTintColor = UIColor.trainsweetGreen()

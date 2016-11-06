@@ -12,20 +12,9 @@ import MessageUI
 class EmailComposer: NSObject, MFMailComposeViewControllerDelegate {
 
         
-//    func feedbackContent() -> String {
-//            let feedbackContent = NSMutableString()
-//            feedbackContent.appendString("<br /><div style=\"width:80%;margin:10px 5% 10px 5%;padding:10px 5% 10px 5%;height:auto;border: 1px #cccccc solid;background-color:#efefef\">")
-//            feedbackContent.appendString("<strong>" + StringUtilities.getLocalizedString(stringKey: "more.feedback.deviceName") + "</strong> \(UIDevice.currentDevice().model)<br />")
-//            feedbackContent.appendString("<strong>" + StringUtilities.getLocalizedString(stringKey: "more.feedback.systemVersion") + "</strong> \(UIDevice.currentDevice().systemVersion)<br />")
-//            
-//            let appName = appInfoWithKey("CFBundleName")!
-//            let appVersion = appInfoWithKey("CFBundleShortVersionString")!
-//            let appBuildNumber = appInfoWithKey("CFBundleVersion")!
-//            let appVersionString = "\(appVersion) (\(appBuildNumber))"
-//            
-//            feedbackContent.appendString("<strong>" + StringUtilities.getLocalizedString(stringKey: "more.feedback.appName") + "</strong> \(appName)<br />")
-//            feedbackContent.appendString("<strong>" + StringUtilities.getLocalizedString(stringKey: "more.feedback.appVersion") + "</strong> \(appVersionString)<br />")
-//            return String(feedbackContent)
+    
+//    func contents() -> String {
+//        
 //    }
     
     // Did this in order to mitigate needing to import MessageUI in my View Controller
@@ -33,29 +22,26 @@ class EmailComposer: NSObject, MFMailComposeViewControllerDelegate {
         return MFMailComposeViewController.canSendMail()
     }
     
-    func configuredMailComposeViewController() -> MFMailComposeViewController {
+    func configuredMailComposeViewController(imageName : String) -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
-        
- //       mailComposerVC.setToRecipients(["sean@trainsweet.com"])
-        mailComposerVC.setSubject("Change Me Prayers")
-        mailComposerVC.setMessageBody(StringUtilities.getLocalizedString(stringKey: Constants.Strings.EMail.Body), isHTML: false)
-//        mailComposerVC.navigationBar.backgroundColor = UIColor.trainsweetGreen()
-//        mailComposerVC.navigationController?.navigationBar.barTintColor = UIColor.trainsweetGreen()
-//        mailComposerVC.navigationBar.barTintColor = UIColor.greenColor()
-//        UINavigationBar.appearance().tintColor = UIColor.greenColor()
-//        UINavigationBar.appearance().backgroundColor = UIColor.greenColor()
 
-//        mailComposerVC.navigationBar.tintColor = UIColor.whiteColor()
-//        mailComposerVC.navigationBar.backItem?.rightBarButtonItem?.tintColor = UIColor.whiteColor()
-        //backBarButtonItem?.tintColor = UIColor.whiteColor()
+        if let image = UIImage(named: imageName) {
+            mailComposerVC.addAttachmentData(UIImageJPEGRepresentation(image, CGFloat(1.0))!, mimeType: "image/jpeg", fileName:  "changeprayer.jpeg")
+        }
+        
+        mailComposerVC.setMessageBody("<html><body><p>Tosha Silver’s Change Me Prayer Oracle App provided me with this message from The Divine 😀</p></body></html>", isHTML: true)
+        
+        mailComposerVC.setSubject("Change Me Prayers")
+
         return mailComposerVC
     }
-    
-    // MARK: MFMailComposeViewControllerDelegate Method
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
+    
+
 }
 
 

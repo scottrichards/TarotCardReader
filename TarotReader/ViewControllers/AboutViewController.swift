@@ -27,6 +27,8 @@ class AboutViewController: UIViewController {
     // ------------------------------------
 
     @IBAction func onBuyClick(_ sender: AnyObject) {
+        let advancedWebView = TSWebViewController(url:"https://toshasilver.com/products/deck",title:"")
+        self.navigationController?.pushViewController(advancedWebView, animated: true)
     }
 
     @IBAction func onAboutClick(_ sender: AnyObject) {

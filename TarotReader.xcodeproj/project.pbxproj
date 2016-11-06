@@ -16,6 +16,7 @@
 		013764B61DCDFC140053A07C /* flipcard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 013764B51DCDFC140053A07C /* flipcard.wav */; };
 		013764B91DCE0C040053A07C /* StringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013764B81DCE0C040053A07C /* StringUtilities.swift */; };
 		013764BB1DCE622C0053A07C /* EmailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013764BA1DCE622C0053A07C /* EmailComposer.swift */; };
+		013764BD1DCEA9990053A07C /* TSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013764BC1DCEA9990053A07C /* TSWebViewController.swift */; };
 		0140D4D21DC3FABE00AFF0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */; };
 		0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0140D4D51DC3FABE00AFF0BB /* Main.storyboard */; };
 		0140D4D91DC3FABE00AFF0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0140D4D81DC3FABE00AFF0BB /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		013764B51DCDFC140053A07C /* flipcard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipcard.wav; sourceTree = "<group>"; };
 		013764B81DCE0C040053A07C /* StringUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtilities.swift; sourceTree = "<group>"; };
 		013764BA1DCE622C0053A07C /* EmailComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailComposer.swift; sourceTree = "<group>"; };
+		013764BC1DCEA9990053A07C /* TSWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSWebViewController.swift; sourceTree = "<group>"; };
 		0140D4CE1DC3FABE00AFF0BB /* TarotReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarotReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0140D4D11DC3FABE00AFF0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0140D4D61DC3FABE00AFF0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		013764B71DCE0C040053A07C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				013764BC1DCEA9990053A07C /* TSWebViewController.swift */,
 				013764BA1DCE622C0053A07C /* EmailComposer.swift */,
 				013764B81DCE0C040053A07C /* StringUtilities.swift */,
 			);
@@ -329,6 +332,7 @@
 				010AA1FB1DCC5FAD007BDD5B /* MainViewController.swift in Sources */,
 				019150611DCC619E003BD9D4 /* InstructionsViewController.swift in Sources */,
 				01B521FD1DCD654F008F60C0 /* AboutViewController.swift in Sources */,
+				013764BD1DCEA9990053A07C /* TSWebViewController.swift in Sources */,
 				013764B91DCE0C040053A07C /* StringUtilities.swift in Sources */,
 				0140D4F51DC3FD4800AFF0BB /* TarotCard.swift in Sources */,
 			);
