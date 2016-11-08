@@ -20,6 +20,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-cg-bN2">
+                                <frame key="frameInset" minY="617" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-9N-n0y">
+                                        <frame key="frameInset" minX="217" minY="7" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Share"/>
+                                        <connections>
+                                            <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qf2-oO-7hz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-fN-eqh">
+                                        <frame key="frameInset" minX="127" minY="8" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Email"/>
+                                        <connections>
+                                            <action selector="onEmailShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2c-lZ-bED"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-nI-ots">
                                 <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,31 +81,8 @@
                                     <constraint firstAttribute="bottom" secondItem="w9k-7p-Bjk" secondAttribute="bottom" id="jKM-RY-QHc"/>
                                 </constraints>
                             </view>
-                            <view opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-cg-bN2">
-                                <frame key="frameInset" minY="617" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-9N-n0y">
-                                        <frame key="frameInset" minX="217" minY="7" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Share"/>
-                                        <connections>
-                                            <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qf2-oO-7hz"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-fN-eqh">
-                                        <frame key="frameInset" minX="127" minY="8" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Email"/>
-                                        <connections>
-                                            <action selector="onEmailShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2c-lZ-bED"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
-                                <frame key="frameInset" minX="39" minY="571" width="297" height="46"/>
+                                <frame key="frameInset" minX="39" minY="601" width="297" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,7 +106,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="QuestionCircle" id="iC9-P9-yqh">
                             <connections>
-                                <segue destination="DHj-u2-dCo" kind="show" id="1kJ-Iw-BRu"/>
+                                <action selector="onRightBarClick:" destination="BYZ-38-t0r" id="ftB-uo-XTy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -119,8 +119,10 @@
                         <outlet property="cardTrailingMargin" destination="wRT-wr-d53" id="LcQ-Sb-Cgs"/>
                         <outlet property="descriptionLabel" destination="KL1-tH-HoP" id="L4J-Mp-sZN"/>
                         <outlet property="leftCardImageView" destination="cw3-bN-8Wd" id="pxb-XK-3c9"/>
+                        <outlet property="rightBarButtonItem" destination="iC9-P9-yqh" id="kmq-mD-kks"/>
                         <outlet property="rightCardImageView" destination="aV2-r0-i3b" id="Mra-0s-BPa"/>
                         <outlet property="titleLabel" destination="IfE-uU-nKa" id="Mmv-zM-LMu"/>
+                        <segue destination="DHj-u2-dCo" kind="show" identifier="instructionSegue" id="cZE-ad-3W4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -285,10 +287,10 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
         <image name="Email" width="37" height="37"/>
         <image name="InstructionsBackground" width="375" height="525"/>
         <image name="Lotus" width="25" height="25"/>
-        <image name="QuestionCircle" width="25" height="25"/>
+        <image name="QuestionCircle" width="37" height="37"/>
         <image name="Share" width="37" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1kJ-Iw-BRu"/>
+        <segue reference="cZE-ad-3W4"/>
     </inferredMetricsTieBreakers>
 </document>

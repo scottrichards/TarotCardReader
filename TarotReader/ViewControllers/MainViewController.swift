@@ -35,7 +35,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardLeadingMargin: NSLayoutConstraint!
     @IBOutlet weak var cardTrailingMargin: NSLayoutConstraint!
     
+    @IBOutlet weak var rightBarButtonItem: UIBarButtonItem!
     
+    enum CardDisplay {
+        case Face, Back
+    }
     
     enum CardState {
         case initial, dragging, animating
@@ -122,9 +126,10 @@ class ViewController: UIViewController {
     func onClickTarotCard() {
     //    playDrawSound()
         if (cardShowing) {
-            
+            rightBarButtonItem.image = UIImage(named: "QuestionCircle")
             showCardBack()
         } else {
+            rightBarButtonItem.image = UIImage(named: "Share")
             let randomNumber = Int(arc4random_uniform(cardCount))
             print("random Number: \(randomNumber)")
             
@@ -144,6 +149,8 @@ class ViewController: UIViewController {
         }
         cardShowing = !cardShowing
     }
+    
+ 
 
     // show the Back card
     func showCardBack() {
@@ -400,6 +407,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEmailShare(_ sender: AnyObject) {
+        shareViaEmail()
+    }
+    
+    func shareViaEmail() {
         var imageName = ""
         if let selectedTarotCard = deckOfCards.cards?[Int(currentCard)] {
             imageName = selectedTarotCard.image!
@@ -419,6 +430,13 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func onRightBarClick(_ sender: AnyObject) {
+        if (cardShowing) {
+            shareViaEmail()
+        } else {
+            performSegue(withIdentifier: "instructionSegue", sender: self)
+        }
+    }
     
 
 }
