@@ -91,10 +91,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="7Xe-6b-Puk"/>
+                            <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="7Xe-6b-Puk"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cu2-r1-D3x"/>
                             <constraint firstItem="qdf-Ox-hMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="7" id="VuV-1d-Imi"/>
-                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="uoV-Qo-pNK"/>
+                            <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="uoV-Qo-pNK"/>
                             <constraint firstAttribute="trailing" secondItem="qdf-Ox-hMZ" secondAttribute="trailing" constant="8" id="wRT-wr-d53"/>
                         </constraints>
                     </view>
