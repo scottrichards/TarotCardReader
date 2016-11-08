@@ -115,6 +115,8 @@
                         <outlet property="cardBackImageView" destination="3ZQ-Vc-wrp" id="tu9-Xf-dp8"/>
                         <outlet property="cardFaceImageView" destination="w9k-7p-Bjk" id="FIm-jn-SQl"/>
                         <outlet property="cardHolderView" destination="qdf-Ox-hMZ" id="EuG-85-oir"/>
+                        <outlet property="cardLeadingMargin" destination="VuV-1d-Imi" id="HRn-58-v5M"/>
+                        <outlet property="cardTrailingMargin" destination="wRT-wr-d53" id="LcQ-Sb-Cgs"/>
                         <outlet property="descriptionLabel" destination="KL1-tH-HoP" id="L4J-Mp-sZN"/>
                         <outlet property="leftCardImageView" destination="cw3-bN-8Wd" id="pxb-XK-3c9"/>
                         <outlet property="rightCardImageView" destination="aV2-r0-i3b" id="Mra-0s-BPa"/>

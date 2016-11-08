@@ -32,6 +32,11 @@ class ViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     let emailComposer = EmailComposer()
     
+    @IBOutlet weak var cardLeadingMargin: NSLayoutConstraint!
+    @IBOutlet weak var cardTrailingMargin: NSLayoutConstraint!
+    
+    
+    
     enum CardState {
         case initial, dragging, animating
     }
@@ -67,8 +72,21 @@ class ViewController: UIViewController {
         // clear out the back button navigation item
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         self.navigationController?.navigationBar.tintColor = UIColor(netHex: Constants.Colors.MainBackground)
+        setConstraintsForDevice()
+        
 //        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(respondToPanGesture(gesture:)))
 //        self.cardFaceImageView.addGestureRecognizer(panGestureRecognizer!)
+    }
+    
+    func setConstraintsForDevice() {
+        let screenSize: CGRect = UIScreen.main.bounds
+        print("width: \(screenSize.width)")
+        if (screenSize.width >= 768) {
+            print("current leading Margin: \(cardLeadingMargin.constant)")
+            print("current trailing Margin: \(cardTrailingMargin.constant)")
+            cardLeadingMargin.constant = 57
+            cardTrailingMargin.constant = 57
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
