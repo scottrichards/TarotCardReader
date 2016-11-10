@@ -186,6 +186,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onAboutClick:" destination="RDV-9g-a2a" eventType="touchUpInside" id="Z0L-oQ-fWO"/>
+                                    <segue destination="4be-9y-mQb" kind="show" id="ApO-MJ-ChV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-KM-zpy">
@@ -206,6 +207,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dt-L2-VON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2000.8" y="-489.80509745127438"/>
+        </scene>
+        <!--About Tosha-->
+        <scene sceneID="tED-Df-MCz">
+            <objects>
+                <viewController title="About Tosha" id="4be-9y-mQb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qUG-ZZ-rvu"/>
+                        <viewControllerLayoutGuide type="bottom" id="urI-EQ-LCK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GWM-Zf-yET">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructionsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dq6-4p-kBX">
+                                <frame key="frameInset" minX="16" minY="326" width="343" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Yo-dT-qXx">
+                                <frame key="frameInset" minX="34" minY="344" width="306" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">For the past 30 years Tosha Silver has taught people around the world ways to align with Inner Love. She’s the author of Outrageous Openness and Change Me Prayers. She lives near San Francisco, where she runs an online school called “Living Outrageous Openness” which offers ongoing support for those who truly want to live these beautiful, ancient practices. You can also join her on her author page on Facebook where she writes often.  For more information about Tosha please visit www.toshasilver.com.</string>
+                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tosha" translatesAutoresizingMaskIntoConstraints="NO" id="MCr-K5-fl0">
+                                <frame key="frameInset" minX="91" minY="79" width="192" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.44313725490196076" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1F-it-E0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2874.4000000000001" y="-488.00599700149928"/>
         </scene>
         <!--Instructions-->
         <scene sceneID="K1x-Rx-NEM">
@@ -289,8 +326,9 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
         <image name="Lotus" width="25" height="25"/>
         <image name="QuestionCircle" width="37" height="37"/>
         <image name="Share" width="37" height="37"/>
+        <image name="Tosha" width="480" height="589"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cZE-ad-3W4"/>
+        <segue reference="vFY-LH-c3g"/>
     </inferredMetricsTieBreakers>
 </document>

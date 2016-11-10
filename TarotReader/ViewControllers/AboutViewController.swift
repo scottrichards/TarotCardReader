@@ -15,8 +15,14 @@ class AboutViewController: UIViewController {
 
         // clear out the back button navigation item
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        let tapToGoBack = UITapGestureRecognizer(target: self, action: #selector(self.returnToMainView(_:)))
+        self.view.addGestureRecognizer(tapToGoBack)
     }
 
+    func returnToMainView(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

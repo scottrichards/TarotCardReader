@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         deckOfCards.readJSONFile()
         cardCount = deckOfCards.cards != nil ? UInt32(deckOfCards.cards!.count) : 0
-        descriptionLabel.text = Constants.Strings.ClickToSelect
+        descriptionLabel.text = StringUtilities.getLocalizedString(stringKey: Constants.Strings.Main.CardBackTap)
         self.view.backgroundColor = UIColor.init(netHex: Constants.Colors.MainBackground)   // 543517
         
         startLocation = cardBackImageView.center
