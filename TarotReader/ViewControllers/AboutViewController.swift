@@ -15,6 +15,7 @@ class AboutViewController: UIViewController {
 
         // clear out the back button navigation item
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        self.navigationController?.navigationBar.tintColor = UIColor(netHex: Constants.Colors.MainBackground)
         let tapToGoBack = UITapGestureRecognizer(target: self, action: #selector(self.returnToMainView(_:)))
         self.view.addGestureRecognizer(tapToGoBack)
     }
@@ -33,7 +34,7 @@ class AboutViewController: UIViewController {
     // ------------------------------------
 
     @IBAction func onBuyClick(_ sender: AnyObject) {
-        let advancedWebView = TSWebViewController(url:"https://toshasilver.com/products/deck",title:"")
+        let advancedWebView = TSWebViewController(url:"https://toshasilver.com/pages/the-change-me-prayers-oracle-deck",title:"Oracle Deck")
         self.navigationController?.pushViewController(advancedWebView, animated: true)
     }
 

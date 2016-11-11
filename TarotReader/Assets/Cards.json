@@ -2,6 +2,31 @@
     "cards" :
     [
         {
+        "title": "Needs",
+        "text": "Change me Divine Beloved into one who wants what You want for me. Let me trust that my needs will always be met in the Highest way when I allow You to guide me.",
+        "affirmation": "I Trust the Highest Way",
+        "image": "Matt_Final_Edited_9_21-01.png",
+        "color": "e7c456"
+        }, {
+        "title": "Release",
+        "text": "Change me Divine Beloved into one who easily releases all that’s ready to go. May I courageously discard all that is outgrown and stagnant, preparing for the new. Let me move in harmony with Your natural cycles.",
+        "affirmation": "I Prepare for the New",
+        "image": "Matt_Final_Edited_9_21-02.png",
+        "color": "42592c"
+        }, {
+        "title": "Source",
+        "text": "Change me Divine Beloved into one who knows that You are my Source. Free me from the illusion of rejection, competition, and scarcity. Fill me with confidence and faith, knowing I never have to beg, just gratefully receive.",
+        "affirmation": "You Will Open Every Door",
+        "image": "Matt_Final_Edited_9_21-03.png",
+        "color": "173864"
+        }, {
+        "title": "Acceptance",
+        "text": "Let me forever serve You. Let me love and accept myself as You love me. May I find You shining brightly within my own Being.",
+        "affirmation": "I Accept Myself",
+        "image": "Matt_Final_Edited_9_21-04.png",
+        "color": "ea563d"
+        },
+        {
         "title": "Receiving",
         "text": "Change me Divine Beloved into one who is willing to receive All the right help, knowing each person, animal, or thing is a form of You. Let me feel deserving of Divine assistance in every way. Open me to receive.",
         "affirmation" : "I Am Open to Receive",
@@ -42,6 +67,7 @@
      "affirmation" : "Clarity Is My Birthright",
         "image": "Matt_Final_Edited_9_21-10.png",
         "color" : "772d36"
-        }
+        },
+     
     ]
 }

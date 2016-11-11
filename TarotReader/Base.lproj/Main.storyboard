@@ -81,19 +81,41 @@
                                     <constraint firstAttribute="bottom" secondItem="w9k-7p-Bjk" secondAttribute="bottom" id="jKM-RY-QHc"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
-                                <frame key="frameInset" minX="39" minY="601" width="297" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHY-Je-vGY">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Reveal Your Change Me Prayer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="281" id="IxV-n8-umo"/>
+                                            <constraint firstAttribute="height" constant="46" id="jFL-vc-7xd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tap" translatesAutoresizingMaskIntoConstraints="NO" id="Rsm-Xh-esl">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="6d4-eh-vPb"/>
+                                            <constraint firstAttribute="height" constant="50" id="ION-O8-2Mx"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Rsm-Xh-esl" firstAttribute="centerY" secondItem="gHY-Je-vGY" secondAttribute="centerY" id="17j-WF-HQy"/>
+                                    <constraint firstItem="Rsm-Xh-esl" firstAttribute="leading" secondItem="gHY-Je-vGY" secondAttribute="leading" constant="8" id="8lZ-dU-fOj"/>
+                                    <constraint firstItem="KL1-tH-HoP" firstAttribute="leading" secondItem="Rsm-Xh-esl" secondAttribute="trailing" constant="8" id="F9C-ZT-lfc"/>
+                                    <constraint firstItem="KL1-tH-HoP" firstAttribute="centerY" secondItem="gHY-Je-vGY" secondAttribute="centerY" id="rm2-wm-grg"/>
+                                    <constraint firstAttribute="width" constant="347" id="vVA-fM-h63"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="7Xe-6b-Puk"/>
+                            <constraint firstItem="gHY-Je-vGY" firstAttribute="top" secondItem="qdf-Ox-hMZ" secondAttribute="bottom" constant="8" id="Bgi-i2-liQ"/>
                             <constraint firstItem="IfE-uU-nKa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cu2-r1-D3x"/>
                             <constraint firstItem="qdf-Ox-hMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="7" id="VuV-1d-Imi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gHY-Je-vGY" secondAttribute="bottom" constant="8" id="bvF-y7-p3V"/>
+                            <constraint firstItem="gHY-Je-vGY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dRV-vK-eNZ"/>
                             <constraint firstItem="qdf-Ox-hMZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="uoV-Qo-pNK"/>
                             <constraint firstAttribute="trailing" secondItem="qdf-Ox-hMZ" secondAttribute="trailing" constant="8" id="wRT-wr-d53"/>
                         </constraints>
@@ -121,6 +143,7 @@
                         <outlet property="leftCardImageView" destination="cw3-bN-8Wd" id="pxb-XK-3c9"/>
                         <outlet property="rightBarButtonItem" destination="iC9-P9-yqh" id="kmq-mD-kks"/>
                         <outlet property="rightCardImageView" destination="aV2-r0-i3b" id="Mra-0s-BPa"/>
+                        <outlet property="tapSwipeIconImage" destination="Rsm-Xh-esl" id="zba-ZC-VDl"/>
                         <outlet property="titleLabel" destination="IfE-uU-nKa" id="Mmv-zM-LMu"/>
                         <segue destination="DHj-u2-dCo" kind="show" identifier="instructionSegue" id="cZE-ad-3W4"/>
                     </connections>
@@ -141,67 +164,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tosha Silver's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agf-UC-Wdv">
-                                <frame key="frameInset" minX="95" minY="90" width="189" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Me Prayers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-KV-60Y">
-                                <frame key="frameInset" minX="31" minY="123" width="316" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oracle Deck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HF-co-Vgs">
-                                <frame key="frameInset" minX="53" minY="173" width="272" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-XQ-qdo">
-                                <frame key="frameInset" minX="69" minY="234" width="240" height="261"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXx-wp-ssw">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tosha Silver's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agf-UC-Wdv">
+                                        <frame key="frameInset" minX="84" minY="20" width="189" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Me Prayers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-KV-60Y">
+                                        <frame key="frameInset" minX="20" minY="53" width="316" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oracle Deck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HF-co-Vgs">
+                                        <frame key="frameInset" minX="42" minY="103" width="272" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="Ou5-CP-7lB"/>
+                                    <constraint firstAttribute="width" constant="356" id="Qbl-QT-7ld"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEr-Ob-Mo4" userLabel="Button Container">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Co-w6-aPS">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Isb-QF-dpA"/>
+                                        </constraints>
+                                        <state key="normal" title="Buy">
+                                            <color key="titleColor" red="0.82745098039999998" green="0.4431372549" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBuyClick:" destination="RDV-9g-a2a" eventType="touchUpInside" id="uLC-A5-oqL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-KM-zpy">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="v46-2k-GXb"/>
+                                        </constraints>
+                                        <state key="normal" title="Instructions">
+                                            <color key="titleColor" red="0.82745098039999998" green="0.4431372549" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DHj-u2-dCo" kind="show" id="vFY-LH-c3g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-Le-viY">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="xMq-sZ-dYg"/>
+                                        </constraints>
+                                        <state key="normal" title="About Tosha">
+                                            <color key="titleColor" red="0.82745098039999998" green="0.4431372549" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onAboutClick:" destination="RDV-9g-a2a" eventType="touchUpInside" id="Z0L-oQ-fWO"/>
+                                            <segue destination="4be-9y-mQb" kind="show" id="ApO-MJ-ChV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Co-w6-aPS" firstAttribute="leading" secondItem="DEr-Ob-Mo4" secondAttribute="leading" id="4dh-b2-rJ1"/>
+                                    <constraint firstAttribute="height" constant="138" id="ABP-MC-qu2"/>
+                                    <constraint firstItem="8HZ-KM-zpy" firstAttribute="leading" secondItem="DEr-Ob-Mo4" secondAttribute="leading" id="FRv-zN-Q5B"/>
+                                    <constraint firstAttribute="trailing" secondItem="8HZ-KM-zpy" secondAttribute="trailing" id="Rq9-Hd-7dd"/>
+                                    <constraint firstItem="TVy-Le-viY" firstAttribute="leading" secondItem="DEr-Ob-Mo4" secondAttribute="leading" id="Xqt-hH-oYP"/>
+                                    <constraint firstItem="TVy-Le-viY" firstAttribute="top" secondItem="8HZ-KM-zpy" secondAttribute="bottom" constant="10" id="c2p-BN-7CQ"/>
+                                    <constraint firstItem="8HZ-KM-zpy" firstAttribute="top" secondItem="4Co-w6-aPS" secondAttribute="bottom" constant="10" id="h6n-K3-W7e"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Co-w6-aPS" secondAttribute="trailing" id="u6C-Nh-T2m"/>
+                                    <constraint firstAttribute="trailing" secondItem="TVy-Le-viY" secondAttribute="trailing" id="v7S-rO-uC8"/>
+                                    <constraint firstItem="4Co-w6-aPS" firstAttribute="top" secondItem="DEr-Ob-Mo4" secondAttribute="top" id="ySL-id-rda"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-XQ-qdo">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w4N-XQ-qdo" secondAttribute="height" multiplier="80:87" id="Flw-04-Zlc"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Co-w6-aPS">
-                                <frame key="frameInset" minX="29" minY="514" width="316" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Buy">
-                                    <color key="titleColor" red="0.82745098039999998" green="0.4431372549" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onBuyClick:" destination="RDV-9g-a2a" eventType="touchUpInside" id="uLC-A5-oqL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-Le-viY">
-                                <frame key="frameInset" minX="29" minY="610" width="316" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="About Tosha">
-                                    <color key="titleColor" red="0.82745098039999998" green="0.4431372549" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onAboutClick:" destination="RDV-9g-a2a" eventType="touchUpInside" id="Z0L-oQ-fWO"/>
-                                    <segue destination="4be-9y-mQb" kind="show" id="ApO-MJ-ChV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-KM-zpy">
-                                <frame key="frameInset" minX="29" minY="562" width="316" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="How to Use">
-                                    <color key="titleColor" red="0.82745098039999998" green="0.4431372549" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="DHj-u2-dCo" kind="show" id="vFY-LH-c3g"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.82745098039215681" green="0.44313725490196076" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uXx-wp-ssw" firstAttribute="centerX" secondItem="380-S7-At6" secondAttribute="centerX" id="1xe-ck-le8"/>
+                            <constraint firstItem="DEr-Ob-Mo4" firstAttribute="centerX" secondItem="380-S7-At6" secondAttribute="centerX" id="OGr-9v-2G8"/>
+                            <constraint firstItem="DEr-Ob-Mo4" firstAttribute="leading" secondItem="380-S7-At6" secondAttribute="leadingMargin" constant="13" id="RFO-uN-8RQ"/>
+                            <constraint firstItem="Jys-xy-tsy" firstAttribute="top" secondItem="DEr-Ob-Mo4" secondAttribute="bottom" constant="20" id="cNm-E5-AxQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DEr-Ob-Mo4" secondAttribute="trailing" constant="14" id="grf-Yq-rBY"/>
+                            <constraint firstItem="DEr-Ob-Mo4" firstAttribute="top" secondItem="w4N-XQ-qdo" secondAttribute="bottom" constant="12" id="k3G-Hp-JA6"/>
+                            <constraint firstItem="uXx-wp-ssw" firstAttribute="top" secondItem="eSP-5h-akJ" secondAttribute="bottom" constant="8" id="lAa-m3-Pg9"/>
+                            <constraint firstItem="w4N-XQ-qdo" firstAttribute="top" secondItem="uXx-wp-ssw" secondAttribute="bottom" constant="8" id="mk8-vc-Ucc"/>
+                            <constraint firstItem="w4N-XQ-qdo" firstAttribute="centerX" secondItem="380-S7-At6" secondAttribute="centerX" id="yAv-vt-KnK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dt-L2-VON" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -324,8 +386,9 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
         <image name="Email" width="37" height="37"/>
         <image name="InstructionsBackground" width="375" height="525"/>
         <image name="Lotus" width="25" height="25"/>
-        <image name="QuestionCircle" width="37" height="37"/>
-        <image name="Share" width="37" height="37"/>
+        <image name="QuestionCircle" width="25" height="25"/>
+        <image name="Share" width="25" height="25"/>
+        <image name="Tap" width="50" height="50"/>
         <image name="Tosha" width="480" height="589"/>
     </resources>
     <inferredMetricsTieBreakers>

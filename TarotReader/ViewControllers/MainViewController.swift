@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardHolderView: UIView!      // Container View for the face or back of the card
     @IBOutlet weak var leftCardImageView: UIImageView!
     @IBOutlet weak var rightCardImageView: UIImageView!
+    @IBOutlet weak var tapSwipeIconImage: UIImageView!
     
     var cardShowing : Bool = false
     var deckOfCards : TarotCardDeck = TarotCardDeck()
@@ -127,9 +128,11 @@ class ViewController: UIViewController {
     //    playDrawSound()
         if (cardShowing) {
             rightBarButtonItem.image = UIImage(named: "QuestionCircle")
+            
             showCardBack()
         } else {
             rightBarButtonItem.image = UIImage(named: "Share")
+            
             let randomNumber = Int(arc4random_uniform(cardCount))
             print("random Number: \(randomNumber)")
             
@@ -140,8 +143,11 @@ class ViewController: UIViewController {
                 self.descriptionLabel.text = StringUtilities.getLocalizedString(stringKey: Constants.Strings.Main.CardFaceSwipe)
                 self.cardFaceImageView.isHidden = false
                 self.cardBackImageView.isHidden = true
+                self.tapSwipeIconImage.image = UIImage(named: "Swipe")
                 if let hexColorStr = selectedCard?.color {
-                    self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
+                    let backgoundColor = UIColor.colorWithHexString(hex:hexColorStr)
+                    self.view.backgroundColor = backgoundColor
+                    self.navigationController?.navigationBar.tintColor = backgoundColor
                 }
             })
             
@@ -162,7 +168,9 @@ class ViewController: UIViewController {
         UIView.transition(with: cardHolderView, duration: 0.7, options: [.transitionCrossDissolve], animations: { [unowned self] in
             self.cardFaceImageView.isHidden = true
             self.cardBackImageView.isHidden = false
+            self.tapSwipeIconImage.image = UIImage(named: "Tap")
             self.view.backgroundColor = UIColor(netHex: Constants.Colors.MainBackground)
+            self.navigationController?.navigationBar.tintColor =  UIColor(netHex: Constants.Colors.MainBackground)
             })
         self.navigationItem.title = "Change Me Prayers"
 //        UIView.transition(from: cardFaceImageView, to: cardBackImageView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
@@ -203,8 +211,9 @@ class ViewController: UIViewController {
 //                if let hexColorStr = selectedCard?.color {
 //                    self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
 //                }
-                if let hexColorStr = selectedTarotCard.color {
+                                                if let hexColorStr = selectedTarotCard.color {
                                                     self.view.backgroundColor = UIColor.colorWithHexString(hex:hexColorStr)
+                                                    self.navigationController?.navigationBar.tintColor =  UIColor.colorWithHexString(hex:hexColorStr)
                                                 }
                                                 self.cardFaceImageView.alpha = 0.2
                                                 if let imagePath = selectedTarotCard.image {
