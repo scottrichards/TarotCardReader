@@ -56,14 +56,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="cw3-bN-8Wd">
-                                <frame key="frameInset" minX="-352" minY="86" width="360" height="495"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="aV2-r0-i3b">
-                                <frame key="frameInset" minX="365" minY="86" width="360" height="495"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-Ox-hMZ">
                                 <subviews>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp"/>
@@ -81,7 +73,7 @@
                                     <constraint firstAttribute="bottom" secondItem="w9k-7p-Bjk" secondAttribute="bottom" id="jKM-RY-QHc"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHY-Je-vGY">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHY-Je-vGY" userLabel="Instruction Container">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Reveal Your Change Me Prayer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
                                         <constraints>
@@ -139,10 +131,11 @@
                         <outlet property="cardHolderView" destination="qdf-Ox-hMZ" id="EuG-85-oir"/>
                         <outlet property="cardLeadingMargin" destination="VuV-1d-Imi" id="HRn-58-v5M"/>
                         <outlet property="cardTrailingMargin" destination="wRT-wr-d53" id="LcQ-Sb-Cgs"/>
+                        <outlet property="centerInstructionContainer" destination="dRV-vK-eNZ" id="5C7-vW-eDv"/>
                         <outlet property="descriptionLabel" destination="KL1-tH-HoP" id="L4J-Mp-sZN"/>
-                        <outlet property="leftCardImageView" destination="cw3-bN-8Wd" id="pxb-XK-3c9"/>
+                        <outlet property="instructionLabelWidth" destination="IxV-n8-umo" id="aTW-B2-f5D"/>
+                        <outlet property="instructionViewWidth" destination="vVA-fM-h63" id="fcm-DL-LIa"/>
                         <outlet property="rightBarButtonItem" destination="iC9-P9-yqh" id="kmq-mD-kks"/>
-                        <outlet property="rightCardImageView" destination="aV2-r0-i3b" id="Mra-0s-BPa"/>
                         <outlet property="tapSwipeIconImage" destination="Rsm-Xh-esl" id="zba-ZC-VDl"/>
                         <outlet property="titleLabel" destination="IfE-uU-nKa" id="Mmv-zM-LMu"/>
                         <segue destination="DHj-u2-dCo" kind="show" identifier="instructionSegue" id="cZE-ad-3W4"/>
@@ -282,35 +275,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstructionsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dq6-4p-kBX">
-                                <frame key="frameInset" minX="16" minY="326" width="343" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Yo-dT-qXx">
-                                <frame key="frameInset" minX="34" minY="344" width="306" height="266"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">For the past 30 years Tosha Silver has taught people around the world ways to align with Inner Love. She’s the author of Outrageous Openness and Change Me Prayers. She lives near San Francisco, where she runs an online school called “Living Outrageous Openness” which offers ongoing support for those who truly want to live these beautiful, ancient practices. You can also join her on her author page on Facebook where she writes often.  For more information about Tosha please visit www.toshasilver.com.</string>
-                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tosha" translatesAutoresizingMaskIntoConstraints="NO" id="MCr-K5-fl0">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2j-Gl-s5s">
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tosha" translatesAutoresizingMaskIntoConstraints="NO" id="MCr-K5-fl0">
+                                        <frame key="frameInset" minX="100" minY="8" width="115" height="146"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="dq6-4p-kBX">
+                                        <frame key="frameInset" minX="13" minY="162" width="299" height="334"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yo-dT-qXx">
+                                        <frame key="frameInset" minX="33" minY="183" width="259" height="293"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">For the past 30 years Tosha Silver has taught people around the world ways to align with Inner Love. She’s the author of Outrageous Openness and Change Me Prayers. She lives near San Francisco, where she runs an online school called “Living Outrageous Openness” which offers ongoing support for those who truly want to live these beautiful, ancient practices. You can also join her on her author page on Facebook where she writes often.  For more information about Tosha please visit www.toshasilver.com.</string>
+                                        <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="MCr-K5-fl0" secondAttribute="height" multiplier="192:233" id="KeD-Xl-h2r"/>
+                                    <constraint firstAttribute="width" constant="320" id="IMb-AW-PRq"/>
+                                    <constraint firstAttribute="height" constant="504" id="L75-GV-ieD"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.82745098039215681" green="0.44313725490196076" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="MCr-K5-fl0" firstAttribute="leading" secondItem="GWM-Zf-yET" secondAttribute="leadingMargin" constant="75" id="Id9-yo-MTk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MCr-K5-fl0" secondAttribute="trailing" constant="76" id="P3r-M0-34l"/>
-                            <constraint firstItem="MCr-K5-fl0" firstAttribute="top" secondItem="qUG-ZZ-rvu" secondAttribute="bottom" constant="15" id="kud-Pc-upE"/>
+                            <constraint firstItem="K2j-Gl-s5s" firstAttribute="centerX" secondItem="GWM-Zf-yET" secondAttribute="centerX" id="NNB-fO-fDa"/>
+                            <constraint firstItem="K2j-Gl-s5s" firstAttribute="top" secondItem="qUG-ZZ-rvu" secondAttribute="bottom" id="n21-wk-KhD"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1F-it-E0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2874.4000000000001" y="-488.00599700149928"/>
+            <point key="canvasLocation" x="2874.375" y="-488.02816901408454"/>
         </scene>
         <!--Instructions-->
         <scene sceneID="K1x-Rx-NEM">
@@ -329,7 +329,7 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyl-zg-l4k">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">I'm so happy to share this beautiful card deck with you.
+                                <string key="text">I'm so happy to share this beautiful card deck with you.
 
 It's a great way to offer any problem to Love and be freed from the stress of the ego forcing solutions. Anyone can learn
 to invite this Force to take over fully. 
@@ -341,7 +341,7 @@ Highest part of OURSELVES to take over. After all, It's everything, inside, outs
 
 And for more help going deeper into this holy unfolding, read or hear the Change Me Prayer book that these are based on.
 
-I hope you receive as much joy from these cards as Matt and I felt making them!</mutableString>
+I hope you receive as much joy from these cards as Matt and I felt making them!</string>
                                 <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -400,7 +400,6 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
         <image name="CardBorder" width="589" height="825"/>
         <image name="Email" width="37" height="37"/>
         <image name="HowToUse" width="262" height="44"/>
-        <image name="InstructionsBackground" width="375" height="525"/>
         <image name="Lotus" width="25" height="25"/>
         <image name="QuestionCircle" width="25" height="25"/>
         <image name="Share" width="25" height="25"/>
@@ -408,6 +407,6 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
         <image name="Tosha" width="480" height="589"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vFY-LH-c3g"/>
+        <segue reference="cZE-ad-3W4"/>
     </inferredMetricsTieBreakers>
 </document>

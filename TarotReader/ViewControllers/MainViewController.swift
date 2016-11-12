@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardFaceImageView: UIImageView!      // The face of the card with Reading and affirmation
     @IBOutlet weak var cardBackImageView: UIImageView!      // The back of the card with the Oracle
     @IBOutlet weak var cardHolderView: UIView!      // Container View for the face or back of the card
-    @IBOutlet weak var leftCardImageView: UIImageView!
-    @IBOutlet weak var rightCardImageView: UIImageView!
     @IBOutlet weak var tapSwipeIconImage: UIImageView!
     
     var cardShowing : Bool = false
@@ -35,7 +33,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cardLeadingMargin: NSLayoutConstraint!
     @IBOutlet weak var cardTrailingMargin: NSLayoutConstraint!
+    @IBOutlet weak var instructionLabelWidth: NSLayoutConstraint!
+    @IBOutlet weak var instructionViewWidth: NSLayoutConstraint!
     
+    @IBOutlet weak var centerInstructionContainer: NSLayoutConstraint!
     @IBOutlet weak var rightBarButtonItem: UIBarButtonItem!
     
     enum CardDisplay {
@@ -92,6 +93,17 @@ class ViewController: UIViewController {
             cardLeadingMargin.constant = 57
             cardTrailingMargin.constant = 57
         }
+        if (screenSize.width <= 320) {
+            descriptionLabel.font = UIFont.systemFont(ofSize: 14)
+            centerInstructionContainer.isActive = false
+            instructionViewWidth.constant = UIScreen.main.bounds.width - 28
+            instructionViewWidth.constant = UIScreen.main.bounds.width - 95
+        }
+//        if (instructionViewWidth.constant > UIScreen.main.bounds.width) {
+//            instructionViewWidth.constant = UIScreen.main.bounds.width - 28
+//            instructionViewWidth.constant = UIScreen.main.bounds.width - 95
+//        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
