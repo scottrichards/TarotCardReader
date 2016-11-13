@@ -58,7 +58,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-Ox-hMZ">
                                 <subviews>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oracle-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp"/>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk"/>
                                 </subviews>
                                 <constraints>
@@ -239,7 +239,7 @@
                                     <constraint firstItem="4Co-w6-aPS" firstAttribute="top" secondItem="DEr-Ob-Mo4" secondAttribute="top" id="ySL-id-rda"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-XQ-qdo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oracle-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-XQ-qdo">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="w4N-XQ-qdo" secondAttribute="height" multiplier="19:26" id="WVS-Od-N64"/>
                                 </constraints>
@@ -396,11 +396,11 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
         </scene>
     </scenes>
     <resources>
-        <image name="CardBack" width="582" height="800"/>
         <image name="CardBorder" width="589" height="825"/>
         <image name="Email" width="37" height="37"/>
         <image name="HowToUse" width="262" height="44"/>
         <image name="Lotus" width="25" height="25"/>
+        <image name="Oracle-Back.png" width="1200" height="1650"/>
         <image name="QuestionCircle" width="25" height="25"/>
         <image name="Share" width="25" height="25"/>
         <image name="Tap" width="50" height="50"/>

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01091FA91DD81182005018F7 /* Oracle-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9B1DD81182005018F7 /* Oracle-01.png */; };
+		01091FAA1DD81182005018F7 /* Oracle-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9C1DD81182005018F7 /* Oracle-02.png */; };
+		01091FAB1DD81182005018F7 /* Oracle-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9D1DD81182005018F7 /* Oracle-03.png */; };
+		01091FAC1DD81182005018F7 /* Oracle-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9E1DD81182005018F7 /* Oracle-04.png */; };
+		01091FAD1DD81182005018F7 /* Oracle-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9F1DD81182005018F7 /* Oracle-05.png */; };
+		01091FAE1DD81182005018F7 /* Oracle-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA01DD81182005018F7 /* Oracle-06.png */; };
+		01091FAF1DD81182005018F7 /* Oracle-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA11DD81182005018F7 /* Oracle-07.png */; };
+		01091FB01DD81182005018F7 /* Oracle-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA21DD81182005018F7 /* Oracle-08.png */; };
+		01091FB11DD81182005018F7 /* Oracle-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA31DD81182005018F7 /* Oracle-09.png */; };
+		01091FB21DD81182005018F7 /* Oracle-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA41DD81182005018F7 /* Oracle-10.png */; };
+		01091FB31DD81182005018F7 /* Oracle-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA51DD81182005018F7 /* Oracle-11.png */; };
+		01091FB41DD81182005018F7 /* Oracle-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA61DD81182005018F7 /* Oracle-12.png */; };
+		01091FB51DD81182005018F7 /* Oracle-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA71DD81182005018F7 /* Oracle-13.png */; };
+		01091FB61DD81182005018F7 /* Oracle-Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA81DD81182005018F7 /* Oracle-Back.png */; };
 		010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */; };
 		010AA1F11DCAA0FD007BDD5B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 010AA1F01DCAA0FD007BDD5B /* Localizable.strings */; };
 		010AA1FB1DCC5FAD007BDD5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1F91DCC5FAD007BDD5B /* MainViewController.swift */; };
@@ -24,20 +38,8 @@
 		0140D4E71DC3FABE00AFF0BB /* TarotReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4E61DC3FABE00AFF0BB /* TarotReaderTests.swift */; };
 		0140D4F51DC3FD4800AFF0BB /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4F41DC3FD4800AFF0BB /* TarotCard.swift */; };
 		0140D4F71DC3FDA300AFF0BB /* TarotCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */; };
-		0164CF201DC667520026B1BB /* Matt_Final_Edited_9_21-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF181DC667520026B1BB /* Matt_Final_Edited_9_21-05.png */; };
-		0164CF211DC667520026B1BB /* Matt_Final_Edited_9_21-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF191DC667520026B1BB /* Matt_Final_Edited_9_21-06.png */; };
-		0164CF221DC667520026B1BB /* Matt_Final_Edited_9_21-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1A1DC667520026B1BB /* Matt_Final_Edited_9_21-07.png */; };
-		0164CF231DC667520026B1BB /* Matt_Final_Edited_9_21-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1B1DC667520026B1BB /* Matt_Final_Edited_9_21-08.png */; };
-		0164CF241DC667520026B1BB /* Matt_Final_Edited_9_21-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1C1DC667520026B1BB /* Matt_Final_Edited_9_21-09.png */; };
-		0164CF251DC667520026B1BB /* Matt_Final_Edited_9_21-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1D1DC667520026B1BB /* Matt_Final_Edited_9_21-10.png */; };
-		0164CF261DC667520026B1BB /* Matt_Final_Edited_9_21-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1E1DC667520026B1BB /* Matt_Final_Edited_9_21-11.png */; };
-		0164CF271DC667520026B1BB /* Matt_Final_Edited_9_21-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0164CF1F1DC667520026B1BB /* Matt_Final_Edited_9_21-12.png */; };
 		019150611DCC619E003BD9D4 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019150601DCC619E003BD9D4 /* InstructionsViewController.swift */; };
 		01B521FD1DCD654F008F60C0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B521FC1DCD654F008F60C0 /* AboutViewController.swift */; };
-		01D3084C1DD646BF0071051B /* Matt_Final_Edited_9_21-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D3084A1DD646BF0071051B /* Matt_Final_Edited_9_21-01.png */; };
-		01D3084D1DD646BF0071051B /* Matt_Final_Edited_9_21-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D3084B1DD646BF0071051B /* Matt_Final_Edited_9_21-04.png */; };
-		01D3084F1DD647320071051B /* Matt_Final_Edited_9_21-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D3084E1DD647320071051B /* Matt_Final_Edited_9_21-03.png */; };
-		01D308511DD648610071051B /* Matt_Final_Edited_9_21-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D308501DD648610071051B /* Matt_Final_Edited_9_21-02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01091F9B1DD81182005018F7 /* Oracle-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-01.png"; sourceTree = "<group>"; };
+		01091F9C1DD81182005018F7 /* Oracle-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-02.png"; sourceTree = "<group>"; };
+		01091F9D1DD81182005018F7 /* Oracle-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-03.png"; sourceTree = "<group>"; };
+		01091F9E1DD81182005018F7 /* Oracle-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-04.png"; sourceTree = "<group>"; };
+		01091F9F1DD81182005018F7 /* Oracle-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-05.png"; sourceTree = "<group>"; };
+		01091FA01DD81182005018F7 /* Oracle-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-06.png"; sourceTree = "<group>"; };
+		01091FA11DD81182005018F7 /* Oracle-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-07.png"; sourceTree = "<group>"; };
+		01091FA21DD81182005018F7 /* Oracle-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-08.png"; sourceTree = "<group>"; };
+		01091FA31DD81182005018F7 /* Oracle-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-09.png"; sourceTree = "<group>"; };
+		01091FA41DD81182005018F7 /* Oracle-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-10.png"; sourceTree = "<group>"; };
+		01091FA51DD81182005018F7 /* Oracle-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-11.png"; sourceTree = "<group>"; };
+		01091FA61DD81182005018F7 /* Oracle-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-12.png"; sourceTree = "<group>"; };
+		01091FA71DD81182005018F7 /* Oracle-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-13.png"; sourceTree = "<group>"; };
+		01091FA81DD81182005018F7 /* Oracle-Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-Back.png"; sourceTree = "<group>"; };
 		010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		010AA1F01DCAA0FD007BDD5B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		010AA1F91DCC5FAD007BDD5B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -72,20 +88,8 @@
 		0140D4E81DC3FABE00AFF0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0140D4F41DC3FD4800AFF0BB /* TarotCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
 		0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotCardDeck.swift; sourceTree = "<group>"; };
-		0164CF181DC667520026B1BB /* Matt_Final_Edited_9_21-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-05.png"; sourceTree = "<group>"; };
-		0164CF191DC667520026B1BB /* Matt_Final_Edited_9_21-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-06.png"; sourceTree = "<group>"; };
-		0164CF1A1DC667520026B1BB /* Matt_Final_Edited_9_21-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-07.png"; sourceTree = "<group>"; };
-		0164CF1B1DC667520026B1BB /* Matt_Final_Edited_9_21-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-08.png"; sourceTree = "<group>"; };
-		0164CF1C1DC667520026B1BB /* Matt_Final_Edited_9_21-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-09.png"; sourceTree = "<group>"; };
-		0164CF1D1DC667520026B1BB /* Matt_Final_Edited_9_21-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-10.png"; sourceTree = "<group>"; };
-		0164CF1E1DC667520026B1BB /* Matt_Final_Edited_9_21-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-11.png"; sourceTree = "<group>"; };
-		0164CF1F1DC667520026B1BB /* Matt_Final_Edited_9_21-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-12.png"; sourceTree = "<group>"; };
 		019150601DCC619E003BD9D4 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		01B521FC1DCD654F008F60C0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		01D3084A1DD646BF0071051B /* Matt_Final_Edited_9_21-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-01.png"; sourceTree = "<group>"; };
-		01D3084B1DD646BF0071051B /* Matt_Final_Edited_9_21-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-04.png"; sourceTree = "<group>"; };
-		01D3084E1DD647320071051B /* Matt_Final_Edited_9_21-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-03.png"; sourceTree = "<group>"; };
-		01D308501DD648610071051B /* Matt_Final_Edited_9_21-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt_Final_Edited_9_21-02.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,19 +141,21 @@
 		0130F6481DC404B4000A2DDC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				01091F9B1DD81182005018F7 /* Oracle-01.png */,
+				01091F9C1DD81182005018F7 /* Oracle-02.png */,
+				01091F9D1DD81182005018F7 /* Oracle-03.png */,
+				01091F9E1DD81182005018F7 /* Oracle-04.png */,
+				01091F9F1DD81182005018F7 /* Oracle-05.png */,
+				01091FA01DD81182005018F7 /* Oracle-06.png */,
+				01091FA11DD81182005018F7 /* Oracle-07.png */,
+				01091FA21DD81182005018F7 /* Oracle-08.png */,
+				01091FA31DD81182005018F7 /* Oracle-09.png */,
+				01091FA41DD81182005018F7 /* Oracle-10.png */,
+				01091FA51DD81182005018F7 /* Oracle-11.png */,
+				01091FA61DD81182005018F7 /* Oracle-12.png */,
+				01091FA71DD81182005018F7 /* Oracle-13.png */,
+				01091FA81DD81182005018F7 /* Oracle-Back.png */,
 				011387E81DC40E95004FAE58 /* Images.xcassets */,
-				01D3084A1DD646BF0071051B /* Matt_Final_Edited_9_21-01.png */,
-				01D308501DD648610071051B /* Matt_Final_Edited_9_21-02.png */,
-				01D3084E1DD647320071051B /* Matt_Final_Edited_9_21-03.png */,
-				01D3084B1DD646BF0071051B /* Matt_Final_Edited_9_21-04.png */,
-				0164CF181DC667520026B1BB /* Matt_Final_Edited_9_21-05.png */,
-				0164CF191DC667520026B1BB /* Matt_Final_Edited_9_21-06.png */,
-				0164CF1A1DC667520026B1BB /* Matt_Final_Edited_9_21-07.png */,
-				0164CF1B1DC667520026B1BB /* Matt_Final_Edited_9_21-08.png */,
-				0164CF1C1DC667520026B1BB /* Matt_Final_Edited_9_21-09.png */,
-				0164CF1D1DC667520026B1BB /* Matt_Final_Edited_9_21-10.png */,
-				0164CF1E1DC667520026B1BB /* Matt_Final_Edited_9_21-11.png */,
-				0164CF1F1DC667520026B1BB /* Matt_Final_Edited_9_21-12.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -304,25 +310,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01091FB11DD81182005018F7 /* Oracle-09.png in Resources */,
 				0140D4DC1DC3FABE00AFF0BB /* LaunchScreen.storyboard in Resources */,
-				0164CF261DC667520026B1BB /* Matt_Final_Edited_9_21-11.png in Resources */,
+				01091FAC1DD81182005018F7 /* Oracle-04.png in Resources */,
+				01091FAB1DD81182005018F7 /* Oracle-03.png in Resources */,
 				0140D4D91DC3FABE00AFF0BB /* Assets.xcassets in Resources */,
-				01D3084F1DD647320071051B /* Matt_Final_Edited_9_21-03.png in Resources */,
-				0164CF251DC667520026B1BB /* Matt_Final_Edited_9_21-10.png in Resources */,
-				01D3084D1DD646BF0071051B /* Matt_Final_Edited_9_21-04.png in Resources */,
+				01091FB61DD81182005018F7 /* Oracle-Back.png in Resources */,
+				01091FB51DD81182005018F7 /* Oracle-13.png in Resources */,
+				01091FB41DD81182005018F7 /* Oracle-12.png in Resources */,
 				013764B61DCDFC140053A07C /* flipcard.wav in Resources */,
-				01D3084C1DD646BF0071051B /* Matt_Final_Edited_9_21-01.png in Resources */,
+				01091FAA1DD81182005018F7 /* Oracle-02.png in Resources */,
+				01091FB01DD81182005018F7 /* Oracle-08.png in Resources */,
+				01091FB31DD81182005018F7 /* Oracle-11.png in Resources */,
+				01091FA91DD81182005018F7 /* Oracle-01.png in Resources */,
+				01091FAF1DD81182005018F7 /* Oracle-07.png in Resources */,
 				011387E91DC40E95004FAE58 /* Images.xcassets in Resources */,
-				0164CF221DC667520026B1BB /* Matt_Final_Edited_9_21-07.png in Resources */,
-				0164CF201DC667520026B1BB /* Matt_Final_Edited_9_21-05.png in Resources */,
+				01091FAE1DD81182005018F7 /* Oracle-06.png in Resources */,
+				01091FB21DD81182005018F7 /* Oracle-10.png in Resources */,
 				0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */,
+				01091FAD1DD81182005018F7 /* Oracle-05.png in Resources */,
 				010AA1F11DCAA0FD007BDD5B /* Localizable.strings in Resources */,
-				0164CF231DC667520026B1BB /* Matt_Final_Edited_9_21-08.png in Resources */,
-				0164CF211DC667520026B1BB /* Matt_Final_Edited_9_21-06.png in Resources */,
-				01D308511DD648610071051B /* Matt_Final_Edited_9_21-02.png in Resources */,
-				0164CF241DC667520026B1BB /* Matt_Final_Edited_9_21-09.png in Resources */,
 				0130F64F1DC404B4000A2DDC /* Cards.json in Resources */,
-				0164CF271DC667520026B1BB /* Matt_Final_Edited_9_21-12.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

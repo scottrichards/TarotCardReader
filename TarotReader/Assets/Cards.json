@@ -1,48 +1,85 @@
 {
     "cards" :
     [
-        {
-        "title": "Receiving",
-        "text": "Change me Divine Beloved into one who is willing to receive All the right help, knowing each person, animal, or thing is a form of You. Let me feel deserving of Divine assistance in every way. Open me to receive.",
-        "affirmation" : "I Am Open to Receive",
-        "image": "Matt_Final_Edited_9_21-05.png",
-        "color" : "cb4b5b"
-        },
-        {
-        "title": "Trust",
-        "text": "Change me Divine Beloved into one who easily honors and respects my Inner Self. May I always belong first to my own inner Knowing.",
-        "affirmation" : "I Respect Myself",
-        "image": "Matt_Final_Edited_9_21-06.png",
-        "color" : "581f5a"
-        },
-        {
-        "title": "Worthiness",
-        "text": "Thank you Divine Beloved for shifting me into one who easily opens to receive in every way. Let me always know my own worthiness and beauty.",
-        "affirmation" : "I Am Worthy",
-        "image": "Matt_Final_Edited_9_21-07.png",
-        "color" : "143a65"
-        },
-        {
-        "title": "Faith",
-        "text": "Change me Devine Beloved into one who trusts that all drives and departs exactly on schedule. May I always know You know my deepest needs in every way and guide all actions.",
-        "affirmation" : "I Am One Who Trusts",
-        "image": "Matt_Final_Edited_9_21-08.png",
-        "color" : "bd6b2a"
-        },
-        {
-        "title": "Channel",
-        "text": "",
-     "affirmation" : "I Am a Conduit",
-        "image": "Matt_Final_Edited_9_21-09.png",
-        "color" : "4aacd5"
-        },
-        {
-        "title": "Understanding",
-        "text": "",
-     "affirmation" : "Clarity Is My Birthright",
-        "image": "Matt_Final_Edited_9_21-10.png",
-        "color" : "772d36"
-        },
+     {
+     "title": "Needs",
+     "text": "Change me Divine Beloved into one who wants what You want for me. Let me trust that my needs will always be met in the Highest way when I allow You to guide me.",
+     "affirmation": "I Trust the Highest Way",
+     "image": "Oracle-01.png",
+     "color": "e7c456"
+     }, {
+     "title": "Release",
+     "text": "Change me Divine Beloved into one who easily releases all that’s ready to go. May I courageously discard all that is outgrown and stagnant, preparing for the new. Let me move in harmony with Your natural cycles.",
+     "affirmation": "I Prepare for the New",
+     "image": "Oracle-02.png",
+     "color": "42592c"
+     }, {
+     "title": "Source",
+     "text": "Change me Divine Beloved into one who knows that You are my Source. Free me from the illusion of rejection, competition, and scarcity. Fill me with confidence and faith, knowing I never have to beg, just gratefully receive.",
+     "affirmation": "You Will Open Every Door",
+     "image": "Oracle-03.png",
+     "color": "173864"
+     }, {
+     "title": "Acceptance",
+     "text": "Let me forever serve You. Let me love and accept myself as You love me. May I find You shining brightly within my own Being.",
+     "affirmation": "I Accept Myself",
+     "image": "Oracle-04.png",
+     "color": "ea563d"
+     }, {
+     "title": "Receiving",
+     "text": "Change me Divine Beloved into one who is willing to receive All the right help, knowing each person, animal, or thing is a form of You. Let me feel deserving of Divine assistance in every way. Open me to receive.",
+     "affirmation": "I Am Open to Receive",
+     "image": "Oracle-05.png",
+     "color": "cb4b5b"
+     }, {
+     "title": "Trust",
+     "text": "Change me Divine Beloved into one who easily honors and respects my Inner Self. May I always belong first to my own inner Knowing.",
+     "affirmation": "I Respect My Self",
+     "image": "Oracle-06.png",
+     "color": "581f5a"
+     }, {
+     "title": "Worthiness",
+     "text": "Thank you Divine Beloved for shifting me into one who easily opens to receive in every way. Let me always know my own worthiness and beauty.",
+     "affirmation": "I Am Worthy",
+     "image": "Oracle-07.png",
+     "color": "143a65"
+     }, {
+     "title": "Faith",
+     "text": "Change me Devine Beloved into one who trusts that all drives and departs exactly on schedule. May I always know You know my deepest needs in every way and guide all actions.",
+     "affirmation": "I Am One Who Trusts",
+     "image": "Oracle-08.png",
+     "color": "bd6b2a"
+     }, {
+     "title": "Channel",
+     "text": "Change me Divine Beloved into one who can let You act thru me, write thru me, speak thru me. I offer myself to You. May I be a conduit for Your blessings; use me for the Highest good.",
+     "affirmation": "I Am a Conduit",
+     "image": "Oracle-09.png",
+     "color": "4aacd5"
+     }, {
+     "title": "Understanding",
+     "text": "Change me Beloved into one who remembers in every moment my true Self: Love, Light, Wisdom and Divinity.",
+     "affirmation": "Clarity Is My Birthright",
+     "image": "Oracle-10.png",
+     "color": "772d36"
+     }, {
+     "title": "Vampire",
+     "text": "May I always be protected from psychic vampires of all kinds. Let me stand in Your radiant light, courageous and strong, easily saying no!",
+     "affirmation": "I Protect My Energy",
+     "image": "Oracle-11.png",
+     "color": "4f4844"
+     }, {
+     "title": "Guidance",
+     "text": "Change me Divine Beloved into one who can offer You even the most baffling problems, knowing You’ll carry me to the right solutions at the right time...if I am open, receptive, and available.",
+     "affirmation": "I Am Open",
+     "image": "Oracle-12.png",
+     "color": "4f4844"
+     }, {
+     "title": "Strength",
+     "text": "Change me Divine Beloved into one who holds my center in all situations, no matter how challenging. Fill me with serenity and calm, wrap me in Your faith.",
+     "affirmation": "I Hold My Center",
+     "image": "Oracle-13.png",
+     "color": "e7c456"
+     }
      
     ]
 }
