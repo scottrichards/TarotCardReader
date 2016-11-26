@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v0I-br-kjJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v0I-br-kjJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,11 +24,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-cg-bN2">
-                                <frame key="frameInset" minY="617" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-9N-n0y">
-                                        <frame key="frameInset" minX="217" minY="7" width="37" height="37"/>
+                                        <rect key="frame" x="217" y="7" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Share"/>
                                         <connections>
@@ -33,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-fN-eqh">
-                                        <frame key="frameInset" minX="127" minY="8" width="37" height="37"/>
+                                        <rect key="frame" x="127" y="8" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Email"/>
                                         <connections>
@@ -44,10 +47,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-nI-ots">
-                                <frame key="frameInset" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-uU-nKa">
+                                <rect key="frame" x="16" y="66" width="343" height="21.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="BIN-Qn-kef"/>
                                     <constraint firstAttribute="height" constant="21.5" id="jg2-Sl-zbV"/>
@@ -57,9 +61,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-Ox-hMZ">
+                                <rect key="frame" x="7" y="66" width="360" height="495"/>
                                 <subviews>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oracle-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp"/>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="495"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="495"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="3ZQ-Vc-wrp" secondAttribute="bottom" id="2qc-m9-kVn"/>
@@ -74,8 +83,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHY-Je-vGY" userLabel="Instruction Container">
+                                <rect key="frame" x="14" y="569" width="347" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Reveal Your Change Me Prayer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-tH-HoP">
+                                        <rect key="frame" x="66" y="22" width="281" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="281" id="IxV-n8-umo"/>
                                             <constraint firstAttribute="height" constant="46" id="jFL-vc-7xd"/>
@@ -85,6 +96,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tap" translatesAutoresizingMaskIntoConstraints="NO" id="Rsm-Xh-esl">
+                                        <rect key="frame" x="8" y="20" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="6d4-eh-vPb"/>
                                             <constraint firstAttribute="height" constant="50" id="ION-O8-2Mx"/>
@@ -158,23 +170,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXx-wp-ssw" userLabel="Title Container">
+                                <rect key="frame" x="9.5" y="72" width="356" height="156"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tosha Silver's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agf-UC-Wdv">
-                                        <frame key="frameInset" minX="84" minY="20" width="189" height="34"/>
+                                        <rect key="frame" x="84" y="11" width="189" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Me Prayers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-KV-60Y">
-                                        <frame key="frameInset" minX="20" minY="53" width="316" height="63"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-KV-60Y">
+                                        <rect key="frame" x="20" y="45" width="316" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oracle Deck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HF-co-Vgs">
-                                        <frame key="frameInset" minX="42" minY="103" width="272" height="78"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prayers Oracle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HF-co-Vgs">
+                                        <rect key="frame" x="42" y="87" width="272" height="78"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -187,13 +200,15 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEr-Ob-Mo4" userLabel="Button Container">
+                                <rect key="frame" x="29" y="509" width="316" height="138"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Co-w6-aPS">
+                                        <rect key="frame" x="0.0" y="0.0" width="316" height="38"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="Isb-QF-dpA"/>
                                         </constraints>
-                                        <state key="normal" title="Buy">
+                                        <state key="normal" title="Buy Oracle Cards">
                                             <color key="titleColor" red="0.82745098039999998" green="0.4431372549" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -201,6 +216,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-KM-zpy">
+                                        <rect key="frame" x="0.0" y="48" width="316" height="38"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="v46-2k-GXb"/>
@@ -213,6 +229,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-Le-viY">
+                                        <rect key="frame" x="0.0" y="96" width="316" height="38"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="xMq-sZ-dYg"/>
@@ -239,7 +256,8 @@
                                     <constraint firstItem="4Co-w6-aPS" firstAttribute="top" secondItem="DEr-Ob-Mo4" secondAttribute="top" id="ySL-id-rda"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oracle-Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-XQ-qdo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-XQ-qdo">
+                                <rect key="frame" x="92.5" y="236" width="190" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="w4N-XQ-qdo" secondAttribute="height" multiplier="19:26" id="WVS-Od-N64"/>
                                 </constraints>
@@ -276,18 +294,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2j-Gl-s5s">
+                                <rect key="frame" x="27.5" y="64" width="320" height="504"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tosha" translatesAutoresizingMaskIntoConstraints="NO" id="MCr-K5-fl0">
-                                        <frame key="frameInset" minX="100" minY="8" width="115" height="146"/>
+                                        <rect key="frame" x="100" y="8" width="115" height="146"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="dq6-4p-kBX">
-                                        <frame key="frameInset" minX="13" minY="162" width="299" height="334"/>
+                                        <rect key="frame" x="13" y="162" width="299" height="334"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yo-dT-qXx">
-                                        <frame key="frameInset" minX="33" minY="183" width="259" height="293"/>
+                                        <rect key="frame" x="33" y="183" width="259" height="293"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">For the past 30 years Tosha Silver has taught people around the world ways to align with Inner Love. She’s the author of Outrageous Openness and Change Me Prayers. She lives near San Francisco, where she runs an online school called “Living Outrageous Openness” which offers ongoing support for those who truly want to live these beautiful, ancient practices. You can also join her on her author page on Facebook where she writes often.  For more information about Tosha please visit www.toshasilver.com.</string>
@@ -325,9 +344,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-Hg-ZYb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyl-zg-l4k">
+                                <rect key="frame" x="27" y="161" width="323" height="466"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">I'm so happy to share this beautiful card deck with you.
 
@@ -346,6 +367,7 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowToUse" translatesAutoresizingMaskIntoConstraints="NO" id="YX2-qx-cD8">
+                                <rect key="frame" x="45" y="105" width="285" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YX2-qx-cD8" secondAttribute="height" multiplier="95:16" id="6fh-AE-Qsq"/>
                                 </constraints>
@@ -396,11 +418,11 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
         </scene>
     </scenes>
     <resources>
+        <image name="69-OracleBack.png" width="1200" height="1650"/>
         <image name="CardBorder" width="589" height="825"/>
         <image name="Email" width="37" height="37"/>
         <image name="HowToUse" width="262" height="44"/>
         <image name="Lotus" width="25" height="25"/>
-        <image name="Oracle-Back.png" width="1200" height="1650"/>
         <image name="QuestionCircle" width="25" height="25"/>
         <image name="Share" width="25" height="25"/>
         <image name="Tap" width="50" height="50"/>

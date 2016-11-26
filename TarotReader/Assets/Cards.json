@@ -1,85 +1,405 @@
 {
-    "cards" :
-    [
-     {
-     "title": "Needs",
-     "text": "Change me Divine Beloved into one who wants what You want for me. Let me trust that my needs will always be met in the Highest way when I allow You to guide me.",
-     "affirmation": "I Trust the Highest Way",
-     "image": "Oracle-01.png",
-     "color": "e7c456"
-     }, {
-     "title": "Release",
-     "text": "Change me Divine Beloved into one who easily releases all that’s ready to go. May I courageously discard all that is outgrown and stagnant, preparing for the new. Let me move in harmony with Your natural cycles.",
-     "affirmation": "I Prepare for the New",
-     "image": "Oracle-02.png",
-     "color": "42592c"
-     }, {
-     "title": "Source",
-     "text": "Change me Divine Beloved into one who knows that You are my Source. Free me from the illusion of rejection, competition, and scarcity. Fill me with confidence and faith, knowing I never have to beg, just gratefully receive.",
-     "affirmation": "You Will Open Every Door",
-     "image": "Oracle-03.png",
-     "color": "173864"
-     }, {
-     "title": "Acceptance",
-     "text": "Let me forever serve You. Let me love and accept myself as You love me. May I find You shining brightly within my own Being.",
-     "affirmation": "I Accept Myself",
-     "image": "Oracle-04.png",
-     "color": "ea563d"
-     }, {
-     "title": "Receiving",
-     "text": "Change me Divine Beloved into one who is willing to receive All the right help, knowing each person, animal, or thing is a form of You. Let me feel deserving of Divine assistance in every way. Open me to receive.",
-     "affirmation": "I Am Open to Receive",
-     "image": "Oracle-05.png",
-     "color": "cb4b5b"
-     }, {
-     "title": "Trust",
-     "text": "Change me Divine Beloved into one who easily honors and respects my Inner Self. May I always belong first to my own inner Knowing.",
-     "affirmation": "I Respect My Self",
-     "image": "Oracle-06.png",
-     "color": "581f5a"
-     }, {
-     "title": "Worthiness",
-     "text": "Thank you Divine Beloved for shifting me into one who easily opens to receive in every way. Let me always know my own worthiness and beauty.",
-     "affirmation": "I Am Worthy",
-     "image": "Oracle-07.png",
-     "color": "143a65"
-     }, {
-     "title": "Faith",
-     "text": "Change me Devine Beloved into one who trusts that all drives and departs exactly on schedule. May I always know You know my deepest needs in every way and guide all actions.",
-     "affirmation": "I Am One Who Trusts",
-     "image": "Oracle-08.png",
-     "color": "bd6b2a"
-     }, {
-     "title": "Channel",
-     "text": "Change me Divine Beloved into one who can let You act thru me, write thru me, speak thru me. I offer myself to You. May I be a conduit for Your blessings; use me for the Highest good.",
-     "affirmation": "I Am a Conduit",
-     "image": "Oracle-09.png",
-     "color": "4aacd5"
-     }, {
-     "title": "Understanding",
-     "text": "Change me Beloved into one who remembers in every moment my true Self: Love, Light, Wisdom and Divinity.",
-     "affirmation": "Clarity Is My Birthright",
-     "image": "Oracle-10.png",
-     "color": "772d36"
-     }, {
-     "title": "Vampire",
-     "text": "May I always be protected from psychic vampires of all kinds. Let me stand in Your radiant light, courageous and strong, easily saying no!",
-     "affirmation": "I Protect My Energy",
-     "image": "Oracle-11.png",
-     "color": "4f4844"
-     }, {
-     "title": "Guidance",
-     "text": "Change me Divine Beloved into one who can offer You even the most baffling problems, knowing You’ll carry me to the right solutions at the right time...if I am open, receptive, and available.",
-     "affirmation": "I Am Open",
-     "image": "Oracle-12.png",
-     "color": "4f4844"
-     }, {
-     "title": "Strength",
-     "text": "Change me Divine Beloved into one who holds my center in all situations, no matter how challenging. Fill me with serenity and calm, wrap me in Your faith.",
-     "affirmation": "I Hold My Center",
-     "image": "Oracle-13.png",
-     "color": "e7c456"
-     }
-     
-    ]
+    "cards": [{
+              "title": "Needs",
+              "text": "Change me Divine Beloved into one who wants what You want for me. Let me trust that my needs will always be met in the Highest way when I allow You to guide me.",
+              "affirmation": "I Trust the Highest Way",
+              "image": "01-Needs.jpg",
+              "color": "e7c456"
+              }, {
+              "title": "Release",
+              "text": "Change me Divine Beloved into one who easily releases all that’s ready to go. May I courageously discard all that is outgrown and stagnant, preparing for the new. Let me move in harmony with Your natural cycles.",
+              "affirmation": "I Prepare for the New",
+              "image": "02-Release.jpg",
+              "color": "42592c"
+              }, {
+              "title": "Source",
+              "text": "Change me Divine Beloved into one who knows that You are my Source. Free me from the illusion of rejection, competition, and scarcity. Fill me with confidence and faith, knowing I never have to beg, just gratefully receive.",
+              "affirmation": "You Will Open Every Door",
+              "image": "03-Source.jpg",
+              "color": "173864"
+              }, {
+              "title": "Acceptance",
+              "text": "Let me forever serve You. Let me love and accept myself as You love me. May I find You shining brightly within my own Being.",
+              "affirmation": "I Accept Myself",
+              "image": "04-Acceptance.jpg",
+              "color": "ea563d"
+              }, {
+              "title": "Receiving",
+              "text": "Change me Divine Beloved into one who is willing to receive All the right help, knowing each person, animal, or thing is a form of You. Let me feel deserving of Divine assistance in every way. Open me to receive.",
+              "affirmation": "I Am Open to Receive",
+              "image": "05-Receiving.jpg",
+              "color": "cb4b5b"
+              }, {
+              "title": "Trust",
+              "text": "Change me Divine Beloved into one who easily honors and respects my Inner Self. May I always belong first to my own inner Knowing.",
+              "affirmation": "I Respect My Self",
+              "image": "06-Trust.jpg",
+              "color": "581f5a"
+              }, {
+              "title": "Worthiness",
+              "text": "Thank you Divine Beloved for shifting me into one who easily opens to receive in every way. Let me always know my own worthiness and beauty.",
+              "affirmation": "I Am Worthy",
+              "image": "07-Worthiness.jpg",
+              "color": "143a65"
+              }, {
+              "title": "Faith",
+              "text": "Change me Devine Beloved into one who trusts that all drives and departs exactly on schedule. May I always know You know my deepest needs in every way and guide all actions.",
+              "affirmation": "I Am One Who Trusts",
+              "image": "08-Faith.jpg",
+              "color": "bd6b2a"
+              }, {
+              "title": "Channel",
+              "text": "Change me Divine Beloved into one who can let You act thru me, write thru me, speak thru me. I offer myself to You. May I be a conduit for Your blessings; use me for the Highest good.",
+              "affirmation": "I Am a Conduit",
+              "image": "09-Channel.jpg",
+              "color": "4aacd5"
+              }, {
+              "title": "Understanding",
+              "text": "Change me Beloved into one who remembers in every moment my true Self: Love, Light, Wisdom and Divinity.",
+              "affirmation": "Clarity Is My Birthright",
+              "image": "10-Understanding.jpg",
+              "color": "772d36"
+              }, {
+              "title": "Vampire",
+              "text": "May I always be protected from psychic vampires of all kinds. Let me stand in Your radiant light, courageous and strong, easily saying no!",
+              "affirmation": "I Protect My Energy",
+              "image": "11-Vampire.jpg",
+              "color": "4f4844"
+              }, {
+              "title": "Guidance",
+              "text": "Change me Divine Beloved into one who can offer You even the most baffling problems, knowing You’ll carry me to the right solutions at the right time...if I am open, receptive, and available.",
+              "affirmation": "I Am Open",
+              "image": "12-Guidance.jpg",
+              "color": "4f4844"
+              }, {
+              "title": "Strength",
+              "text": "Change me Divine Beloved into one who holds my center in all situations, no matter how challenging. Fill me with serenity and calm, wrap me in Your faith.",
+              "affirmation": "I Hold My Center",
+              "image": "13-Strength.jpg",
+              "color": "e7c456"
+              }, {
+              "title": "Discernment",
+              "text": "Grant me discernment and detachment when it's needed most. May I honor my feelings deeply, then let go, trusting Your Plan. Open my soft, tender heart to accept Your mysteries and guide my way.",
+              "affirmation": "Trusting Your Place",
+              "image": "14-Discernment.jpg",
+              "color": "42592c"
+              }, {
+              "title": "Now",
+              "text": "Allow me Divine Beloved to rest in that holy space between what is and what will be. Let me fully embrace, relax and bless the Now.",
+              "affirmation": "In the Holy Space Between",
+              "image": "15-Now.jpg",
+              "color": "173864"
+              }, {
+              "title": "Resource",
+              "text": "Allow me Divine Beloved to let go, relax and enjoy the process...knowing that it’s safe to offer all to Your capable hands. The right actions are always shown, and the right help will always come.",
+              "affirmation": "The Right Help Will Come",
+              "image": "16-Resource.jpg",
+              "color": "ea563d"
+              }, {
+              "title": "Mystery",
+              "text": "Change me Divine Beloved into one who rests peacefully in the unknown until the right and timely actions are shown! I offer the Mystery to You alone.",
+              "affirmation": "I Rest in the Unknown",
+              "image": "17-Mystery.jpg",
+              "color": "cb4b5b"
+              }, {
+              "title": "Offering",
+              "text": "Let me Divine Beloved offer all desires to You, knowing right outcomes are already selected. Grant me true surrender and peace. May I be a vehicle for Your will in every way.",
+              "affirmation": "The Right Way is Shown",
+              "image": "18-Offering.jpg",
+              "color": "e7c456"
+              }, {
+              "title": "Surrender",
+              "text": "Help me let go in all needed ways, offering action and outcome to You. May I feel the safety and joy of true surrender. Please take this burden and guide me.",
+              "affirmation": "Open to the Highest Good",
+              "image": "20-Surrender.jpg",
+              "color": "42592c"
+              }, {
+              "title": "Openness",
+              "text": "I invite You Divine to move thru me in all ways, guiding my actions in every moment. Release all fear, let me feel unbridled openness to the New. May the Highest unfold in all ways.",
+              "affirmation": "I Release All Fear",
+              "image": "21-Openness.jpg",
+              "color": "173864"
+              }, {
+              "title": "Unfolding",
+              "text": "Change me Divine Beloved into One who lets You unfold things according to Your will. Please guide my actions and my way, trusting every true need is known.",
+              "affirmation": "According to Your Will",
+              "image": "22-Unfolding.jpg",
+              "color": "ea563d"
+              }, {
+              "title": "Abundance",
+              "text": "May I honor all the ways Your grace flows so I move in harmony with the Tao. Open me to trust and receive Your abundant blessings in every way!",
+              "affirmation": "In Harmony with the Tao",
+              "image": "23-Abundance.jpg",
+              "color": "cb4b5b"
+              }, {
+              "title": "Uncertainty",
+              "text": "May I live in the Now, and relax peacefully into the unfolding, knowing all the pieces of the puzzle will fall into place at the right time...and not a moment before!",
+              "affirmation": "Let Me Deeply Trust",
+              "image": "24-Uncertainty.jpg",
+              "color": "581f5a"
+              }, {
+              "title": "Adventure",
+              "text": "Change me Divine Beloved into one who rides the tide happily, trusting where I am being led, even when everything doesn’t make sense yet!",
+              "affirmation": "I Will Ride the Tide",
+              "image": "25-Adventure.jpg",
+              "color": "143a65"
+              }, {
+              "title": "Playfullness",
+              "text": "Change me Divine Beloved into one who is wildly open to the New. Free me from rigid patterns that no longer serve. Let me feel adventurous and spontaneous, knowing that the more I open to life, the more it opens to me.",
+              "affirmation": "I Feel Adventurous",
+              "image": "26-Playfullness.jpg",
+              "color": "bd6b2a"
+              }, {
+              "title": "Authenticity",
+              "text": "Change me Beloved into one who has the courage to be my true self. Let me honor my self just as I am. Allow me to honor my sexuality, desires, and needs as sacred expressions of Your Divine Love.",
+              "affirmation": "I Can Be My True Self",
+              "image": "27-Authenticity.jpg",
+              "color": "4aacd5"
+              }, {
+              "title": "Uniqueness",
+              "text": "Change me Beloved into one who embraces my own uniqueness, knowing You come in countless ways. Let me accept my own nature completely, knowing it, too, is Divine. May I love myself as I am, not as others say I should be.",
+              "affirmation": "I Accept My Own Nature",
+              "image": "28-Uniqueness.jpg",
+              "color": "772d36"
+              }, {
+              "title": "Boundaries",
+              "text": "Change me Beloved into one who easily sets boundaries wherever needed. May I feel entitled to say no to any situation that feels bad or wrong. Fill me with Divine confidence, speak through me.",
+              "affirmation": "I Am Entitled to Say No",
+              "image": "29-Boundaries.jpg",
+              "color": "4f4844"
+              }, {
+              "title": "Spirit",
+              "text": "Change me Beloved into one who knows my Spirit is eternal and ageless. Let me release any old ideas of constriction or limitation. My whole Being is filled with joy, energy, and beauty, a vessel for the Divine Shakti.",
+              "affirmation": "I Am Filled with Light",
+              "image": "30-Spirit.jpg",
+              "color": "581f5a"
+              }, {
+              "title": "Compassion",
+              "text": "Change me Divine Beloved into one who honors my emotions. Let me have my feelings without judgment and release them. May I feel deserving to say no. Show me how to be kind and loving to the child inside who needs care.",
+              "affirmation": "I Am Kind and Loving",
+              "image": "31-Compassion.jpg",
+              "color": "143a65"
+              }, {
+              "title": "Vessel",
+              "text": "Change me Divine Beloved into one who accepts my body exactly as it is, seeing it as a vessel for Your Love. Fill me with gratitude for this physical form. Let me nurture and care for myself in every way.",
+              "affirmation": "I Am a Spark of Divinity",
+              "image": "32-Vessel.jpg",
+              "color": "bd6b2a"
+              }, {
+              "title": "Honor",
+              "text": "Change me Divine Beloved into one who can love myself in every condition. Free me from self-torture. Fill me with self-acceptance and worthiness. May I honor All my feelings, however they arise.",
+              "affirmation": "I Love Myself",
+              "image": "33-Honor.jpg",
+              "color": "4aacd5"
+              }, {
+              "title": "Individuality",
+              "text": "Change me Divine Beloved into one who can joyfully embrace myself as I am. Let me enjoy my own uniqueness and be my full, unbridled Self. May I love myself as You love me.",
+              "affirmation": "I Am Unique",
+              "image": "34-Individuality.jpg",
+              "color": "772d36"
+              }, {
+              "title": "Divinity",
+              "text": "May I always remember my true identity: unlimited Light and Love. Let me know myself as pure Consciousness. Wake me from the sleepwalk of believing I am “only” human.",
+              "affirmation": "I Know My True Identity",
+              "image": "35-Divinity.jpg",
+              "color": "e7c456"
+              }, {
+              "title": "Prosperity",
+              "text": "Change me Divine Beloved into one who knows You alone are the source of all prosperity. Let me live in gratitude, trusting every need is handled. Release me from the prison of jealousy. That alone is true wealth.",
+              "affirmation": "I Am Trusting",
+              "image": "36-Prosperity.jpg",
+              "color": "42592c"
+              }, {
+              "title": "Challenge",
+              "text": "Allow me to flow with what cannot change. Let me embrace all tests and release any fear of loss, knowing that all can be replenished with ease by Divine Will.",
+              "affirmation": "I Embrace All Tests",
+              "image": "37-Challenge.jpg",
+              "color": "173864"
+              }, {
+              "title": "Detachment",
+              "text": "Change me Divine Beloved into one who knows that You are my unlimited Source. May I neither fear loss nor cling to gain. Let me forgive anyone who hurts me, knowing that You provide for me in the most surprising ways.",
+              "affirmation": "I Relax and Receive",
+              "image": "38-Detachment.jpg",
+              "color": "ea563d"
+              }, {
+              "title": "Creativity",
+              "text": "Change me Divine Beloved into one who honors my deepest creative passions and needs. Help me value the talents You have given, both known and unknown.",
+              "affirmation": "I Honor My Passions",
+              "image": "39-Creativity.jpg",
+              "color": "cb4b5b"
+              }, {
+              "title": "Relationship",
+              "text": "Change me Divine Beloved into one who trusts that the perfect relationship always arrives on time. Let me feel worthy and deserving of love. Allow me to release all attachments. May desires melt into preferences.",
+              "affirmation": "I Am Worthy",
+              "image": "40-Relationship.jpg",
+              "color": "581f5a"
+              }, {
+              "title": "Empowerment",
+              "text": "Change me Divine Beloved into one who knows my own worth. Let me feel entitled to speak my truth with love. May I know I deserve to be surrounded by those who value me.",
+              "affirmation": "I Speak My Truth",
+              "image": "41-Empowerment.jpg",
+              "color": "143a65"
+              }, {
+              "title": "Desires",
+              "text": "Change me Divine Beloved into one who offers all longings to You, allowing them to relax into preferences. Let me feel whole, knowing all true needs will be handled. You are my Source for all.",
+              "affirmation": "Melt Them into Preferences",
+              "image": "42-Desires.jpg",
+              "color": "bd6b2a"
+              }, {
+              "title": "Love",
+              "text": "Change me Divine Beloved into one who knows my true worth in every moment. Let me experience that I AM Love. My own sacred Self will always draw kindred spirits.",
+              "affirmation": "I Know I Am Love",
+              "image": "43-Love.jpg",
+              "color": "4aacd5"
+              }, {
+              "title": "Generosity",
+              "text": "Change me Beloved into one who can easily send blessings to all, even those filled with negativity or fear. May I shower the planet with love, knowing there is an unlimited ocean within me.",
+              "affirmation": "I Am Abundant Love",
+              "image": "44-Generosity.jpg",
+              "color": "772d36"
+              }, {
+              "title": "Forgiveness",
+              "text": "Change me Divine Beloved into one who can easily access all my feelings. Let me bless and release anger, resentment or bitterness. By forgiving all, I open to happiness and contentment.",
+              "affirmation": "I Release Emotions",
+              "image": "45-Forgiveness.jpg",
+              "color": "4f4844"
+              }, {
+              "title": "Awakening",
+              "text": "Change me Divine Beloved into one who knows the true nature of our souls. Awaken me to the knowledge of the Eternal. Let me know my true self as Consciousness.",
+              "affirmation": "I Know the Eternal",
+              "image": "46-Awakening.jpg",
+              "color": "4f4844"
+              }, {
+              "title": "Presence",
+              "text": "Change Me Divine Beloved into one who can completely enjoy the moment as it is. May I release all hurry, relaxing and accepting the present. Let me be fully and happily in the Now.",
+              "affirmation": "I Am Happily in the Now",
+              "image": "47-Presence.jpg",
+              "color": "e7c456"
+              }, {
+              "title": "Patience",
+              "text": "Change me Beloved into one who can wait in patience and faith until the right actions are shown. Grant me the ability to align with Your Will and honor Divine timing.",
+              "affirmation": "I Trust the Waiting",
+              "image": "48-Patience.jpg",
+              "color": "42592c"
+              }, {
+              "title": "Balance",
+              "text": "Change me Divine Beloved into one who can fully offer my schedule to You so my life can be in balance. May I take rest whenever necessary, trusting that one way or another all needs will be met.",
+              "affirmation": "My Needs Will Be Met",
+              "image": "49-Balance.jpg",
+              "color": "173864"
+              }, {
+              "title": "Intuition",
+              "text": "Change me Beloved into one who can offer all major decisions to You. Let me trust You're always guiding me in the right directions. May I always remember that if something is meant to be, “Out of no way God finds a way.”",
+              "affirmation": "God Finds a Way",
+              "image": "50-Intuition.jpg",
+              "color": "ea563d"
+              }, {
+              "title": "Competition",
+              "text": "Change me Divine Beloved into one who can trust that You alone are the Source for all. Free me from the illusion of scarcity and competition. Let me trust that all needs are always richly met. I am Yours alone.",
+              "affirmation": "All Needs Richly Met",
+              "image": "51-Competition.jpg",
+              "color": "e7c456"
+              }, {
+              "title": "Beauty",
+              "text": "Change me Divine Beloved into one who knows without question my own beauty, worthiness and desirability. Let me remember who I am, Love Itself, in a temporary human form.",
+              "affirmation": "I Am a Spark of Divinity",
+              "image": "52-Beauty.jpg",
+              "color": "42592c"
+              }, {
+              "title": "Grace",
+              "text": "Make me ready to call on You in even the most confusing situations, large or small. Let me include You. May I lean on Your strength, knowing Your grace can unravel any dilemma.",
+              "affirmation": "I Lean on You",
+              "image": "53-Grace.jpg",
+              "color": "173864"
+              }, {
+              "title": "Perfectionism",
+              "text": "Change me Beloved into one who allows the Universe to give to me every way It chooses. May I be fully open to receive, knowing the Divine is my complete Source. Let me release all perfectionism and fear of “doing it wrong.”",
+              "affirmation": "The Divine Is My Total Source",
+              "image": "54-Perfectionism.jpg",
+              "color": "ea563d"
+              }, {
+              "title": "Evolution",
+              "text": "Change me Divine Beloved into one who knows we can evolve and open at any age. Let me welcome change in uplifting and surprising ways. Allow me to trust the process, diving ever deeper into Your love.",
+              "affirmation": "I Welcome Change",
+              "image": "55-Evolution.jpg",
+              "color": "cb4b5b"
+              }, {
+              "title": "Protection",
+              "text": "Change me Beloved into one who is protected from all negative energy and predictions. Fill me with Your dazzling and radiant Light; make me a vessel for Your Love. I now release all fears I’ve absorbed from others!",
+              "affirmation": "I Am Safe",
+              "image": "56-Protection.jpg",
+              "color": "581f5a"
+              }, {
+              "title": "Courage",
+              "text": "Change me Divine Beloved into one who knows You are the ultimate protection. Let me stay fully in the moment, anchored in Divine strength. Fill me with courage so I may endure even the hardest trials, trusting You will carry me.",
+              "affirmation": "I Am Anchored",
+              "image": "57-Courage.jpg",
+              "color": "143a65"
+              }, {
+              "title": "Eternity",
+              "text": "Change me Divine Beloved into one who understands the true meaning of Death. Remove my fear of dying. Open my vision to the Eternal. May all transitions lead me into ever-deepening union with You.",
+              "affirmation": "Deep Union With You",
+              "image": "58-Eternity.jpg",
+              "color": "bd6b2a"
+              }, {
+              "title": "Heart",
+              "text": "Change me Divine Beloved into one who can allow Love to lead my life. May I offer myself completely to the Highest so all may occur as needed. Grant me peace and contentment wherever I am. Use me for the greatest good.",
+              "affirmation": "Allow Love to Lead",
+              "image": "59-Heart.jpg",
+              "color": "4aacd5"
+              }, {
+              "title": "Change",
+              "text": "Change me Divine Beloved into one who truly lets You take the lead. Fill me with patience and faith as you line up all pieces of the puzzle. Let me trust the right changes always come at the right time.",
+              "affirmation": "I Have Faith and Patience",
+              "image": "60-Change.jpg",
+              "color": "772d36"
+              }, {
+              "title": "Burdens",
+              "text": "Change me Divine Beloved into one who gratefully receives all help You send. Let me release the useless idea that I must carry the burden alone. Let me trust You send the right assistance. May I feel worthy and accept!",
+              "affirmation": "I Accept Your Help",
+              "image": "61-Burdens.jpg",
+              "color": "4f4844"
+              }, {
+              "title": "Longing",
+              "text": "Change me Divine Beloved into one who offers You my deepest longings, trusting You know exactly how to handle them. Lead the way completely; free me from my chains. Let me know my wholeness and freedom most of all.",
+              "affirmation": "I Offer My Deepest Desires",
+              "image": "62-Longing.jpg",
+              "color": "cb4b5b"
+              }, {
+              "title": "Conduit",
+              "text": "Change me Divine Beloved into one who can get out of the way. Release me, open me. Let me be a pure, clear conduit for Your Love.",
+              "affirmation": "I Am Open to Love",
+              "image": "63-Conduit.jpg",
+              "color": "581f5a"
+              }, {
+              "title": "Relax",
+              "text": "Oh Beloved, change me into one who knows how to relax completely, sleep deeply, and receive the blessing of each moment with ease and gratitude.",
+              "affirmation": "I Receive All Blessings",
+              "image": "64-Relax.jpg",
+              "color": "143a65"
+              }, {
+              "title": "Decisions",
+              "text": "Change me Divine Beloved into one who can offer all decisions to You. May I trust during times of transition that the perfect actions will be shown. Grant me patience to allow events to line up as they need.",
+              "affirmation": "Perfect Actions Are Shown",
+              "image": "65-Decisions.jpg",
+              "color": "bd6b2a"
+              }, {
+              "title": "Death",
+              "text": "Change me Divine Beloved into one who understands the true meaning of Death. Remove my fear of dying. May all transitions lead me into ever-deepening union with You.",
+              "affirmation": "Death Before Rebirth",
+              "image": "66-Death.jpg",
+              "color": "4aacd5"
+              }, {
+              "title": "Soul Mate",
+              "text": "Allow me Divine Beloved to trust that the perfect person has already been selected. In the right place and time we shall meet, for You know every true desire of my heart. May I only wish for what You wish for me.",
+              "affirmation": "I Offer My Desires",
+              "image": "67-SoulMate.jpg",
+              "color": "772d36"
+              }, {
+              "title": "Inner Child",
+              "text": "Change me Divine Beloved into one who can easily soothe, love and care for the Inner Child who may grow fearful or impatient. Let me easily send my love to it. Everyday I grow more filled with Divine courage, patience and calm.",
+              "affirmation": "I Love & Care for Myself",
+              "image": "68-InnerChild.jpg",
+              "color": "4f4844"
+              }]
 }

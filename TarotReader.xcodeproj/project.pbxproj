@@ -7,20 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01091FA91DD81182005018F7 /* Oracle-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9B1DD81182005018F7 /* Oracle-01.png */; };
-		01091FAA1DD81182005018F7 /* Oracle-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9C1DD81182005018F7 /* Oracle-02.png */; };
-		01091FAB1DD81182005018F7 /* Oracle-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9D1DD81182005018F7 /* Oracle-03.png */; };
-		01091FAC1DD81182005018F7 /* Oracle-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9E1DD81182005018F7 /* Oracle-04.png */; };
-		01091FAD1DD81182005018F7 /* Oracle-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091F9F1DD81182005018F7 /* Oracle-05.png */; };
-		01091FAE1DD81182005018F7 /* Oracle-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA01DD81182005018F7 /* Oracle-06.png */; };
-		01091FAF1DD81182005018F7 /* Oracle-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA11DD81182005018F7 /* Oracle-07.png */; };
-		01091FB01DD81182005018F7 /* Oracle-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA21DD81182005018F7 /* Oracle-08.png */; };
-		01091FB11DD81182005018F7 /* Oracle-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA31DD81182005018F7 /* Oracle-09.png */; };
-		01091FB21DD81182005018F7 /* Oracle-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA41DD81182005018F7 /* Oracle-10.png */; };
-		01091FB31DD81182005018F7 /* Oracle-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA51DD81182005018F7 /* Oracle-11.png */; };
-		01091FB41DD81182005018F7 /* Oracle-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA61DD81182005018F7 /* Oracle-12.png */; };
-		01091FB51DD81182005018F7 /* Oracle-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA71DD81182005018F7 /* Oracle-13.png */; };
-		01091FB61DD81182005018F7 /* Oracle-Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 01091FA81DD81182005018F7 /* Oracle-Back.png */; };
 		010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */; };
 		010AA1F11DCAA0FD007BDD5B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 010AA1F01DCAA0FD007BDD5B /* Localizable.strings */; };
 		010AA1FB1DCC5FAD007BDD5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1F91DCC5FAD007BDD5B /* MainViewController.swift */; };
@@ -40,6 +26,76 @@
 		0140D4F71DC3FDA300AFF0BB /* TarotCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */; };
 		019150611DCC619E003BD9D4 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019150601DCC619E003BD9D4 /* InstructionsViewController.swift */; };
 		01B521FD1DCD654F008F60C0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B521FC1DCD654F008F60C0 /* AboutViewController.swift */; };
+		01FF44CE1DE754A800D60192 /* 69-OracleBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44891DE754A800D60192 /* 69-OracleBack.png */; };
+		01FF45151DE9338B00D60192 /* 01-Needs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D01DE9338B00D60192 /* 01-Needs.jpg */; };
+		01FF45161DE9338B00D60192 /* 02-Release.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D11DE9338B00D60192 /* 02-Release.jpg */; };
+		01FF45171DE9338B00D60192 /* 03-Source.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D21DE9338B00D60192 /* 03-Source.jpg */; };
+		01FF45181DE9338B00D60192 /* 04-Acceptance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D31DE9338B00D60192 /* 04-Acceptance.jpg */; };
+		01FF45191DE9338B00D60192 /* 05-Receiving.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D41DE9338B00D60192 /* 05-Receiving.jpg */; };
+		01FF451A1DE9338B00D60192 /* 06-Trust.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D51DE9338B00D60192 /* 06-Trust.jpg */; };
+		01FF451B1DE9338B00D60192 /* 07-Worthiness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D61DE9338B00D60192 /* 07-Worthiness.jpg */; };
+		01FF451C1DE9338B00D60192 /* 08-Faith.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D71DE9338B00D60192 /* 08-Faith.jpg */; };
+		01FF451D1DE9338B00D60192 /* 09-Channel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D81DE9338B00D60192 /* 09-Channel.jpg */; };
+		01FF451E1DE9338B00D60192 /* 10-Understanding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D91DE9338B00D60192 /* 10-Understanding.jpg */; };
+		01FF451F1DE9338B00D60192 /* 11-Vampire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44DA1DE9338B00D60192 /* 11-Vampire.jpg */; };
+		01FF45201DE9338B00D60192 /* 12-Guidance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44DB1DE9338B00D60192 /* 12-Guidance.jpg */; };
+		01FF45211DE9338B00D60192 /* 13-Strength.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44DC1DE9338B00D60192 /* 13-Strength.jpg */; };
+		01FF45221DE9338B00D60192 /* 14-Discernment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44DD1DE9338B00D60192 /* 14-Discernment.jpg */; };
+		01FF45231DE9338B00D60192 /* 15-Now.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44DE1DE9338B00D60192 /* 15-Now.jpg */; };
+		01FF45241DE9338B00D60192 /* 16-Resource.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44DF1DE9338B00D60192 /* 16-Resource.jpg */; };
+		01FF45251DE9338B00D60192 /* 17-Mystery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E01DE9338B00D60192 /* 17-Mystery.jpg */; };
+		01FF45261DE9338B00D60192 /* 18-Offering.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E11DE9338B00D60192 /* 18-Offering.jpg */; };
+		01FF45271DE9338B00D60192 /* 19-HowTo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E21DE9338B00D60192 /* 19-HowTo.jpg */; };
+		01FF45281DE9338B00D60192 /* 20-Surrender.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E31DE9338B00D60192 /* 20-Surrender.jpg */; };
+		01FF45291DE9338B00D60192 /* 21-Openness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E41DE9338B00D60192 /* 21-Openness.jpg */; };
+		01FF452A1DE9338B00D60192 /* 22-Unfolding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E51DE9338B00D60192 /* 22-Unfolding.jpg */; };
+		01FF452B1DE9338B00D60192 /* 23-Abundance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E61DE9338B00D60192 /* 23-Abundance.jpg */; };
+		01FF452C1DE9338B00D60192 /* 24-Uncertainty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E71DE9338B00D60192 /* 24-Uncertainty.jpg */; };
+		01FF452D1DE9338B00D60192 /* 25-Adventure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E81DE9338B00D60192 /* 25-Adventure.jpg */; };
+		01FF452E1DE9338B00D60192 /* 26-Playfullness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44E91DE9338B00D60192 /* 26-Playfullness.jpg */; };
+		01FF452F1DE9338B00D60192 /* 27-Authenticity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44EA1DE9338B00D60192 /* 27-Authenticity.jpg */; };
+		01FF45301DE9338B00D60192 /* 28-Uniqueness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44EB1DE9338B00D60192 /* 28-Uniqueness.jpg */; };
+		01FF45311DE9338B00D60192 /* 29-Boundaries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44EC1DE9338B00D60192 /* 29-Boundaries.jpg */; };
+		01FF45321DE9338B00D60192 /* 30-Spirit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44ED1DE9338B00D60192 /* 30-Spirit.jpg */; };
+		01FF45331DE9338B00D60192 /* 31-Compassion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44EE1DE9338B00D60192 /* 31-Compassion.jpg */; };
+		01FF45341DE9338B00D60192 /* 32-Vessel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44EF1DE9338B00D60192 /* 32-Vessel.jpg */; };
+		01FF45351DE9338B00D60192 /* 33-Honor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F01DE9338B00D60192 /* 33-Honor.jpg */; };
+		01FF45361DE9338B00D60192 /* 34-Individuality.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F11DE9338B00D60192 /* 34-Individuality.jpg */; };
+		01FF45371DE9338B00D60192 /* 35-Divinity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F21DE9338B00D60192 /* 35-Divinity.jpg */; };
+		01FF45381DE9338B00D60192 /* 36-Prosperity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F31DE9338B00D60192 /* 36-Prosperity.jpg */; };
+		01FF45391DE9338B00D60192 /* 37-Challenge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F41DE9338B00D60192 /* 37-Challenge.jpg */; };
+		01FF453A1DE9338B00D60192 /* 38-Detachment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F51DE9338B00D60192 /* 38-Detachment.jpg */; };
+		01FF453B1DE9338B00D60192 /* 39-Creativity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F61DE9338B00D60192 /* 39-Creativity.jpg */; };
+		01FF453C1DE9338B00D60192 /* 40-Relationship.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F71DE9338B00D60192 /* 40-Relationship.jpg */; };
+		01FF453D1DE9338B00D60192 /* 41-Empowerment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F81DE9338B00D60192 /* 41-Empowerment.jpg */; };
+		01FF453E1DE9338B00D60192 /* 42-Desires.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44F91DE9338B00D60192 /* 42-Desires.jpg */; };
+		01FF453F1DE9338B00D60192 /* 43-Love.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44FA1DE9338B00D60192 /* 43-Love.jpg */; };
+		01FF45401DE9338B00D60192 /* 44-Generosity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44FB1DE9338B00D60192 /* 44-Generosity.jpg */; };
+		01FF45411DE9338B00D60192 /* 45-Forgiveness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44FC1DE9338B00D60192 /* 45-Forgiveness.jpg */; };
+		01FF45421DE9338B00D60192 /* 46-Awakening.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44FD1DE9338B00D60192 /* 46-Awakening.jpg */; };
+		01FF45431DE9338B00D60192 /* 47-Presence.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44FE1DE9338B00D60192 /* 47-Presence.jpg */; };
+		01FF45441DE9338B00D60192 /* 48-Patience.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44FF1DE9338B00D60192 /* 48-Patience.jpg */; };
+		01FF45451DE9338B00D60192 /* 49-Balance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45001DE9338B00D60192 /* 49-Balance.jpg */; };
+		01FF45461DE9338B00D60192 /* 50-Intuition.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45011DE9338B00D60192 /* 50-Intuition.jpg */; };
+		01FF45471DE9338B00D60192 /* 51-Competition.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45021DE9338B00D60192 /* 51-Competition.jpg */; };
+		01FF45481DE9338B00D60192 /* 52-Beauty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45031DE9338B00D60192 /* 52-Beauty.jpg */; };
+		01FF45491DE9338B00D60192 /* 53-Grace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45041DE9338B00D60192 /* 53-Grace.jpg */; };
+		01FF454A1DE9338B00D60192 /* 54-Perfectionism.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45051DE9338B00D60192 /* 54-Perfectionism.jpg */; };
+		01FF454B1DE9338B00D60192 /* 55-Evolution.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45061DE9338B00D60192 /* 55-Evolution.jpg */; };
+		01FF454C1DE9338B00D60192 /* 56-Protection.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45071DE9338B00D60192 /* 56-Protection.jpg */; };
+		01FF454D1DE9338B00D60192 /* 57-Courage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45081DE9338B00D60192 /* 57-Courage.jpg */; };
+		01FF454E1DE9338B00D60192 /* 58-Eternity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45091DE9338B00D60192 /* 58-Eternity.jpg */; };
+		01FF454F1DE9338B00D60192 /* 59-Heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF450A1DE9338B00D60192 /* 59-Heart.jpg */; };
+		01FF45501DE9338B00D60192 /* 60-Change.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF450B1DE9338B00D60192 /* 60-Change.jpg */; };
+		01FF45511DE9338B00D60192 /* 61-Burdens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF450C1DE9338B00D60192 /* 61-Burdens.jpg */; };
+		01FF45521DE9338B00D60192 /* 62-Longing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF450D1DE9338B00D60192 /* 62-Longing.jpg */; };
+		01FF45531DE9338B00D60192 /* 63-Conduit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF450E1DE9338B00D60192 /* 63-Conduit.jpg */; };
+		01FF45541DE9338B00D60192 /* 64-Relax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF450F1DE9338B00D60192 /* 64-Relax.jpg */; };
+		01FF45551DE9338B00D60192 /* 65-Decisions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45101DE9338B00D60192 /* 65-Decisions.jpg */; };
+		01FF45561DE9338B00D60192 /* 66-Death.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45111DE9338B00D60192 /* 66-Death.jpg */; };
+		01FF45571DE9338B00D60192 /* 67-SoulMate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45121DE9338B00D60192 /* 67-SoulMate.jpg */; };
+		01FF45581DE9338B00D60192 /* 68-InnerChild.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45131DE9338B00D60192 /* 68-InnerChild.jpg */; };
+		01FF45591DE9338B00D60192 /* 69-OracleBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF45141DE9338B00D60192 /* 69-OracleBack.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,20 +109,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01091F9B1DD81182005018F7 /* Oracle-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-01.png"; sourceTree = "<group>"; };
-		01091F9C1DD81182005018F7 /* Oracle-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-02.png"; sourceTree = "<group>"; };
-		01091F9D1DD81182005018F7 /* Oracle-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-03.png"; sourceTree = "<group>"; };
-		01091F9E1DD81182005018F7 /* Oracle-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-04.png"; sourceTree = "<group>"; };
-		01091F9F1DD81182005018F7 /* Oracle-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-05.png"; sourceTree = "<group>"; };
-		01091FA01DD81182005018F7 /* Oracle-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-06.png"; sourceTree = "<group>"; };
-		01091FA11DD81182005018F7 /* Oracle-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-07.png"; sourceTree = "<group>"; };
-		01091FA21DD81182005018F7 /* Oracle-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-08.png"; sourceTree = "<group>"; };
-		01091FA31DD81182005018F7 /* Oracle-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-09.png"; sourceTree = "<group>"; };
-		01091FA41DD81182005018F7 /* Oracle-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-10.png"; sourceTree = "<group>"; };
-		01091FA51DD81182005018F7 /* Oracle-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-11.png"; sourceTree = "<group>"; };
-		01091FA61DD81182005018F7 /* Oracle-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-12.png"; sourceTree = "<group>"; };
-		01091FA71DD81182005018F7 /* Oracle-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-13.png"; sourceTree = "<group>"; };
-		01091FA81DD81182005018F7 /* Oracle-Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oracle-Back.png"; sourceTree = "<group>"; };
 		010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		010AA1F01DCAA0FD007BDD5B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		010AA1F91DCC5FAD007BDD5B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +132,76 @@
 		0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotCardDeck.swift; sourceTree = "<group>"; };
 		019150601DCC619E003BD9D4 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		01B521FC1DCD654F008F60C0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		01FF44891DE754A800D60192 /* 69-OracleBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "69-OracleBack.png"; sourceTree = "<group>"; };
+		01FF44D01DE9338B00D60192 /* 01-Needs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "01-Needs.jpg"; sourceTree = "<group>"; };
+		01FF44D11DE9338B00D60192 /* 02-Release.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "02-Release.jpg"; sourceTree = "<group>"; };
+		01FF44D21DE9338B00D60192 /* 03-Source.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "03-Source.jpg"; sourceTree = "<group>"; };
+		01FF44D31DE9338B00D60192 /* 04-Acceptance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "04-Acceptance.jpg"; sourceTree = "<group>"; };
+		01FF44D41DE9338B00D60192 /* 05-Receiving.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "05-Receiving.jpg"; sourceTree = "<group>"; };
+		01FF44D51DE9338B00D60192 /* 06-Trust.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "06-Trust.jpg"; sourceTree = "<group>"; };
+		01FF44D61DE9338B00D60192 /* 07-Worthiness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "07-Worthiness.jpg"; sourceTree = "<group>"; };
+		01FF44D71DE9338B00D60192 /* 08-Faith.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "08-Faith.jpg"; sourceTree = "<group>"; };
+		01FF44D81DE9338B00D60192 /* 09-Channel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "09-Channel.jpg"; sourceTree = "<group>"; };
+		01FF44D91DE9338B00D60192 /* 10-Understanding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "10-Understanding.jpg"; sourceTree = "<group>"; };
+		01FF44DA1DE9338B00D60192 /* 11-Vampire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "11-Vampire.jpg"; sourceTree = "<group>"; };
+		01FF44DB1DE9338B00D60192 /* 12-Guidance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12-Guidance.jpg"; sourceTree = "<group>"; };
+		01FF44DC1DE9338B00D60192 /* 13-Strength.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "13-Strength.jpg"; sourceTree = "<group>"; };
+		01FF44DD1DE9338B00D60192 /* 14-Discernment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "14-Discernment.jpg"; sourceTree = "<group>"; };
+		01FF44DE1DE9338B00D60192 /* 15-Now.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "15-Now.jpg"; sourceTree = "<group>"; };
+		01FF44DF1DE9338B00D60192 /* 16-Resource.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "16-Resource.jpg"; sourceTree = "<group>"; };
+		01FF44E01DE9338B00D60192 /* 17-Mystery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "17-Mystery.jpg"; sourceTree = "<group>"; };
+		01FF44E11DE9338B00D60192 /* 18-Offering.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "18-Offering.jpg"; sourceTree = "<group>"; };
+		01FF44E21DE9338B00D60192 /* 19-HowTo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "19-HowTo.jpg"; sourceTree = "<group>"; };
+		01FF44E31DE9338B00D60192 /* 20-Surrender.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "20-Surrender.jpg"; sourceTree = "<group>"; };
+		01FF44E41DE9338B00D60192 /* 21-Openness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "21-Openness.jpg"; sourceTree = "<group>"; };
+		01FF44E51DE9338B00D60192 /* 22-Unfolding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "22-Unfolding.jpg"; sourceTree = "<group>"; };
+		01FF44E61DE9338B00D60192 /* 23-Abundance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "23-Abundance.jpg"; sourceTree = "<group>"; };
+		01FF44E71DE9338B00D60192 /* 24-Uncertainty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "24-Uncertainty.jpg"; sourceTree = "<group>"; };
+		01FF44E81DE9338B00D60192 /* 25-Adventure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "25-Adventure.jpg"; sourceTree = "<group>"; };
+		01FF44E91DE9338B00D60192 /* 26-Playfullness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "26-Playfullness.jpg"; sourceTree = "<group>"; };
+		01FF44EA1DE9338B00D60192 /* 27-Authenticity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "27-Authenticity.jpg"; sourceTree = "<group>"; };
+		01FF44EB1DE9338B00D60192 /* 28-Uniqueness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "28-Uniqueness.jpg"; sourceTree = "<group>"; };
+		01FF44EC1DE9338B00D60192 /* 29-Boundaries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "29-Boundaries.jpg"; sourceTree = "<group>"; };
+		01FF44ED1DE9338B00D60192 /* 30-Spirit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "30-Spirit.jpg"; sourceTree = "<group>"; };
+		01FF44EE1DE9338B00D60192 /* 31-Compassion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "31-Compassion.jpg"; sourceTree = "<group>"; };
+		01FF44EF1DE9338B00D60192 /* 32-Vessel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "32-Vessel.jpg"; sourceTree = "<group>"; };
+		01FF44F01DE9338B00D60192 /* 33-Honor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "33-Honor.jpg"; sourceTree = "<group>"; };
+		01FF44F11DE9338B00D60192 /* 34-Individuality.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "34-Individuality.jpg"; sourceTree = "<group>"; };
+		01FF44F21DE9338B00D60192 /* 35-Divinity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "35-Divinity.jpg"; sourceTree = "<group>"; };
+		01FF44F31DE9338B00D60192 /* 36-Prosperity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "36-Prosperity.jpg"; sourceTree = "<group>"; };
+		01FF44F41DE9338B00D60192 /* 37-Challenge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "37-Challenge.jpg"; sourceTree = "<group>"; };
+		01FF44F51DE9338B00D60192 /* 38-Detachment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "38-Detachment.jpg"; sourceTree = "<group>"; };
+		01FF44F61DE9338B00D60192 /* 39-Creativity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "39-Creativity.jpg"; sourceTree = "<group>"; };
+		01FF44F71DE9338B00D60192 /* 40-Relationship.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "40-Relationship.jpg"; sourceTree = "<group>"; };
+		01FF44F81DE9338B00D60192 /* 41-Empowerment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "41-Empowerment.jpg"; sourceTree = "<group>"; };
+		01FF44F91DE9338B00D60192 /* 42-Desires.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "42-Desires.jpg"; sourceTree = "<group>"; };
+		01FF44FA1DE9338B00D60192 /* 43-Love.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "43-Love.jpg"; sourceTree = "<group>"; };
+		01FF44FB1DE9338B00D60192 /* 44-Generosity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "44-Generosity.jpg"; sourceTree = "<group>"; };
+		01FF44FC1DE9338B00D60192 /* 45-Forgiveness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "45-Forgiveness.jpg"; sourceTree = "<group>"; };
+		01FF44FD1DE9338B00D60192 /* 46-Awakening.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "46-Awakening.jpg"; sourceTree = "<group>"; };
+		01FF44FE1DE9338B00D60192 /* 47-Presence.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "47-Presence.jpg"; sourceTree = "<group>"; };
+		01FF44FF1DE9338B00D60192 /* 48-Patience.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "48-Patience.jpg"; sourceTree = "<group>"; };
+		01FF45001DE9338B00D60192 /* 49-Balance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "49-Balance.jpg"; sourceTree = "<group>"; };
+		01FF45011DE9338B00D60192 /* 50-Intuition.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "50-Intuition.jpg"; sourceTree = "<group>"; };
+		01FF45021DE9338B00D60192 /* 51-Competition.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "51-Competition.jpg"; sourceTree = "<group>"; };
+		01FF45031DE9338B00D60192 /* 52-Beauty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "52-Beauty.jpg"; sourceTree = "<group>"; };
+		01FF45041DE9338B00D60192 /* 53-Grace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "53-Grace.jpg"; sourceTree = "<group>"; };
+		01FF45051DE9338B00D60192 /* 54-Perfectionism.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "54-Perfectionism.jpg"; sourceTree = "<group>"; };
+		01FF45061DE9338B00D60192 /* 55-Evolution.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "55-Evolution.jpg"; sourceTree = "<group>"; };
+		01FF45071DE9338B00D60192 /* 56-Protection.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "56-Protection.jpg"; sourceTree = "<group>"; };
+		01FF45081DE9338B00D60192 /* 57-Courage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "57-Courage.jpg"; sourceTree = "<group>"; };
+		01FF45091DE9338B00D60192 /* 58-Eternity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "58-Eternity.jpg"; sourceTree = "<group>"; };
+		01FF450A1DE9338B00D60192 /* 59-Heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "59-Heart.jpg"; sourceTree = "<group>"; };
+		01FF450B1DE9338B00D60192 /* 60-Change.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "60-Change.jpg"; sourceTree = "<group>"; };
+		01FF450C1DE9338B00D60192 /* 61-Burdens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "61-Burdens.jpg"; sourceTree = "<group>"; };
+		01FF450D1DE9338B00D60192 /* 62-Longing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "62-Longing.jpg"; sourceTree = "<group>"; };
+		01FF450E1DE9338B00D60192 /* 63-Conduit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "63-Conduit.jpg"; sourceTree = "<group>"; };
+		01FF450F1DE9338B00D60192 /* 64-Relax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "64-Relax.jpg"; sourceTree = "<group>"; };
+		01FF45101DE9338B00D60192 /* 65-Decisions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "65-Decisions.jpg"; sourceTree = "<group>"; };
+		01FF45111DE9338B00D60192 /* 66-Death.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "66-Death.jpg"; sourceTree = "<group>"; };
+		01FF45121DE9338B00D60192 /* 67-SoulMate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "67-SoulMate.jpg"; sourceTree = "<group>"; };
+		01FF45131DE9338B00D60192 /* 68-InnerChild.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "68-InnerChild.jpg"; sourceTree = "<group>"; };
+		01FF45141DE9338B00D60192 /* 69-OracleBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "69-OracleBack.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,20 +253,8 @@
 		0130F6481DC404B4000A2DDC /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				01091F9B1DD81182005018F7 /* Oracle-01.png */,
-				01091F9C1DD81182005018F7 /* Oracle-02.png */,
-				01091F9D1DD81182005018F7 /* Oracle-03.png */,
-				01091F9E1DD81182005018F7 /* Oracle-04.png */,
-				01091F9F1DD81182005018F7 /* Oracle-05.png */,
-				01091FA01DD81182005018F7 /* Oracle-06.png */,
-				01091FA11DD81182005018F7 /* Oracle-07.png */,
-				01091FA21DD81182005018F7 /* Oracle-08.png */,
-				01091FA31DD81182005018F7 /* Oracle-09.png */,
-				01091FA41DD81182005018F7 /* Oracle-10.png */,
-				01091FA51DD81182005018F7 /* Oracle-11.png */,
-				01091FA61DD81182005018F7 /* Oracle-12.png */,
-				01091FA71DD81182005018F7 /* Oracle-13.png */,
-				01091FA81DD81182005018F7 /* Oracle-Back.png */,
+				01FF44CF1DE9338B00D60192 /* jpeg */,
+				01FF44891DE754A800D60192 /* 69-OracleBack.png */,
 				011387E81DC40E95004FAE58 /* Images.xcassets */,
 			);
 			path = Images;
@@ -223,6 +323,82 @@
 				0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		01FF44CF1DE9338B00D60192 /* jpeg */ = {
+			isa = PBXGroup;
+			children = (
+				01FF44D01DE9338B00D60192 /* 01-Needs.jpg */,
+				01FF44D11DE9338B00D60192 /* 02-Release.jpg */,
+				01FF44D21DE9338B00D60192 /* 03-Source.jpg */,
+				01FF44D31DE9338B00D60192 /* 04-Acceptance.jpg */,
+				01FF44D41DE9338B00D60192 /* 05-Receiving.jpg */,
+				01FF44D51DE9338B00D60192 /* 06-Trust.jpg */,
+				01FF44D61DE9338B00D60192 /* 07-Worthiness.jpg */,
+				01FF44D71DE9338B00D60192 /* 08-Faith.jpg */,
+				01FF44D81DE9338B00D60192 /* 09-Channel.jpg */,
+				01FF44D91DE9338B00D60192 /* 10-Understanding.jpg */,
+				01FF44DA1DE9338B00D60192 /* 11-Vampire.jpg */,
+				01FF44DB1DE9338B00D60192 /* 12-Guidance.jpg */,
+				01FF44DC1DE9338B00D60192 /* 13-Strength.jpg */,
+				01FF44DD1DE9338B00D60192 /* 14-Discernment.jpg */,
+				01FF44DE1DE9338B00D60192 /* 15-Now.jpg */,
+				01FF44DF1DE9338B00D60192 /* 16-Resource.jpg */,
+				01FF44E01DE9338B00D60192 /* 17-Mystery.jpg */,
+				01FF44E11DE9338B00D60192 /* 18-Offering.jpg */,
+				01FF44E21DE9338B00D60192 /* 19-HowTo.jpg */,
+				01FF44E31DE9338B00D60192 /* 20-Surrender.jpg */,
+				01FF44E41DE9338B00D60192 /* 21-Openness.jpg */,
+				01FF44E51DE9338B00D60192 /* 22-Unfolding.jpg */,
+				01FF44E61DE9338B00D60192 /* 23-Abundance.jpg */,
+				01FF44E71DE9338B00D60192 /* 24-Uncertainty.jpg */,
+				01FF44E81DE9338B00D60192 /* 25-Adventure.jpg */,
+				01FF44E91DE9338B00D60192 /* 26-Playfullness.jpg */,
+				01FF44EA1DE9338B00D60192 /* 27-Authenticity.jpg */,
+				01FF44EB1DE9338B00D60192 /* 28-Uniqueness.jpg */,
+				01FF44EC1DE9338B00D60192 /* 29-Boundaries.jpg */,
+				01FF44ED1DE9338B00D60192 /* 30-Spirit.jpg */,
+				01FF44EE1DE9338B00D60192 /* 31-Compassion.jpg */,
+				01FF44EF1DE9338B00D60192 /* 32-Vessel.jpg */,
+				01FF44F01DE9338B00D60192 /* 33-Honor.jpg */,
+				01FF44F11DE9338B00D60192 /* 34-Individuality.jpg */,
+				01FF44F21DE9338B00D60192 /* 35-Divinity.jpg */,
+				01FF44F31DE9338B00D60192 /* 36-Prosperity.jpg */,
+				01FF44F41DE9338B00D60192 /* 37-Challenge.jpg */,
+				01FF44F51DE9338B00D60192 /* 38-Detachment.jpg */,
+				01FF44F61DE9338B00D60192 /* 39-Creativity.jpg */,
+				01FF44F71DE9338B00D60192 /* 40-Relationship.jpg */,
+				01FF44F81DE9338B00D60192 /* 41-Empowerment.jpg */,
+				01FF44F91DE9338B00D60192 /* 42-Desires.jpg */,
+				01FF44FA1DE9338B00D60192 /* 43-Love.jpg */,
+				01FF44FB1DE9338B00D60192 /* 44-Generosity.jpg */,
+				01FF44FC1DE9338B00D60192 /* 45-Forgiveness.jpg */,
+				01FF44FD1DE9338B00D60192 /* 46-Awakening.jpg */,
+				01FF44FE1DE9338B00D60192 /* 47-Presence.jpg */,
+				01FF44FF1DE9338B00D60192 /* 48-Patience.jpg */,
+				01FF45001DE9338B00D60192 /* 49-Balance.jpg */,
+				01FF45011DE9338B00D60192 /* 50-Intuition.jpg */,
+				01FF45021DE9338B00D60192 /* 51-Competition.jpg */,
+				01FF45031DE9338B00D60192 /* 52-Beauty.jpg */,
+				01FF45041DE9338B00D60192 /* 53-Grace.jpg */,
+				01FF45051DE9338B00D60192 /* 54-Perfectionism.jpg */,
+				01FF45061DE9338B00D60192 /* 55-Evolution.jpg */,
+				01FF45071DE9338B00D60192 /* 56-Protection.jpg */,
+				01FF45081DE9338B00D60192 /* 57-Courage.jpg */,
+				01FF45091DE9338B00D60192 /* 58-Eternity.jpg */,
+				01FF450A1DE9338B00D60192 /* 59-Heart.jpg */,
+				01FF450B1DE9338B00D60192 /* 60-Change.jpg */,
+				01FF450C1DE9338B00D60192 /* 61-Burdens.jpg */,
+				01FF450D1DE9338B00D60192 /* 62-Longing.jpg */,
+				01FF450E1DE9338B00D60192 /* 63-Conduit.jpg */,
+				01FF450F1DE9338B00D60192 /* 64-Relax.jpg */,
+				01FF45101DE9338B00D60192 /* 65-Decisions.jpg */,
+				01FF45111DE9338B00D60192 /* 66-Death.jpg */,
+				01FF45121DE9338B00D60192 /* 67-SoulMate.jpg */,
+				01FF45131DE9338B00D60192 /* 68-InnerChild.jpg */,
+				01FF45141DE9338B00D60192 /* 69-OracleBack.jpg */,
+			);
+			path = jpeg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,27 +486,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01091FB11DD81182005018F7 /* Oracle-09.png in Resources */,
+				01FF45331DE9338B00D60192 /* 31-Compassion.jpg in Resources */,
+				01FF451F1DE9338B00D60192 /* 11-Vampire.jpg in Resources */,
+				01FF45321DE9338B00D60192 /* 30-Spirit.jpg in Resources */,
+				01FF45581DE9338B00D60192 /* 68-InnerChild.jpg in Resources */,
+				01FF45381DE9338B00D60192 /* 36-Prosperity.jpg in Resources */,
+				01FF45151DE9338B00D60192 /* 01-Needs.jpg in Resources */,
+				01FF453C1DE9338B00D60192 /* 40-Relationship.jpg in Resources */,
 				0140D4DC1DC3FABE00AFF0BB /* LaunchScreen.storyboard in Resources */,
-				01091FAC1DD81182005018F7 /* Oracle-04.png in Resources */,
-				01091FAB1DD81182005018F7 /* Oracle-03.png in Resources */,
+				01FF451D1DE9338B00D60192 /* 09-Channel.jpg in Resources */,
+				01FF45471DE9338B00D60192 /* 51-Competition.jpg in Resources */,
+				01FF451A1DE9338B00D60192 /* 06-Trust.jpg in Resources */,
+				01FF454E1DE9338B00D60192 /* 58-Eternity.jpg in Resources */,
+				01FF45311DE9338B00D60192 /* 29-Boundaries.jpg in Resources */,
 				0140D4D91DC3FABE00AFF0BB /* Assets.xcassets in Resources */,
-				01091FB61DD81182005018F7 /* Oracle-Back.png in Resources */,
-				01091FB51DD81182005018F7 /* Oracle-13.png in Resources */,
-				01091FB41DD81182005018F7 /* Oracle-12.png in Resources */,
+				01FF451E1DE9338B00D60192 /* 10-Understanding.jpg in Resources */,
+				01FF45521DE9338B00D60192 /* 62-Longing.jpg in Resources */,
+				01FF45361DE9338B00D60192 /* 34-Individuality.jpg in Resources */,
+				01FF453B1DE9338B00D60192 /* 39-Creativity.jpg in Resources */,
+				01FF45231DE9338B00D60192 /* 15-Now.jpg in Resources */,
+				01FF45501DE9338B00D60192 /* 60-Change.jpg in Resources */,
+				01FF45371DE9338B00D60192 /* 35-Divinity.jpg in Resources */,
+				01FF45431DE9338B00D60192 /* 47-Presence.jpg in Resources */,
+				01FF45221DE9338B00D60192 /* 14-Discernment.jpg in Resources */,
+				01FF45271DE9338B00D60192 /* 19-HowTo.jpg in Resources */,
+				01FF452C1DE9338B00D60192 /* 24-Uncertainty.jpg in Resources */,
+				01FF453D1DE9338B00D60192 /* 41-Empowerment.jpg in Resources */,
 				013764B61DCDFC140053A07C /* flipcard.wav in Resources */,
-				01091FAA1DD81182005018F7 /* Oracle-02.png in Resources */,
-				01091FB01DD81182005018F7 /* Oracle-08.png in Resources */,
-				01091FB31DD81182005018F7 /* Oracle-11.png in Resources */,
-				01091FA91DD81182005018F7 /* Oracle-01.png in Resources */,
-				01091FAF1DD81182005018F7 /* Oracle-07.png in Resources */,
+				01FF45251DE9338B00D60192 /* 17-Mystery.jpg in Resources */,
+				01FF45341DE9338B00D60192 /* 32-Vessel.jpg in Resources */,
+				01FF45571DE9338B00D60192 /* 67-SoulMate.jpg in Resources */,
 				011387E91DC40E95004FAE58 /* Images.xcassets in Resources */,
-				01091FAE1DD81182005018F7 /* Oracle-06.png in Resources */,
-				01091FB21DD81182005018F7 /* Oracle-10.png in Resources */,
+				01FF45291DE9338B00D60192 /* 21-Openness.jpg in Resources */,
+				01FF453F1DE9338B00D60192 /* 43-Love.jpg in Resources */,
+				01FF45401DE9338B00D60192 /* 44-Generosity.jpg in Resources */,
+				01FF45351DE9338B00D60192 /* 33-Honor.jpg in Resources */,
+				01FF45161DE9338B00D60192 /* 02-Release.jpg in Resources */,
 				0140D4D71DC3FABE00AFF0BB /* Main.storyboard in Resources */,
-				01091FAD1DD81182005018F7 /* Oracle-05.png in Resources */,
+				01FF452A1DE9338B00D60192 /* 22-Unfolding.jpg in Resources */,
+				01FF452F1DE9338B00D60192 /* 27-Authenticity.jpg in Resources */,
+				01FF45481DE9338B00D60192 /* 52-Beauty.jpg in Resources */,
+				01FF454D1DE9338B00D60192 /* 57-Courage.jpg in Resources */,
+				01FF45301DE9338B00D60192 /* 28-Uniqueness.jpg in Resources */,
+				01FF45561DE9338B00D60192 /* 66-Death.jpg in Resources */,
+				01FF45451DE9338B00D60192 /* 49-Balance.jpg in Resources */,
+				01FF45261DE9338B00D60192 /* 18-Offering.jpg in Resources */,
+				01FF45411DE9338B00D60192 /* 45-Forgiveness.jpg in Resources */,
+				01FF45281DE9338B00D60192 /* 20-Surrender.jpg in Resources */,
+				01FF45391DE9338B00D60192 /* 37-Challenge.jpg in Resources */,
 				010AA1F11DCAA0FD007BDD5B /* Localizable.strings in Resources */,
+				01FF45541DE9338B00D60192 /* 64-Relax.jpg in Resources */,
+				01FF454B1DE9338B00D60192 /* 55-Evolution.jpg in Resources */,
+				01FF45191DE9338B00D60192 /* 05-Receiving.jpg in Resources */,
+				01FF45491DE9338B00D60192 /* 53-Grace.jpg in Resources */,
+				01FF45441DE9338B00D60192 /* 48-Patience.jpg in Resources */,
+				01FF452B1DE9338B00D60192 /* 23-Abundance.jpg in Resources */,
+				01FF452E1DE9338B00D60192 /* 26-Playfullness.jpg in Resources */,
+				01FF45421DE9338B00D60192 /* 46-Awakening.jpg in Resources */,
+				01FF453A1DE9338B00D60192 /* 38-Detachment.jpg in Resources */,
+				01FF45181DE9338B00D60192 /* 04-Acceptance.jpg in Resources */,
+				01FF45201DE9338B00D60192 /* 12-Guidance.jpg in Resources */,
+				01FF453E1DE9338B00D60192 /* 42-Desires.jpg in Resources */,
+				01FF45551DE9338B00D60192 /* 65-Decisions.jpg in Resources */,
+				01FF45591DE9338B00D60192 /* 69-OracleBack.jpg in Resources */,
+				01FF45211DE9338B00D60192 /* 13-Strength.jpg in Resources */,
+				01FF45241DE9338B00D60192 /* 16-Resource.jpg in Resources */,
 				0130F64F1DC404B4000A2DDC /* Cards.json in Resources */,
+				01FF45461DE9338B00D60192 /* 50-Intuition.jpg in Resources */,
+				01FF451C1DE9338B00D60192 /* 08-Faith.jpg in Resources */,
+				01FF454F1DE9338B00D60192 /* 59-Heart.jpg in Resources */,
+				01FF45531DE9338B00D60192 /* 63-Conduit.jpg in Resources */,
+				01FF45171DE9338B00D60192 /* 03-Source.jpg in Resources */,
+				01FF451B1DE9338B00D60192 /* 07-Worthiness.jpg in Resources */,
+				01FF454A1DE9338B00D60192 /* 54-Perfectionism.jpg in Resources */,
+				01FF44CE1DE754A800D60192 /* 69-OracleBack.png in Resources */,
+				01FF452D1DE9338B00D60192 /* 25-Adventure.jpg in Resources */,
+				01FF454C1DE9338B00D60192 /* 56-Protection.jpg in Resources */,
+				01FF45511DE9338B00D60192 /* 61-Burdens.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
