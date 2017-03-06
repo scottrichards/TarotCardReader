@@ -63,10 +63,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdf-Ox-hMZ">
                                 <rect key="frame" x="7" y="66" width="360" height="495"/>
                                 <subviews>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-Vc-wrp">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="495"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-7p-Bjk">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="495"/>
                                     </imageView>
                                 </subviews>
@@ -256,7 +256,7 @@
                                     <constraint firstItem="4Co-w6-aPS" firstAttribute="top" secondItem="DEr-Ob-Mo4" secondAttribute="top" id="ySL-id-rda"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-XQ-qdo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="69-OracleBack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-XQ-qdo">
                                 <rect key="frame" x="92.5" y="236" width="190" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="w4N-XQ-qdo" secondAttribute="height" multiplier="19:26" id="WVS-Od-N64"/>
@@ -418,7 +418,7 @@ I hope you receive as much joy from these cards as Matt and I felt making them!<
         </scene>
     </scenes>
     <resources>
-        <image name="69-OracleBack.png" width="1200" height="1650"/>
+        <image name="69-OracleBack.jpg" width="1200" height="1650"/>
         <image name="CardBorder" width="589" height="825"/>
         <image name="Email" width="37" height="37"/>
         <image name="HowToUse" width="262" height="44"/>

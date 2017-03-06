@@ -26,7 +26,6 @@
 		0140D4F71DC3FDA300AFF0BB /* TarotCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */; };
 		019150611DCC619E003BD9D4 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019150601DCC619E003BD9D4 /* InstructionsViewController.swift */; };
 		01B521FD1DCD654F008F60C0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B521FC1DCD654F008F60C0 /* AboutViewController.swift */; };
-		01FF44CE1DE754A800D60192 /* 69-OracleBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44891DE754A800D60192 /* 69-OracleBack.png */; };
 		01FF45151DE9338B00D60192 /* 01-Needs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D01DE9338B00D60192 /* 01-Needs.jpg */; };
 		01FF45161DE9338B00D60192 /* 02-Release.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D11DE9338B00D60192 /* 02-Release.jpg */; };
 		01FF45171DE9338B00D60192 /* 03-Source.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FF44D21DE9338B00D60192 /* 03-Source.jpg */; };
@@ -132,7 +131,6 @@
 		0140D4F61DC3FDA300AFF0BB /* TarotCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotCardDeck.swift; sourceTree = "<group>"; };
 		019150601DCC619E003BD9D4 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		01B521FC1DCD654F008F60C0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		01FF44891DE754A800D60192 /* 69-OracleBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "69-OracleBack.png"; sourceTree = "<group>"; };
 		01FF44D01DE9338B00D60192 /* 01-Needs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "01-Needs.jpg"; sourceTree = "<group>"; };
 		01FF44D11DE9338B00D60192 /* 02-Release.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "02-Release.jpg"; sourceTree = "<group>"; };
 		01FF44D21DE9338B00D60192 /* 03-Source.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "03-Source.jpg"; sourceTree = "<group>"; };
@@ -254,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				01FF44CF1DE9338B00D60192 /* jpeg */,
-				01FF44891DE754A800D60192 /* 69-OracleBack.png */,
 				011387E81DC40E95004FAE58 /* Images.xcassets */,
 			);
 			path = Images;
@@ -559,7 +556,6 @@
 				01FF45171DE9338B00D60192 /* 03-Source.jpg in Resources */,
 				01FF451B1DE9338B00D60192 /* 07-Worthiness.jpg in Resources */,
 				01FF454A1DE9338B00D60192 /* 54-Perfectionism.jpg in Resources */,
-				01FF44CE1DE754A800D60192 /* 69-OracleBack.png in Resources */,
 				01FF452D1DE9338B00D60192 /* 25-Adventure.jpg in Resources */,
 				01FF454C1DE9338B00D60192 /* 56-Protection.jpg in Resources */,
 				01FF45511DE9338B00D60192 /* 61-Burdens.jpg in Resources */,
