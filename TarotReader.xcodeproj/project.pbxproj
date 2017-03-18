@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0104E46D1E6E6B4700FAC68A /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0104E46C1E6E6B4700FAC68A /* LocalNotificationManager.swift */; };
 		010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */; };
 		010AA1F11DCAA0FD007BDD5B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 010AA1F01DCAA0FD007BDD5B /* Localizable.strings */; };
 		010AA1FB1DCC5FAD007BDD5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AA1F91DCC5FAD007BDD5B /* MainViewController.swift */; };
@@ -108,6 +109,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0104E46C1E6E6B4700FAC68A /* LocalNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		010AA1EE1DC80AA3007BDD5B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		010AA1F01DCAA0FD007BDD5B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		010AA1F91DCC5FAD007BDD5B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				013764BC1DCEA9990053A07C /* TSWebViewController.swift */,
 				013764BA1DCE622C0053A07C /* EmailComposer.swift */,
 				013764B81DCE0C040053A07C /* StringUtilities.swift */,
+				0104E46C1E6E6B4700FAC68A /* LocalNotificationManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				010AA1EF1DC80AA3007BDD5B /* ColorExtension.swift in Sources */,
 				0140D4D21DC3FABE00AFF0BB /* AppDelegate.swift in Sources */,
 				010AA1FB1DCC5FAD007BDD5B /* MainViewController.swift in Sources */,
+				0104E46D1E6E6B4700FAC68A /* LocalNotificationManager.swift in Sources */,
 				019150611DCC619E003BD9D4 /* InstructionsViewController.swift in Sources */,
 				01B521FD1DCD654F008F60C0 /* AboutViewController.swift in Sources */,
 				013764BD1DCEA9990053A07C /* TSWebViewController.swift in Sources */,
