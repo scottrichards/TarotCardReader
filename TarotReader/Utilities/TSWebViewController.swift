@@ -54,7 +54,7 @@ class TSWebViewController: UIViewController, WKNavigationDelegate {
         if let url = url {
             let req = URLRequest(url: url)
             self.webView!.load(req)
-            activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+            activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
         }
         self.navigationItem.title = navTitle
         // Do any additional setup after loading the view.

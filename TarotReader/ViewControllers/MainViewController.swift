@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         
         startLocation = cardBackImageView.center
         cardStartRect = cardBackImageView.frame
-        let directions: [UISwipeGestureRecognizerDirection] = [.right, .left]
+        let directions: [UISwipeGestureRecognizer.Direction] = [.right, .left]
         for direction in directions {
             var swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(gesture:)))
             swipeGesture.direction = direction
@@ -188,7 +188,7 @@ class ViewController: UIViewController {
 //        UIView.transition(from: cardFaceImageView, to: cardBackImageView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
     }
     
-    func animateCard(count:Int, direction: UISwipeGestureRecognizerDirection) -> TarotCard? {
+    func animateCard(count:Int, direction: UISwipeGestureRecognizer.Direction) -> TarotCard? {
         currentCard = UInt32(count)
         if let selectedTarotCard = deckOfCards.cards?[count] {
 //            UIView.animate(withDuration: 0.7,
@@ -216,7 +216,7 @@ class ViewController: UIViewController {
 //                            
 //                },
 //                           completion: nil)
-            let flipDirection = (direction == UISwipeGestureRecognizerDirection.right) ? UIViewAnimationOptions.transitionFlipFromLeft : UIViewAnimationOptions.transitionFlipFromRight
+            let flipDirection = (direction == UISwipeGestureRecognizer.Direction.right) ? UIView.AnimationOptions.transitionFlipFromLeft : UIView.AnimationOptions.transitionFlipFromRight
             UIView.transition(with: cardFaceImageView, duration: 0.7, options: [flipDirection], animations: { [unowned self] in
 //                self.cardFaceImageView.isHidden = false
 //                self.cardBackImageView.isHidden = true
@@ -285,7 +285,7 @@ class ViewController: UIViewController {
         playDrawSound()
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.right:
+            case UISwipeGestureRecognizer.Direction.right:
                 print("Swiped right")
                 
                 if (currentCard > 0) {
@@ -296,7 +296,7 @@ class ViewController: UIViewController {
                 animateCard(count: Int(currentCard), direction: swipeGesture.direction)
                 
                 //change view controllers
-            case UISwipeGestureRecognizerDirection.left :
+            case UISwipeGestureRecognizer.Direction.left :
                 print("Swiped Left")
                 
                 let cardCount :UInt32 = deckOfCards.cards != nil ? UInt32(deckOfCards.cards!.count) : 0
@@ -334,7 +334,7 @@ class ViewController: UIViewController {
             print("MOVE cardFaceImageView.center = \(cardFaceImageView.center)")
             cardFaceImageView.center = CGPoint(x:  translation.x + (startLocation?.x)!, y: (startLocation?.y)!)
         }
-        if (cardState == .dragging && gesture.state == UIGestureRecognizerState.ended) {
+        if (cardState == .dragging && gesture.state == UIGestureRecognizer.State.ended) {
         //    animateBack()
             cardState = .initial
         }
@@ -421,8 +421,8 @@ class ViewController: UIViewController {
 //            facebookSheet.add(self.cardFaceImageView.image)
             self.present(facebookSheet, animated: true, completion: nil)
         } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
         

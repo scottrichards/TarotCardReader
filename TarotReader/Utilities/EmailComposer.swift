@@ -27,7 +27,9 @@ class EmailComposer: NSObject, MFMailComposeViewControllerDelegate {
         mailComposerVC.mailComposeDelegate = self
 
         if let image = UIImage(named: imageName) {
-            mailComposerVC.addAttachmentData(UIImageJPEGRepresentation(image, CGFloat(1.0))!, mimeType: "image/jpeg", fileName:  "changeprayer.jpeg")
+            if let imageData = image.jpegData(compressionQuality: 1.0) {
+            mailComposerVC.addAttachmentData(imageData, mimeType: "image/jpeg", fileName:  "changeprayer.jpeg")
+            }
         }
         
         mailComposerVC.setMessageBody("<html><body><p>Tosha Silver’s Change Me Prayer Oracle App provided me with this message from The Divine 😀</p></body></html>", isHTML: true)

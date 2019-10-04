@@ -29,7 +29,7 @@ class LocalNotificationManager: NSObject {
         let content = UNMutableNotificationContent()
         content.title = "Don't forget"
         content.body = "Buy some milk"
-        content.sound = UNNotificationSound.default()
+        content.sound = UNNotificationSound.default
         
         let date = Date(timeIntervalSinceNow: 3600)
         
