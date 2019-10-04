@@ -20,7 +20,7 @@ class AboutViewController: UIViewController {
         self.view.addGestureRecognizer(tapToGoBack)
     }
 
-    func returnToMainView(_ sender: UITapGestureRecognizer) {
+    @objc func returnToMainView(_ sender: UITapGestureRecognizer) {
         self.navigationController?.popViewController(animated: true)
     }
     

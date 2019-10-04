@@ -136,7 +136,7 @@ class ViewController: UIViewController {
        audioPlayer.play()
     }
     
-    func onClickTarotCard() {
+    @objc func onClickTarotCard() {
     //    playDrawSound()
         if (cardShowing) {
             rightBarButtonItem.image = UIImage(named: "QuestionCircle")
@@ -281,7 +281,7 @@ class ViewController: UIViewController {
     // MARK: Swipe Gestures
     
     
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         playDrawSound()
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
