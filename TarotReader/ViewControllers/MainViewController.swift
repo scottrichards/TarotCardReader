@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     var cardState : CardState = .initial
     
     var panGestureRecognizer : UIPanGestureRecognizer?
-    var audioPlayer = AVAudioPlayer()
+    var audioPlayer : AVAudioPlayer!
     let emailComposer = EmailComposer()
     
     @IBOutlet weak var cardLeadingMargin: NSLayoutConstraint!
